@@ -1,0 +1,32 @@
+{
+  "lr": {
+    "single_auc": 0.5358,
+    "wf_auc": 0.5383,
+    "wf_std": 0.0626,
+    "wf_equity": 6.29,
+    "return": 8.13,
+    "sharpe": 1.51,
+    "win_rate": 0.578,
+    "n_trades": 84
+  },
+  "rf": {
+    "single_auc": 0.5083,
+    "wf_auc": 0.5086,
+    "wf_std": 0.0913,
+    "wf_equity": -4.28,
+    "return": 1.66,
+    "sharpe": 0.37,
+    "win_rate": 0.516,
+    "n_trades": 31
+  },
+  "xgb": {
+    "single_auc": 0.4933,
+    "wf_auc": 0.511,
+    "wf_std": 0.0762,
+    "wf_equity": -9.45,
+    "return": 10.07,
+    "sharpe": 1.45,
+    "win_rate": 0.463,
+    "n_trades": 121
+  }
+}

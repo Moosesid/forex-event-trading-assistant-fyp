@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scikit-learn
+Pillow
+yfinance
+cloudscraper
+beautifulsoup4
