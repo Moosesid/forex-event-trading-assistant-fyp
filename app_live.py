@@ -756,7 +756,7 @@ elif page == "🔍 Interpretability":
         st.caption("Drop in AUC when each feature is randomly shuffled. Higher = more critical.")
         img = load_img("permutation_importance_lr.png")
         if img:
-            st.image(img, use_container_width=True)
+            st.image(img, width=700)
         else:
             st.info("Run Section 9 in notebook.")
 
@@ -787,7 +787,7 @@ elif page == "🔍 Interpretability":
             st.caption("Each dot = one prediction. Color = feature value. X = SHAP impact.")
             img = load_img("shap_summary_lr.png")
             if img:
-                st.image(img, use_container_width=True)
+                st.image(img, width=700)
             else:
                 st.info("Run Section 9 in notebook.")
         with c2:
@@ -795,7 +795,7 @@ elif page == "🔍 Interpretability":
             st.caption("Mean absolute SHAP value — overall importance ranking.")
             img = load_img("shap_bar_lr.png")
             if img:
-                st.image(img, use_container_width=True)
+                st.image(img, width=700)
             else:
                 st.info("Run Section 9 in notebook.")
 
@@ -824,7 +824,7 @@ elif page == "🔍 Interpretability":
         st.caption("AUC drop when each feature group is removed. Positive = group adds value.")
         img = load_img("ablation_study_lr.png")
         if img:
-            st.image(img, use_container_width=True)
+            st.image(img, width=700)
         else:
             st.info("Save ablation_study_lr.png from Section 9b.")
         for group, drop, desc in [
