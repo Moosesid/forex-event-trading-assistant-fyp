@@ -249,7 +249,7 @@ def fetch_ff_calendar():
                     'previous': e.get('previous', '—'),
                     'actual':   e.get('actual', '—'),
                     'is_today': ev_date == today if ev_date else False,
-                    'released': e.get('released', False),
+                    'released': e.get('actual', '—') not in ('', '—', None),
                 })
             return events
         except Exception:
