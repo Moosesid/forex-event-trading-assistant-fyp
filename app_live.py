@@ -582,7 +582,7 @@ if page == "🎯 Live Signal":
                 if val == "BUY":  return "color: #2ea043; font-weight: bold"
                 if val == "SELL": return "color: #f85149; font-weight: bold"
                 return "color: #8b949e"
-            styled_log = log_df.style.applymap(colour_signal, subset=["signal"])
+            styled_log = log_df.style.map(colour_signal, subset=["signal"])
             st.dataframe(styled_log, hide_index=True, use_container_width=True)
             st.caption(f"Showing last {min(50, len(log_df))} entries from {LOG_FILE}")
         except Exception as e:
@@ -1002,8 +1002,8 @@ elif page == "📊 Signal History":
                         return "color: #8b949e"
 
                     styled = hist_df.style\
-                        .applymap(style_signal, subset=["Signal"])\
-                        .applymap(style_hit, subset=["Hit/Miss"])
+                        .map(style_signal, subset=["Signal"])\
+                        .map(style_hit, subset=["Hit/Miss"])
 
                     st.dataframe(styled, hide_index=True, use_container_width=True)
 
