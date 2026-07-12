@@ -1,28 +1,28 @@
 {
-  "scraped_at": "2026-07-12 06:42:06.544694",
+  "scraped_at": "2026-07-12 09:09:09.683994",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-07-09",
-      "time": "11:00pm",
-      "currency": "EUR",
-      "event": "German Final CPI m/m",
-      "forecast": "-0.3%",
-      "previous": "-0.3%",
-      "actual": "-0.3%",
+      "date": "2026-07-14",
+      "time": "5:30am",
+      "currency": "USD",
+      "event": "Core CPI m/m",
+      "forecast": "0.2%",
+      "previous": "0.2%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-07-09",
-      "time": "11:45pm",
-      "currency": "EUR",
-      "event": "French Final CPI m/m",
-      "forecast": "-0.2%",
-      "previous": "-0.2%",
-      "actual": "-0.3%",
+      "date": "2026-07-14",
+      "time": "",
+      "currency": "USD",
+      "event": "CPI m/m",
+      "forecast": "-0.1%",
+      "previous": "0.5%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     }
   ]
 }
