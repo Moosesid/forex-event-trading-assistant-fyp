@@ -1,17 +1,17 @@
 {
-  "scraped_at": "2026-07-14 11:37:52.154341",
+  "scraped_at": "2026-07-14 14:03:09.958596",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-07-14",
-      "time": "7:30am",
+      "time": "8:30am",
       "currency": "USD",
       "event": "Core CPI m/m",
       "forecast": "0.2%",
       "previous": "0.2%",
-      "actual": "",
+      "actual": "0.0%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-07-14",
@@ -20,9 +20,9 @@
       "event": "CPI m/m",
       "forecast": "-0.1%",
       "previous": "0.5%",
-      "actual": "",
+      "actual": "-0.4%",
       "is_today": true,
-      "released": false
+      "released": true
     }
   ]
 }
