@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-07-19 06:38:10.578122",
+  "scraped_at": "2026-07-19 09:09:40.358296",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-07-23",
-      "time": "7:15am",
+      "time": "8:15am",
       "currency": "EUR",
       "event": "Main Refinancing Rate",
       "forecast": "2.40%",
