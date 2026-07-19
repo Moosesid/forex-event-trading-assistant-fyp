@@ -1,28 +1,17 @@
 {
-  "scraped_at": "2026-07-19 03:37:05.875785",
+  "scraped_at": "2026-07-19 06:38:10.578122",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-07-14",
-      "time": "5:30am",
-      "currency": "USD",
-      "event": "Core CPI m/m",
-      "forecast": "0.2%",
-      "previous": "0.2%",
-      "actual": "0.0%",
+      "date": "2026-07-23",
+      "time": "7:15am",
+      "currency": "EUR",
+      "event": "Main Refinancing Rate",
+      "forecast": "2.40%",
+      "previous": "2.40%",
+      "actual": "",
       "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-07-14",
-      "time": "",
-      "currency": "USD",
-      "event": "CPI m/m",
-      "forecast": "-0.1%",
-      "previous": "0.5%",
-      "actual": "-0.4%",
-      "is_today": false,
-      "released": true
+      "released": false
     }
   ]
 }
