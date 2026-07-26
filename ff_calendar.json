@@ -1,17 +1,72 @@
 {
-  "scraped_at": "2026-07-26 00:08:33.878730",
+  "scraped_at": "2026-07-26 04:32:46.712313",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-07-23",
-      "time": "8:15am",
-      "currency": "EUR",
-      "event": "Main Refinancing Rate",
-      "forecast": "2.40%",
-      "previous": "2.40%",
-      "actual": "2.40%",
+      "date": "2026-07-29",
+      "time": "2:00pm",
+      "currency": "USD",
+      "event": "Federal Funds Rate",
+      "forecast": "3.75%",
+      "previous": "3.75%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
+    },
+    {
+      "date": "2026-07-30",
+      "time": "All Day",
+      "currency": "EUR",
+      "event": "German Prelim CPI m/m",
+      "forecast": "0.7%",
+      "previous": "-0.3%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-07-31",
+      "time": "2:45am",
+      "currency": "EUR",
+      "event": "French Prelim CPI m/m",
+      "forecast": "0.3%",
+      "previous": "-0.3%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-07-31",
+      "time": "5:00am",
+      "currency": "EUR",
+      "event": "Core CPI Flash Estimate y/y",
+      "forecast": "2.4%",
+      "previous": "2.4%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-07-31",
+      "time": "",
+      "currency": "EUR",
+      "event": "CPI Flash Estimate y/y",
+      "forecast": "2.9%",
+      "previous": "2.8%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-07-31",
+      "time": "",
+      "currency": "EUR",
+      "event": "Italian Prelim CPI m/m",
+      "forecast": "0.1%",
+      "previous": "0.0%",
+      "actual": "",
+      "is_today": false,
+      "released": false
     }
   ]
 }
