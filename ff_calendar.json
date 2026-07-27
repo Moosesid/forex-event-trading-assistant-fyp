@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-27 19:46:26.873242",
+  "scraped_at": "2026-07-27 21:18:46.761306",
   "source": "github_actions",
   "events": [
     {
@@ -62,7 +62,7 @@
       "time": "",
       "currency": "EUR",
       "event": "Italian Prelim CPI m/m",
-      "forecast": "0.1%",
+      "forecast": "0.3%",
       "previous": "0.0%",
       "actual": "",
       "is_today": false,
