@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-07-27 15:48:21.066735",
+  "scraped_at": "2026-07-27 17:49:05.693912",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-07-29",
-      "time": "1:00pm",
+      "time": "11:00am",
       "currency": "USD",
       "event": "Federal Funds Rate",
       "forecast": "3.75%",
@@ -14,7 +14,7 @@
       "released": false
     },
     {
-      "date": "2026-07-30",
+      "date": "2026-07-29",
       "time": "All Day",
       "currency": "EUR",
       "event": "German Prelim CPI m/m",
@@ -25,8 +25,8 @@
       "released": false
     },
     {
-      "date": "2026-07-31",
-      "time": "1:45am",
+      "date": "2026-07-30",
+      "time": "11:45pm",
       "currency": "EUR",
       "event": "French Prelim CPI m/m",
       "forecast": "0.3%",
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-07-31",
-      "time": "4:00am",
+      "time": "2:00am",
       "currency": "EUR",
       "event": "Core CPI Flash Estimate y/y",
       "forecast": "2.4%",
