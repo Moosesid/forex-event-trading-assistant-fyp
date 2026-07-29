@@ -1,7 +1,7 @@
 """
 FYP Dashboard — Economic Event-Driven Forex Trading Assistant
 Muhammad Mursyid Bin Hassan | 2300435
-Run: streamlit run app.py
+Run: streamlit run app_live_corrected.py
 Requires: fyp_model.pkl + all CSV files in same directory
 """
 
@@ -64,21 +64,28 @@ def load_img(path):
     return Image.open(path) if os.path.exists(path) else None
 
 try:
-    saved       = load_model()
-    model       = saved['model']
-    scaler      = saved['scaler']
+    saved = load_model()
+    model = saved['model']
     feature_cols = saved['feature_cols']
+
+    # Older model files stored a separate scaler. The corrected Run 2
+    # model stores scaling inside the sklearn Pipeline, so this is optional.
+    scaler = saved.get('scaler')
     MODEL_LOADED = True
 except Exception as e:
     MODEL_LOADED = False
+    MODEL_LOAD_ERROR = str(e)
 
 # ── Load results JSON ────────────────────────────────────────────────────────
 @st.cache_data
 def load_results():
-    if os.path.exists('results_summary.json'):
+    if not os.path.exists('results_summary.json'):
+        return None
+    try:
         with open('results_summary.json', 'r') as f:
             return json.load(f)
-    return None
+    except (OSError, json.JSONDecodeError):
+        return None
 
 # ── Signal logger ─────────────────────────────────────────────────────────────
 LOG_FILE = "signal_log.csv"
@@ -117,6 +124,84 @@ def log_signal(signal, prob, price, events_today, days_since, days_until):
         pass
 
 res = load_results()
+
+# Run 6 evaluation values, used when results_summary.json does not yet
+# contain a field. JSON values take priority.
+#
+# Sources, all from the Run 6 report:
+#   single_auc            Table 5, tuned fixed-holdout test AUC
+#   rf walk-forward       Table 8, final 36-fold evaluation
+#   lr / xgb walk-forward Section 6.8 grid, one-day horizon, same 36 folds
+#   strategy trading      Table 10, 1bp transaction cost
+RUN6_FALLBACK = {
+    'buy_and_hold': {
+        'gross_return': 1.81,
+        'net_return': 1.80,
+        'sharpe': 0.0649,
+        'max_drawdown': -23.29,
+        'position_changes': 1,
+        # legacy key names kept so older widgets still resolve
+        'single_split_return': 1.80,
+        'single_split_sharpe': 0.0649,
+        'single_split_max_drawdown': -23.29,
+        'walk_forward_return': 1.80,
+        'walk_forward_sharpe': 0.0649,
+        'walk_forward_max_drawdown': -23.29,
+    },
+    'overlay': {
+        'gross_return': 4.94,
+        'net_return': 1.51,
+        'sharpe': 0.0591,
+        'max_drawdown': -18.81,
+        'position_changes': 333,
+    },
+    'long_short': {
+        'gross_return': -3.07,
+        'net_return': -8.10,
+        'sharpe': -0.1744,
+        'max_drawdown': -19.65,
+        'position_changes': 357,
+    },
+    'long_only': {
+        'net_return': -6.63,
+        'max_drawdown': -15.20,
+    },
+    'rf': {
+        'single_auc': 0.5309,
+        'train_auc': 0.5858,
+        'wf_auc': 0.5389,
+        'pooled_wf_auc': 0.5145,
+        'wf_std': 0.0621,
+        'folds_above_50': 26,
+        'folds_above_55': 14,
+        'n_folds': 36,
+    },
+    'lr': {
+        'single_auc': 0.5071,
+        'train_auc': 0.5581,
+        'wf_auc': 0.5399,
+        'pooled_wf_auc': 0.5281,
+        'wf_std': 0.0600,
+        'folds_above_50': 25,
+        'n_folds': 36,
+    },
+    'xgb': {
+        'single_auc': 0.5265,
+        'train_auc': 0.8827,
+        'wf_auc': 0.5075,
+        'pooled_wf_auc': 0.5036,
+        'wf_std': 0.0754,
+        'folds_above_50': 20,
+        'n_folds': 36,
+    },
+}
+
+def result_section(name):
+    """Return one result section, with current-run fallbacks for missing keys."""
+    merged = dict(RUN6_FALLBACK.get(name, {}))
+    if isinstance(res, dict) and isinstance(res.get(name), dict):
+        merged.update(res[name])
+    return merged
 
 # ── Live price data ───────────────────────────────────────────────────────────
 @st.cache_data(ttl=300)   # refresh every 5 minutes
@@ -249,7 +334,7 @@ def fetch_ff_calendar():
                     'previous': e.get('previous', '—'),
                     'actual':   e.get('actual', '—'),
                     'is_today': ev_date == today if ev_date else False,
-                    'released': e.get('actual', '—') not in ('', '—', None),
+                    'released': e.get('released', False),
                 })
             return events
         except Exception:
@@ -259,8 +344,14 @@ def fetch_ff_calendar():
 
 
 # ── Feature engineering from live price ──────────────────────────────────────
-def compute_features_from_price(price_df, event_surprises, days_since, days_until, any_event):
-    """Compute all 42 features from live price dataframe + event inputs."""
+def compute_features_from_price(
+    price_df,
+    event_surprises,
+    event_flags,
+    days_since,
+    days_until
+):
+    """Compute the 48 corrected Run 2 features for the latest price row."""
     df = price_df.copy()
     close = df['close']
 
@@ -270,94 +361,127 @@ def compute_features_from_price(price_df, event_surprises, days_since, days_unti
     for lag in [5, 7, 10]:
         df[f'mom{lag}'] = df[f'r{lag}d'] - df['r1d']
 
-    df['vol_5d']       = df['log_return'].rolling(5).std()
-    df['vol_14d']      = df['log_return'].rolling(14).std()
+    df['vol_5d'] = df['log_return'].rolling(5).std()
+    df['vol_14d'] = df['log_return'].rolling(14).std()
     df['price_pct_14d'] = (
-        (close - close.rolling(14).min()) /
-        (close.rolling(14).max() - close.rolling(14).min() + 1e-8)
+        (close - close.rolling(14).min())
+        / (close.rolling(14).max() - close.rolling(14).min() + 1e-8)
     )
 
-    df['above_200ma'] = (close > close.rolling(200).mean()).astype(int)
-    df['dist_200ma']  = (close - close.rolling(200).mean()) / close.rolling(200).mean()
-    df['ma50_slope']  = close.rolling(50).mean().pct_change(5)
+    ma200 = close.rolling(200).mean()
+    df['above_200ma'] = (close > ma200).astype(int)
+    df['dist_200ma'] = (close - ma200) / ma200
+    df['ma50_slope'] = close.rolling(50).mean().pct_change(5)
 
     dow = pd.to_datetime(df.index).dayofweek
     df['cos_dow'] = np.cos(2 * np.pi * dow / 5)
     df['sin_dow'] = np.sin(2 * np.pi * dow / 5)
 
     delta = close.diff()
-    gain  = delta.clip(lower=0).rolling(14).mean()
-    loss  = (-delta.clip(upper=0)).rolling(14).mean()
+    gain = delta.clip(lower=0).rolling(14).mean()
+    loss = (-delta.clip(upper=0)).rolling(14).mean()
     df['rsi'] = 100 - (100 / (1 + gain / (loss + 1e-8)))
 
     ema12 = close.ewm(span=12, adjust=False).mean()
     ema26 = close.ewm(span=26, adjust=False).mean()
-    df['macd_hist'] = (ema12 - ema26) - (ema12 - ema26).ewm(span=9, adjust=False).mean()
+    macd = ema12 - ema26
+    df['macd_hist'] = macd - macd.ewm(span=9, adjust=False).mean()
 
     sma20 = close.rolling(20).mean()
     std20 = close.rolling(20).std()
-    df['bb_pct'] = (close - (sma20 - 2*std20)) / (4*std20 + 1e-8)
+    df['bb_pct'] = (close - (sma20 - 2 * std20)) / (4 * std20 + 1e-8)
 
     tr = pd.concat([
         df['high'] - df['low'],
         (df['high'] - close.shift(1)).abs(),
-        (df['low']  - close.shift(1)).abs()
+        (df['low'] - close.shift(1)).abs(),
     ], axis=1).max(axis=1)
     df['atr_norm'] = tr.rolling(14).mean() / close
 
-    if days_since <= 3 and any_event:
+    # Training used the rolling volatility whenever the latest observation
+    # was within three days of a tracked event, including the event day.
+    if days_since <= 3:
         df['post_event_vol'] = df['log_return'].rolling(3).std()
     else:
         df['post_event_vol'] = 0.0
 
-    # get latest row
-    latest = df.dropna().iloc[-1].to_dict()
+    latest_rows = df.replace([np.inf, -np.inf], np.nan).dropna()
+    if latest_rows.empty:
+        raise ValueError('Not enough valid price history to construct features.')
+    latest = latest_rows.iloc[-1].to_dict()
 
-    # inject event features
-    def expanding_pct(csv_col_series, val):
+    def expanding_pct(csv_col_series, value):
         if len(csv_col_series) == 0:
             return 0.5
-        all_vals = pd.Series(list(csv_col_series) + [val])
-        return float(all_vals.rank(pct=True).iloc[-1])
+        historical = pd.to_numeric(csv_col_series, errors='coerce').dropna()
+        if historical.empty:
+            return 0.5
+        return float(((historical < value).sum() + 0.5 * (historical == value).sum()) / len(historical))
 
     vec = {}
     csv_map = {
-        'cpi':      ('cpi_surprise.csv',          'cpi_surprise'),
-        'nfp':      ('nfp_surprise.csv',           'nfp_surprise'),
-        'fomc':     ('fomc_surprise.csv',          'fomc_surprise'),
-        'ecb_rate': ('ecb_rate_surprise.csv',      'ecb_rate_surprise'),
-        'eu_cpi':   ('eu_cpi_surprise.csv',        'eu_cpi_surprise'),
-        'eu_core':  ('eu_core_cpi_surprise.csv',   'eu_core_cpi_surprise'),
+        'cpi_surprise': ('cpi_surprise.csv', 'cpi_surprise'),
+        'nfp_surprise': ('nfp_surprise.csv', 'nfp_surprise'),
+        'fomc_surprise': ('fomc_surprise.csv', 'fomc_surprise'),
+        'ecb_rate_surprise': ('ecb_rate_surprise.csv', 'ecb_rate_surprise'),
+        'eu_cpi_surprise': ('eu_cpi_surprise.csv', 'eu_cpi_surprise'),
+        'eu_core_cpi_surprise': (
+            'eu_core_cpi_surprise.csv',
+            'eu_core_cpi_surprise'
+        ),
     }
 
-    event_keys = ['cpi', 'nfp', 'fomc', 'ecb_rate', 'eu_cpi', 'eu_core']
-    col_names  = ['cpi_surprise', 'nfp_surprise', 'fomc_surprise',
-                  'ecb_rate_surprise', 'eu_cpi_surprise', 'eu_core_cpi_surprise']
+    for surprise_col, (csv_path, csv_col) in csv_map.items():
+        day_col = surprise_col.replace('_surprise', '_day')
+        available_col = surprise_col.replace('_surprise', '_available')
+        pct_col = f'{surprise_col}_pct'
 
-    for key, col in zip(event_keys, col_names):
-        val = event_surprises.get(col, 0)
-        is_event = val != 0
-        hist = load_surprise_csv(csv_map[key][0], col)
-        pct  = expanding_pct(hist, val) if is_event else 0.5
+        is_event = int(bool(event_flags.get(surprise_col, False)))
+        is_available = int(surprise_col in event_surprises)
+        value = float(event_surprises.get(surprise_col, 0.0))
 
-        vec[col]               = val
-        vec[col.replace('_surprise', '_day')] = int(is_event)
-        vec[col + '_pct']      = pct
+        historical = load_surprise_csv(csv_path, csv_col)
+        percentile = expanding_pct(historical, value) if is_available else 0.5
 
-    vec['event_day']        = int(any_event)
-    vec['days_since_event'] = days_since
-    vec['days_until_event'] = days_until
+        vec[surprise_col] = value
+        vec[available_col] = is_available
+        vec[pct_col] = percentile
+        vec[day_col] = is_event
 
-    # price-derived features from latest row
-    for f in ['r1d','r5d','r7d','r10d','r14d','mom5','mom7','mom10',
-              'vol_5d','vol_14d','price_pct_14d','above_200ma','dist_200ma',
-              'ma50_slope','cos_dow','sin_dow','rsi','macd_hist','bb_pct',
-              'atr_norm','post_event_vol']:
-        vec[f] = latest.get(f, 0)
+    vec['event_day'] = int(any(event_flags.values()))
+    vec['days_since_event'] = int(days_since)
+    vec['days_until_event'] = int(days_until)
 
-    return pd.DataFrame([vec])[feature_cols], latest, close.iloc[-1]
+    price_features = [
+        'r1d', 'r5d', 'r7d', 'r10d', 'r14d',
+        'mom5', 'mom7', 'mom10',
+        'vol_5d', 'vol_14d', 'price_pct_14d',
+        'above_200ma', 'dist_200ma', 'ma50_slope',
+        'cos_dow', 'sin_dow', 'rsi', 'macd_hist',
+        'bb_pct', 'atr_norm', 'post_event_vol'
+    ]
+    for feature in price_features:
+        vec[feature] = latest.get(feature, 0.0)
 
-def get_signal(prob, buy_t, sell_t):
+    missing = [feature for feature in feature_cols if feature not in vec]
+    if missing:
+        raise ValueError(f'Missing live features: {missing}')
+
+    X_input = pd.DataFrame([vec]).reindex(columns=feature_cols)
+    X_input = X_input.replace([np.inf, -np.inf], np.nan)
+    if X_input.isna().any().any():
+        bad_columns = X_input.columns[X_input.isna().any()].tolist()
+        raise ValueError(f'NaN values in live features: {bad_columns}')
+
+    return X_input, latest, float(close.iloc[-1])
+
+# Validation-selected thresholds from the Run 6 evaluation.
+# Chosen inside each fold's 252-day validation window, never on test data.
+# They are not adjustable in the dashboard.
+BUY_THRESHOLD = 0.52
+SELL_THRESHOLD = 0.48
+
+def get_signal(prob, buy_t=BUY_THRESHOLD, sell_t=SELL_THRESHOLD):
     if prob >= buy_t:   return "BUY"
     if prob <= sell_t:  return "SELL"
     return "HOLD"
@@ -376,14 +500,25 @@ with st.sidebar:
         "📋 Results Summary"
     ], label_visibility="collapsed")
     st.markdown("---")
-    st.markdown("**Model:** Logistic Regression")
-    st.markdown("**Params:** C=0.001, L2, saga")
-    st.markdown("**Features:** 42")
+    if MODEL_LOADED:
+        _pname = saved.get('model_name', type(model).__name__)
+        try:
+            _keys = ('max_depth', 'n_estimators', 'min_samples_leaf',
+                     'max_features', 'C', 'penalty', 'solver')
+            _pr = model.get_params()
+            _ps = ', '.join(f"{k}={_pr[k]}" for k in _keys if k in _pr)
+        except Exception:
+            _ps = 'n/a'
+        st.markdown(f"**Model:** {_pname}")
+        st.markdown(f"**Params:** {_ps}")
+    else:
+        st.markdown("**Model:** not loaded")
+    st.markdown(f"**Features:** {len(feature_cols) if MODEL_LOADED else 48}")
     st.markdown(f"**Refreshes:** every 5 min")
     if MODEL_LOADED:
         st.success("✓ Model loaded")
     else:
-        st.error("✗ fyp_model.pkl not found")
+        st.error(f"✗ Model could not be loaded: {MODEL_LOAD_ERROR}")
     st.caption(f"Last refresh: {datetime.now().strftime('%H:%M:%S')}")
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -403,42 +538,95 @@ if page == "🎯 Live Signal":
 
     today = date.today()
 
-    # today's released events → compute surprises
-    today_events = [e for e in ff_events if e['is_today'] and e['released']]
+    # All tracked events today determine the event-day flags. Released
+    # events with valid actual and forecast values also provide surprises.
+    today_all_events = [
+        event for event in ff_events
+        if event['is_today']
+    ]
+    today_events = [
+        event for event in today_all_events
+        if event['released']
+    ]
 
     event_surprises = {}
-    any_event = len(today_events) > 0
+    event_flags = {
+        'cpi_surprise': False,
+        'nfp_surprise': False,
+        'fomc_surprise': False,
+        'ecb_rate_surprise': False,
+        'eu_cpi_surprise': False,
+        'eu_core_cpi_surprise': False,
+    }
 
-    def parse_num(s):
+    def parse_num(value):
+        """Match the scraper's training-time numeric cleaning."""
         try:
-            return float(str(s).replace('%','').replace('K','').replace('M','').strip())
-        except:
+            cleaned = (
+                str(value)
+                .replace('%', '')
+                .replace('K', '')
+                .replace('M', '')
+                .replace('<', '')
+                .replace(',', '')
+                .strip()
+            )
+            return float(cleaned)
+        except (TypeError, ValueError):
             return None
 
-    for ev in today_events:
-        act  = parse_num(ev['actual'])
-        fore = parse_num(ev['forecast'])
-        if act is not None and fore is not None:
-            surprise = act - fore
-            name = ev['event']
-            if 'CPI m/m' in name and ev['currency'] == 'USD':
-                event_surprises['cpi_surprise'] = surprise
-            elif 'Non-Farm' in name:
-                event_surprises['nfp_surprise'] = surprise
-            elif 'Federal Funds' in name:
-                event_surprises['fomc_surprise'] = surprise
-            elif 'Main Refinancing' in name:
-                event_surprises['ecb_rate_surprise'] = surprise
-            elif 'Core CPI Flash' in name:
-                event_surprises['eu_core_cpi_surprise'] = surprise
-            elif 'CPI Flash' in name:
-                event_surprises['eu_cpi_surprise'] = surprise
+    def event_feature_key(event):
+        name = event.get('event', '')
+        currency = event.get('currency', '')
+        if 'CPI m/m' in name and currency == 'USD':
+            return 'cpi_surprise'
+        if 'Non-Farm' in name and currency == 'USD':
+            return 'nfp_surprise'
+        if 'Federal Funds' in name and currency == 'USD':
+            return 'fomc_surprise'
+        if 'Main Refinancing' in name and currency == 'EUR':
+            return 'ecb_rate_surprise'
+        if 'Core CPI Flash' in name and currency == 'EUR':
+            return 'eu_core_cpi_surprise'
+        if 'CPI Flash' in name and currency == 'EUR':
+            return 'eu_cpi_surprise'
+        return None
 
-    # days since/until event from FF calendar
-    past_events   = [e for e in ff_events if e['date'] and e['date'] < today and e['released']]
-    future_events = [e for e in ff_events if e['date'] and e['date'] > today]
-    days_since = (today - past_events[-1]['date']).days   if past_events   else 3
-    days_until = (future_events[0]['date'] - today).days  if future_events else 5
+    for event in today_all_events:
+        feature_key = event_feature_key(event)
+        if feature_key is not None:
+            # Event-day presence is independent of release/availability.
+            event_flags[feature_key] = True
+
+    for event in today_events:
+        feature_key = event_feature_key(event)
+        if feature_key is None:
+            continue
+        actual = parse_num(event.get('actual'))
+        forecast = parse_num(event.get('forecast'))
+        if actual is not None and forecast is not None:
+            event_surprises[feature_key] = actual - forecast
+
+    tracked_events = [
+        event for event in ff_events
+        if event.get('date') and event_feature_key(event) is not None
+    ]
+    past_dates = sorted(
+        event['date'] for event in tracked_events
+        if event['date'] < today and event.get('released')
+    )
+    future_dates = sorted(
+        event['date'] for event in tracked_events
+        if event['date'] > today
+    )
+
+    if any(event_flags.values()):
+        # In the training data both timing features are zero on event days.
+        days_since = 0
+        days_until = 0
+    else:
+        days_since = (today - past_dates[-1]).days if past_dates else 3
+        days_until = (future_dates[0] - today).days if future_dates else 5
 
     # compute features + signal
     col_l, col_r = st.columns([1, 1])
@@ -505,21 +693,45 @@ if page == "🎯 Live Signal":
                 """, unsafe_allow_html=True)
 
     with col_r:
-        buy_t  = st.slider("BUY threshold",  0.50, 0.70, 0.57, 0.01)
-        sell_t = st.slider("SELL threshold", 0.30, 0.50, 0.43, 0.01)
+        buy_t = BUY_THRESHOLD
+        sell_t = SELL_THRESHOLD
+
+        st.caption(
+            f"Fixed signal thresholds: SELL ≤ {sell_t:.2f} · "
+            f"BUY ≥ {buy_t:.2f}"
+        )
+
+        X_input = None
+        feature_error = None
 
         if MODEL_LOADED and len(price_df) > 200:
             try:
                 X_input, latest_feats, curr_close = compute_features_from_price(
-                    price_df, event_surprises, days_since, days_until, any_event
+                    price_df,
+                    event_surprises,
+                    event_flags,
+                    days_since,
+                    days_until
                 )
-                X_scaled = scaler.transform(X_input)
-                prob     = float(model.predict_proba(X_scaled)[0, 1])
-                signal   = get_signal(prob, buy_t, sell_t)
-                # log every signal generated
-                log_signal(signal, prob, curr_close, len(today_events), days_since, days_until)
-            except Exception as e:
-                st.error(f"Feature computation error: {e}")
+
+                # The corrected Run 2 model is a Pipeline containing its scaler.
+                # Older model files with a separate scaler remain supported.
+                if hasattr(model, 'named_steps'):
+                    model_input = X_input
+                elif scaler is not None:
+                    model_input = scaler.transform(X_input)
+                else:
+                    model_input = X_input
+
+                prob = float(model.predict_proba(model_input)[0, 1])
+                signal = get_signal(prob)
+                log_signal(
+                    signal, prob, curr_close,
+                    len(today_events), days_since, days_until
+                )
+            except Exception as error:
+                feature_error = str(error)
+                st.error(f"Feature computation error: {feature_error}")
                 prob, signal = 0.5, "HOLD"
         else:
             prob, signal = 0.5, "HOLD"
@@ -558,8 +770,17 @@ if page == "🎯 Live Signal":
         </div>""", unsafe_allow_html=True)
 
         with st.expander("View feature vector"):
-            if MODEL_LOADED:
-                st.dataframe(X_input.T.rename(columns={0:'value'}).round(6), use_container_width=True)
+            if X_input is not None:
+                st.dataframe(
+                    X_input.T.rename(columns={0: 'value'}).round(6),
+                    use_container_width=True
+                )
+            elif feature_error:
+                st.warning("Feature vector unavailable because live feature construction failed.")
+            elif not MODEL_LOADED:
+                st.warning("Feature vector unavailable because the model is not loaded.")
+            else:
+                st.info("Feature vector will appear after sufficient live price data is loaded.")
 
         st.caption("⚠️ Demo only. Max 0.1 lot. Not financial advice.")
 
@@ -582,7 +803,7 @@ if page == "🎯 Live Signal":
                 if val == "BUY":  return "color: #2ea043; font-weight: bold"
                 if val == "SELL": return "color: #f85149; font-weight: bold"
                 return "color: #8b949e"
-            styled_log = log_df.style.map(colour_signal, subset=["signal"])
+            styled_log = log_df.style.applymap(colour_signal, subset=["signal"])
             st.dataframe(styled_log, hide_index=True, use_container_width=True)
             st.caption(f"Showing last {min(50, len(log_df))} entries from {LOG_FILE}")
         except Exception as e:
@@ -663,49 +884,70 @@ elif page == "📈 Model Analysis":
     st.markdown("# 📈 Model Analysis")
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 
-    st.markdown("### Single-Split Performance (80/20 chronological)")
-    c1, c2, c3, c4 = st.columns(4)
-    if res:
-        lr = res['lr']
-        c1.metric("AUC-ROC",         f"{lr['single_auc']:.4f}")
-        c2.metric("Strategy Return",  f"{lr['return']:+.2f}%")
-        c3.metric("Sharpe Ratio",     f"{lr['sharpe']:.2f}")
-        c4.metric("Win Rate",         f"{lr['win_rate']*100:.1f}%", f"{lr['n_trades']} trades")
-    else:
-        c1.metric("AUC-ROC", "0.5358")
-        c2.metric("Strategy Return", "+8.13%")
-        c3.metric("Sharpe Ratio", "1.51")
-        c4.metric("Win Rate", "57.8%", "84 trades")
+    lr = result_section('lr')
+    rf = result_section('rf')
+    xgb = result_section('xgb')
+    bah = result_section('buy_and_hold')
 
-    st.markdown("### Walk-Forward Validation (13 folds, Nov 2022 – Oct 2025)")
+    st.markdown("### Fixed-Holdout Diagnostic (bias-variance check)")
+    st.caption(
+        "This split is a diagnostic, not a selection instrument. The gap column "
+        "is the informative one."
+    )
+    c1, c2, c3 = st.columns(3)
+    c1.metric(
+        "Random Forest",
+        f"{rf['single_auc']:.4f}",
+        f"train {rf['train_auc']:.4f} · gap {rf['train_auc'] - rf['single_auc']:.4f}"
+    )
+    c2.metric(
+        "Logistic Regression",
+        f"{lr['single_auc']:.4f}",
+        f"train {lr['train_auc']:.4f} · gap {lr['train_auc'] - lr['single_auc']:.4f}"
+    )
+    c3.metric(
+        "XGBoost",
+        f"{xgb['single_auc']:.4f}",
+        f"train {xgb['train_auc']:.4f} · gap {xgb['train_auc'] - xgb['single_auc']:.4f}"
+    )
+
+    st.markdown("### Walk-Forward Validation (36 folds, Jul 2017 – Oct 2025)")
+    st.caption(
+        "Random Forest on the hybrid feature set, ten-year rolling training "
+        "window, purge gap at every fold boundary, 2,160 out-of-sample days."
+    )
     c1, c2, c3, c4 = st.columns(4)
-    if res:
-        c1.metric("Mean AUC",       f"{res['lr']['wf_auc']:.4f}")
-        c2.metric("Std AUC",        f"±{res['lr']['wf_std']:.4f}")
-        c3.metric("Folds > Random", "10 / 13")
-        c4.metric("Folds > 0.55",   "6 / 13")
-    else:
-        c1.metric("Mean AUC", "0.5383")
-        c2.metric("Std AUC", "±0.0626")
-        c3.metric("Folds > Random", "10 / 13")
-        c4.metric("Folds > 0.55", "6 / 13")
+    c1.metric("Mean Fold AUC", f"{rf['wf_auc']:.4f}")
+    c2.metric("Pooled AUC", f"{rf['pooled_wf_auc']:.4f}")
+    c3.metric(
+        "Folds > Random",
+        f"{rf['folds_above_50']} / {rf['n_folds']}"
+    )
+    c4.metric(
+        "Folds > 0.55",
+        f"{rf['folds_above_55']} / {rf['n_folds']}"
+    )
+    st.caption(
+        "Fold-level test against 0.50: t = 3.754, one-sided p = 0.000316, "
+        "Bonferroni-corrected p = 0.009484 across the 30 configurations examined."
+    )
 
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("#### Walk-Forward AUC per Fold")
-        img = load_img("walkforward_auc_three_models.png")
-        if img:
-            st.image(img, use_container_width=True)
-        else:
-            st.info("Run Section 8 in notebook.")
-    with col2:
         st.markdown("#### Walk-Forward Equity Curves")
-        img = load_img("walkforward_equity_three_models.png")
+        img = load_img("run6_equity_curves.png")
         if img:
             st.image(img, use_container_width=True)
         else:
-            st.info("Run Section 8 in notebook.")
+            st.info("Run Section 8 in the notebook to create this figure.")
+    with col2:
+        st.markdown("#### Walk-Forward Drawdowns")
+        img = load_img("run6_drawdowns.png")
+        if img:
+            st.image(img, use_container_width=True)
+        else:
+            st.info("Run Section 8 in the notebook to create this figure.")
 
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
     st.markdown("#### Evaluation Diagnostics")
@@ -713,34 +955,43 @@ elif page == "📈 Model Analysis":
     if img:
         st.image(img, use_container_width=True)
     else:
-        st.info("Run Section 6 in notebook.")
+        st.info("Run Section 6 in the notebook to create this figure.")
 
     st.markdown("### Model Comparison")
-    if res:
-        lr, rf, xgb = res['lr'], res['rf'], res['xgb']
-        st.dataframe(pd.DataFrame({
-            'Model':            ['Logistic Regression ★', 'Random Forest', 'XGBoost'],
-            'Single-Split AUC': [lr['single_auc'], rf['single_auc'], xgb['single_auc']],
-            'WF Mean AUC':      [lr['wf_auc'], rf['wf_auc'], xgb['wf_auc']],
-            'WF AUC Std':       [lr['wf_std'], rf['wf_std'], xgb['wf_std']],
-            'WF Equity Return': [f"{lr['wf_equity']:+.2f}%", f"{rf['wf_equity']:+.2f}%", f"{xgb['wf_equity']:+.2f}%"],
-            'Backtest Return':  [f"{lr['return']:+.2f}%", f"{rf['return']:+.2f}%", f"{xgb['return']:+.2f}%"],
-            'Sharpe':           [lr['sharpe'], rf['sharpe'], xgb.get('sharpe', '—')],
-            'Win Rate':         [f"{lr['win_rate']*100:.1f}%", f"{rf['win_rate']*100:.1f}%", f"{xgb['win_rate']*100:.1f}%"],
-            'Trades':           [lr['n_trades'], rf['n_trades'], xgb['n_trades']],
-        }), hide_index=True, use_container_width=True)
-    else:
-        st.dataframe(pd.DataFrame({
-            'Model':            ['Logistic Regression ★', 'Random Forest', 'XGBoost'],
-            'WF Mean AUC':      [0.5383, 0.5086, 0.5110],
-            'WF AUC Std':       [0.0626, 0.0913, 0.0762],
-            'WF Equity Return': ['+6.29%', '-4.28%', '-9.45%'],
-            'Single-Split AUC': [0.5358, 0.5083, 0.4933],
-            'Backtest Return':  ['+8.13%', '—', '—'],
-            'Sharpe':           [1.51, '—', '—'],
-            'Win Rate':         ['57.8%', '—', '—'],
-        }), hide_index=True, use_container_width=True)
-    st.caption("★ Primary model selected based on highest walk-forward stability. All metrics from completed experiments.")
+    st.caption(
+        "Walk-forward figures are computed on the same 36 folds for all three "
+        "models. Trading results are reported by strategy rather than by model, "
+        "because a single realised return path does not measure predictive skill."
+    )
+    comparison = pd.DataFrame({
+        'Model': ['Random Forest \u2605', 'Logistic Regression', 'XGBoost'],
+        'Holdout AUC': [rf['single_auc'], lr['single_auc'], xgb['single_auc']],
+        'Train AUC': [rf['train_auc'], lr['train_auc'], xgb['train_auc']],
+        'Overfit Gap': [
+            round(rf['train_auc'] - rf['single_auc'], 4),
+            round(lr['train_auc'] - lr['single_auc'], 4),
+            round(xgb['train_auc'] - xgb['single_auc'], 4),
+        ],
+        'WF Mean AUC': [rf['wf_auc'], lr['wf_auc'], xgb['wf_auc']],
+        'WF Pooled AUC': [
+            rf['pooled_wf_auc'], lr['pooled_wf_auc'], xgb['pooled_wf_auc']
+        ],
+        'WF AUC Std': [rf['wf_std'], lr['wf_std'], xgb['wf_std']],
+        'Folds > 0.50': [
+            f"{rf['folds_above_50']} / {rf['n_folds']}",
+            f"{lr['folds_above_50']} / {lr['n_folds']}",
+            f"{xgb['folds_above_50']} / {xgb['n_folds']}",
+        ],
+    })
+    st.dataframe(comparison, hide_index=True, use_container_width=True)
+    st.caption(
+        "\u2605 Random Forest on the hybrid feature set was selected on walk-forward "
+        "performance during the experimental sequence, not on the final test result. "
+        "Random Forest and Logistic Regression differ by 0.0013 in mean fold AUC "
+        "against a fold standard deviation of 0.06 and are not meaningfully separable. "
+        "XGBoost shows the largest train-test gap, the signature of capacity spent "
+        "on memorisation."
+    )
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 4 — INTERPRETABILITY
@@ -752,9 +1003,9 @@ elif page == "🔍 Interpretability":
     tab1, tab2, tab3 = st.tabs(["Permutation Importance", "SHAP Analysis", "Ablation Study"])
 
     with tab1:
-        st.markdown("#### Permutation Importance — Logistic Regression")
+        st.markdown("#### Permutation Importance — Random Forest")
         st.caption("Drop in AUC when each feature is randomly shuffled. Higher = more critical.")
-        img = load_img("permutation_importance_lr.png")
+        img = load_img("permutation_importance_rf.png")
         if img:
             st.image(img, width=700)
         else:
@@ -769,11 +1020,11 @@ elif page == "🔍 Interpretability":
         </div>""", unsafe_allow_html=True)
 
         for feat, desc in [
-            ("eu_core_cpi_surprise_pct", "EU Core CPI percentile rank — how this ECB surprise compares historically. Top feature overall."),
-            ("nfp_day",                  "Binary flag: is today a Non-Farm Payrolls release day? Model uses event timing as a strong signal."),
-            ("mom7",                     "7-day momentum (r7d minus r1d) — recent directional price pressure heading into the event."),
-            ("eu_core_cpi_surprise",     "Raw EU Core CPI surprise value — actual minus forecast for the ECB core inflation print."),
-            ("days_since_event",         "How many days since the last high-impact event. Market tends to drift back to trend after releases."),
+            ("nfp_surprise_pct", "Highest permutation importance in the corrected run; the percentile rank of the latest NFP surprise."),
+            ("r7d", "Seven-day return, representing medium-short price direction."),
+            ("cpi_surprise", "Raw US CPI actual-minus-forecast surprise."),
+            ("days_since_event", "Number of days since the latest tracked event."),
+            ("r5d", "Five-day return, capturing recent price movement."),
         ]:
             st.markdown(f"""<div class="finding-box">
                 <strong style="font-family:'IBM Plex Mono',monospace">{feat}</strong><br>
@@ -785,7 +1036,7 @@ elif page == "🔍 Interpretability":
         with c1:
             st.markdown("#### SHAP Summary Plot")
             st.caption("Each dot = one prediction. Color = feature value. X = SHAP impact.")
-            img = load_img("shap_summary_lr.png")
+            img = load_img("shap_summary_rf.png")
             if img:
                 st.image(img, width=700)
             else:
@@ -793,7 +1044,7 @@ elif page == "🔍 Interpretability":
         with c2:
             st.markdown("#### SHAP Bar Chart")
             st.caption("Mean absolute SHAP value — overall importance ranking.")
-            img = load_img("shap_bar_lr.png")
+            img = load_img("shap_bar_rf.png")
             if img:
                 st.image(img, width=700)
             else:
@@ -814,32 +1065,76 @@ elif page == "🔍 Interpretability":
         </div>""", unsafe_allow_html=True)
         st.markdown("""<div class="finding-box">
             <strong>Key takeaway</strong><br>
-            <code>days_until_event</code> dominates both charts — the model is most sensitive to how close we are
-            to the next high-impact release. This confirms that event timing, not just the surprise magnitude,
-            is a critical driver of EUR/USD directional signal.
+            The corrected interpretation is mixed rather than dominated by one family.
+            Permutation importance ranks <code>nfp_surprise_pct</code> first, followed by
+            short-horizon returns and CPI/event-timing variables. SHAP should be read as
+            prediction-level contribution, not as proof that a feature group improves
+            out-of-sample AUC.
         </div>""", unsafe_allow_html=True)
 
     with tab3:
-        st.markdown("#### Ablation Study — Feature Group Contribution")
-        st.caption("AUC drop when each feature group is removed. Positive = group adds value.")
-        img = load_img("ablation_study_lr.png")
-        if img:
-            st.image(img, width=700)
-        else:
-            st.info("Save ablation_study_lr.png from Section 9b.")
-        for group, drop, desc in [
-            ("USD Events",  "+0.0266", "Largest contributor — CPI and NFP surprises drive the primary signal."),
-            ("ECB Events",  "+0.0182", "Second largest — EUR-side surprises provide independent signal."),
-            ("Momentum",    "+0.0106", "Lagged returns add moderate signal."),
-            ("Time",        "+0.0035", "Days since/until event adds marginal value."),
-            ("Regime",      "~0.0000", "200-day MA adds minimal marginal value over event features."),
-            ("Technical",   "~0.0000", "RSI, MACD, Bollinger Band add noise rather than signal."),
-            ("Volatility",  "-0.0043", "Removal slightly improves AUC — volatility features may add noise."),
+        st.markdown("#### Ablation Study \u2014 Feature Group Contribution")
+        st.caption(
+            "Group-level ablation measured across 65 common walk-forward folds. "
+            "Each row retrains the model with one feature family removed: "
+            "'Technical only' ablates the event features, 'Event only' ablates "
+            "market context, and 'Hybrid' retains both. This supersedes the earlier "
+            "single-split ablation, whose effect sizes were smaller than the "
+            "fold-to-fold standard deviation."
+        )
+
+        feature_sets = pd.DataFrame({
+            'Configuration': ['Technical only (events ablated)',
+                              'Event only (market context ablated)',
+                              'Hybrid (nothing ablated)'],
+            'Logistic Regression': [0.5115, 0.5105, 0.5215],
+            'Random Forest': [0.5123, 0.5064, 0.5298],
+            'XGBoost': [0.4956, 0.5055, 0.5130],
+        })
+        st.dataframe(feature_sets, hide_index=True, use_container_width=True)
+
+        st.caption(
+            "The hybrid set is strongest for all three models. Reading down the "
+            "columns rather than across the rows is the point: the result is about "
+            "feature sets, not about which model wins."
+        )
+
+        st.markdown("#### Ablation Significance")
+        st.caption(
+            "Because every configuration uses the same 65 folds, the ablation can "
+            "be tested paired rather than as a comparison of means. Random Forest "
+            "shown. A significant positive difference means the ablated group was "
+            "carrying real information."
+        )
+
+        paired = pd.DataFrame({
+            'Ablation': ['Event features removed', 'Market context removed'],
+            'AUC lost': ['-0.0176', '-0.0235'],
+            't': [2.979, 2.429],
+            'p (two-sided)': [0.0041, 0.0180],
+            'Hybrid higher in': ['44 / 65 folds', '40 / 65 folds'],
+            'Verdict': ['Group carries signal', 'Group carries signal'],
+        })
+        st.dataframe(paired, hide_index=True, use_container_width=True)
+
+        for text in [
+            "Neither event data nor market context alone is sufficient. The "
+            "combination is measurably better than either in isolation, and both "
+            "differences are statistically significant.",
+
+            "Event features contribute in combination rather than in isolation. "
+            "The event-only set reaches 0.5064 for Random Forest, barely "
+            "distinguishable from chance, yet adding those features to "
+            "market-context variables improves walk-forward AUC by 0.0176.",
+
+            "The interpretation is that event information is conditioning rather "
+            "than driving: it is useful in the context of prevailing momentum and "
+            "regime, rather than as a standalone predictor.",
         ]:
-            st.markdown(f"""<div class="finding-box">
-                <strong style="font-family:'IBM Plex Mono',monospace">{group}</strong>
-                <span style="color:#1f6feb;font-family:'IBM Plex Mono',monospace;margin-left:8px">{drop}</span>
-                <br>{desc}</div>""", unsafe_allow_html=True)
+            st.markdown(
+                f'<div class="finding-box">{text}</div>',
+                unsafe_allow_html=True
+            )
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 5 — RESULTS SUMMARY
@@ -847,170 +1142,133 @@ elif page == "🔍 Interpretability":
 elif page == "📋 Results Summary":
     st.markdown("# 📋 Results Summary")
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
+
+    lr = result_section('lr')
+    rf = result_section('rf')
+    xgb = result_section('xgb')
+    bah = result_section('buy_and_hold')
+    ovl = result_section('overlay')
+    lsh = result_section('long_short')
+    lon = result_section('long_only')
+
     st.markdown("""
     **Economic Event-Driven Forex Trading Assistant using Machine Learning**  
-    This project characterises the **predictability boundary** of EUR/USD around high-impact 
-    macroeconomic events. The primary finding is that a **noise ceiling** — not model complexity 
-    or hyperparameters — is the binding constraint. AUC converges to 0.51–0.54 regardless of model class.
+    The Run 6 evaluation finds a small but statistically detectable directional
+    signal in daily EUR/USD. The clearest benefit is risk-related rather than
+    return-related: the overlay reduces maximum drawdown at comparable total
+    return. The system is a decision-support and risk-filtering tool, not an
+    autonomous trading strategy.
     """)
+
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
     st.markdown("### Key Findings")
-    for f in [
-        "Logistic Regression (C=0.001, L2, saga) — most stable AUC across 13 walk-forward folds.",
-        "Walk-forward mean AUC 0.5383 (std 0.0626). 10/13 folds above random, 6/13 above 0.55.",
-        "Two catastrophic folds align with sustained USD strength regimes — regime dependency confirmed.",
-        "Single-split backtest: +8.13% return, Sharpe 1.51, win rate 57.8% across 84 trades.",
-        "Walk-forward equity: LR +6.29% vs buy-and-hold +16.01% in bullish regime.",
-        "USD event surprises (NFP, CPI, FOMC) are the primary signal source — ablation drop +0.0266 AUC.",
-        "ECB event integration expanded features 33→42 and contributed +0.0182 AUC.",
-        "Noise ceiling confirmed: AUC converges to 0.51–0.54 regardless of model complexity.",
-    ]:
-        st.markdown(f'<div class="finding-box">{f}</div>', unsafe_allow_html=True)
+    findings = [
+        (
+            f"Random Forest on the hybrid feature set was selected on walk-forward "
+            f"performance during the experimental sequence, not on the final test set."
+        ),
+        (
+            f"Across {rf['n_folds']} non-overlapping folds covering 2,160 "
+            f"out-of-sample days, mean fold AUC was {rf['wf_auc']:.4f} with a "
+            f"standard deviation of {rf['wf_std']:.4f}, pooled AUC was "
+            f"{rf['pooled_wf_auc']:.4f}, and {rf['folds_above_50']}/"
+            f"{rf['n_folds']} folds exceeded 0.50."
+        ),
+        (
+            "The fold-level test against 0.50 gives t = 3.754 and a one-sided "
+            "p-value of 0.000316, which survives Bonferroni correction across "
+            "the 30 configurations examined."
+        ),
+        (
+            "A hybrid of event and market-context features beats either family "
+            "in isolation: +0.0176 over technical-only (p = 0.0041) and +0.0235 "
+            "over event-only (p = 0.0180) on paired fold-level tests."
+        ),
+        (
+            f"The Buy-and-Hold plus overlay strategy reduced maximum drawdown "
+            f"from {bah['max_drawdown']:.2f}% to {ovl['max_drawdown']:.2f}% at a "
+            f"comparable net return of {ovl['net_return']:+.2f}% against "
+            f"{bah['net_return']:+.2f}%."
+        ),
+        (
+            "Predictive accuracy declines as the prediction horizon lengthens, "
+            "consistently across all three model families, which is what rapid "
+            "absorption of announcement information predicts."
+        ),
+        (
+            "Hyperparameter tuning is not driving the result: folds outside the "
+            "tuning window scored higher (0.5452) than folds inside it (0.5343)."
+        ),
+    ]
+    for finding in findings:
+        st.markdown(
+            f'<div class="finding-box">{finding}</div>',
+            unsafe_allow_html=True
+        )
 
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
+    st.markdown("### Strategy Comparison")
+    st.caption(
+        "Walk-forward trading performance at 1 basis point transaction cost, "
+        "2,160 out-of-sample days."
+    )
+    benchmark_table = pd.DataFrame({
+        'Strategy': [
+            'Buy and Hold',
+            'Buy and Hold + ML overlay',
+            'ML long-short',
+            'ML long-only',
+        ],
+        'Net Return': [
+            f"{bah['net_return']:+.2f}%",
+            f"{ovl['net_return']:+.2f}%",
+            f"{lsh['net_return']:+.2f}%",
+            f"{lon['net_return']:+.2f}%",
+        ],
+        'Sharpe': [
+            f"{bah['sharpe']:.4f}",
+            f"{ovl['sharpe']:.4f}",
+            f"{lsh['sharpe']:.4f}",
+            "n/a",
+        ],
+        'Max Drawdown': [
+            f"{bah['max_drawdown']:.2f}%",
+            f"{ovl['max_drawdown']:.2f}%",
+            f"{lsh['max_drawdown']:.2f}%",
+            f"{lon['max_drawdown']:.2f}%",
+        ],
+        'Position Changes': [
+            bah['position_changes'],
+            ovl['position_changes'],
+            lsh['position_changes'],
+            "n/a",
+        ],
+    })
+    st.dataframe(benchmark_table, hide_index=True, use_container_width=True)
+
     st.markdown("### Limitations")
     st.markdown("""
-    - Daily EUR/USD direction has limited predictability from macro surprises alone
-    - Model degrades in sustained USD strength / strong trending regimes
-    - Z-score surprise proxy is imperfect — intraday data may improve signal
+    - Daily EUR/USD direction remains only weakly predictable; the edge is
+      statistically detectable but small.
+    - Announcement effects are largely intraday, so aggregation to a daily
+      target discards most of the reaction.
+    - The fold-level test assumes independent folds; consecutive ten-year
+      training windows share approximately 97.6% of their rows.
+    - The 0.52/0.48 thresholds were selected inside each fold's validation window, never on test data.
+    - The live dashboard depends on third-party market and calendar data and is a demonstration only.
     """)
+
     st.markdown("### Future Work")
     st.markdown("""
-    - Intraday models (1H/4H) for immediate post-release price action
-    - Ensemble regime-switching: separate models per regime
-    - MT5 live deployment with safety locks (demo only, max 0.1 lot, daily loss limit)
+    - Validate thresholds inside a dedicated rolling validation window.
+    - Move to an intraday horizon, which requires a price feed and an event
+      calendar that both carry release times.
+    - Add regime-specific models and transaction-cost stress testing.
+    - Integrate MT5 only with strict demo-account safety controls.
     """)
+
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
-    st.caption("ICT3902C Capstone | Muhammad Mursyid Bin Hassan | 2300435 | Supervisor: Dr Li Xiaorong")
-
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 3 — SIGNAL HISTORY (30-day lookback)
-# ══════════════════════════════════════════════════════════════════════════════
-elif page == "📊 Signal History":
-    st.markdown("# 📊 Signal History — Last 30 Days")
-    st.caption("Retrospective model signals using live price data + trained model. Shows what the model would have recommended each day.")
-    st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
-
-    if not MODEL_LOADED:
-        st.error("fyp_model.pkl not found. Cannot generate signal history.")
-    else:
-        with st.spinner("Computing 30-day signal history..."):
-            try:
-                # Fetch price data
-                price_df = fetch_live_price()
-                close = price_df['close']
-
-                # Load surprise CSVs for percentile rank
-                csv_map = {
-                    'cpi':      ('cpi_surprise.csv',         'cpi_surprise'),
-                    'nfp':      ('nfp_surprise.csv',          'nfp_surprise'),
-                    'fomc':     ('fomc_surprise.csv',         'fomc_surprise'),
-                    'ecb_rate': ('ecb_rate_surprise.csv',     'ecb_rate_surprise'),
-                    'eu_cpi':   ('eu_cpi_surprise.csv',       'eu_cpi_surprise'),
-                    'eu_core':  ('eu_core_cpi_surprise.csv',  'eu_core_cpi_surprise'),
-                }
-                csv_data = {}
-                for key, (fname, col) in csv_map.items():
-                    if os.path.exists(fname):
-                        df_csv = pd.read_csv(fname, parse_dates=['date'])
-                        csv_data[key] = df_csv[col].dropna()
-
-                # Generate signals for last 30 trading days
-                lookback = 30
-                history_rows = []
-
-                # We need at least 200 rows for 200MA warmup
-                if len(price_df) < 220:
-                    st.warning("Not enough price history to compute signals.")
-                else:
-                    eval_indices = list(range(len(price_df) - lookback - 1, len(price_df) - 1))
-
-                    for idx in eval_indices:
-                        row_date = price_df.index[idx]
-                        # Slice price data up to and including this row
-                        sub_df = price_df.iloc[:idx+1].copy()
-
-                        try:
-                            X_input, _, _ = compute_features_from_price(
-                                sub_df,
-                                event_surprises={},  # no live event on historical dates
-                                days_since=3,
-                                days_until=5,
-                                any_event=False
-                            )
-                            X_scaled = scaler.transform(X_input)
-                            prob = float(model.predict_proba(X_scaled)[0, 1])
-                            signal = get_signal(prob, 0.57, 0.43)
-
-                            # Actual next-day return
-                            if idx + 1 < len(price_df):
-                                next_close = float(price_df['close'].iloc[idx + 1])
-                                curr_close = float(price_df['close'].iloc[idx])
-                                actual_return = (next_close - curr_close) / curr_close * 100
-                                actual_direction = "UP" if actual_return > 0 else "DOWN"
-                            else:
-                                actual_return = None
-                                actual_direction = "—"
-
-                            # Hit/miss
-                            if signal == "HOLD" or actual_direction == "—":
-                                hit = "—"
-                            elif (signal == "BUY" and actual_direction == "UP") or \
-                                 (signal == "SELL" and actual_direction == "DOWN"):
-                                hit = "✅"
-                            else:
-                                hit = "❌"
-
-                            history_rows.append({
-                                "Date": row_date.strftime("%a %d %b %Y"),
-                                "Signal": signal,
-                                "P(UP)": f"{prob:.3f}",
-                                "Next Day Return": f"{actual_return:+.2f}%" if actual_return is not None else "—",
-                                "Actual Direction": actual_direction,
-                                "Hit/Miss": hit,
-                            })
-                        except Exception:
-                            pass
-
-                if history_rows:
-                    hist_df = pd.DataFrame(history_rows[::-1])  # most recent first
-
-                    # Summary stats
-                    signals_only = [r for r in history_rows if r["Signal"] != "HOLD"]
-                    hits = [r for r in signals_only if r["Hit/Miss"] == "✅"]
-                    misses = [r for r in signals_only if r["Hit/Miss"] == "❌"]
-                    holds = [r for r in history_rows if r["Signal"] == "HOLD"]
-
-                    c1, c2, c3, c4 = st.columns(4)
-                    c1.metric("Signals Generated", len(signals_only), f"of {len(history_rows)} days")
-                    c2.metric("Hit Rate", f"{len(hits)/len(signals_only)*100:.0f}%" if signals_only else "—",
-                              f"{len(hits)} correct")
-                    c3.metric("Misses", len(misses))
-                    c4.metric("HOLD Days", len(holds), "below threshold")
-
-                    st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
-
-                    # Colour code the table
-                    def style_signal(val):
-                        if val == "BUY":   return "color: #2ea043; font-weight: bold"
-                        if val == "SELL":  return "color: #f85149; font-weight: bold"
-                        if val == "HOLD":  return "color: #8b949e"
-                        return ""
-                    def style_hit(val):
-                        if val == "✅": return "color: #2ea043"
-                        if val == "❌": return "color: #f85149"
-                        return "color: #8b949e"
-
-                    styled = hist_df.style\
-                        .map(style_signal, subset=["Signal"])\
-                        .map(style_hit, subset=["Hit/Miss"])
-
-                    st.dataframe(styled, hide_index=True, use_container_width=True)
-
-                    st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
-                    st.caption("⚠️ Signal history uses no event surprise data for historical dates — signals reflect price/regime features only. Live Signal page incorporates today's released events for the current signal.")
-                else:
-                    st.warning("Could not compute signal history. Check that fyp_model.pkl and price data are available.")
-
-            except Exception as e:
-                st.error(f"Error computing signal history: {e}")
+    st.caption(
+        "ICT3902C Capstone | Muhammad Mursyid Bin Hassan | 2300435 | "
+        "Supervisor: Dr Li Xiaorong"
+    )

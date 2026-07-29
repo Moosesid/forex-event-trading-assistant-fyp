@@ -1,32 +1,107 @@
 {
-  "lr": {
-    "single_auc": 0.5358,
-    "wf_auc": 0.5383,
-    "wf_std": 0.0626,
-    "wf_equity": 6.29,
-    "return": 8.13,
-    "sharpe": 1.51,
-    "win_rate": 0.578,
-    "n_trades": 84
-  },
-  "rf": {
-    "single_auc": 0.5083,
-    "wf_auc": 0.5086,
-    "wf_std": 0.0913,
-    "wf_equity": -4.28,
-    "return": 1.66,
-    "sharpe": 0.37,
-    "win_rate": 0.516,
-    "n_trades": 31
-  },
-  "xgb": {
-    "single_auc": 0.4933,
-    "wf_auc": 0.511,
-    "wf_std": 0.0762,
-    "wf_equity": -9.45,
-    "return": 10.07,
-    "sharpe": 1.45,
-    "win_rate": 0.463,
-    "n_trades": 121
+  "run6": {
+    "model": "Random Forest",
+    "params": "max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=100",
+    "n_features": 48,
+    "train_window": 2520,
+    "n_folds": 36,
+    "test_window": 60,
+    "purge_gap": 1,
+    "cost_bps": 1,
+    "oos_days": 2160,
+    "mean_fold_auc": 0.5389,
+    "std_fold_auc": 0.0621,
+    "folds_above_050": 26,
+    "folds_above_055": 14,
+    "pooled_auc": 0.5145,
+    "t_stat": 3.754,
+    "p_one_sided": 0.000316,
+    "p_bonferroni": 0.009484,
+    "clean_folds": [
+      {
+        "Folds": "1-21 (inside tuning window)",
+        "Period": "2017-07 to 2022-05",
+        "n": 21,
+        "Mean AUC": 0.5343,
+        "Above 0.50": "13/21",
+        "One-sided p": 0.0238
+      },
+      {
+        "Folds": "22-36 (clean)",
+        "Period": "2022-06 to 2025-10",
+        "n": 15,
+        "Mean AUC": 0.5452,
+        "Above 0.50": "13/15",
+        "One-sided p": 0.0004
+      },
+      {
+        "Folds": "All",
+        "Period": "2017-07 to 2025-10",
+        "n": 36,
+        "Mean AUC": 0.5389,
+        "Above 0.50": "26/36",
+        "One-sided p": 0.0003
+      }
+    ],
+    "strategies": [
+      {
+        "Strategy": "Buy and Hold",
+        "Gross Return": 1.81,
+        "Net Return": 1.8,
+        "Sharpe": 0.0649,
+        "Max Drawdown": -23.29,
+        "Position Changes": 1
+      },
+      {
+        "Strategy": "ML Long-Short",
+        "Gross Return": -3.07,
+        "Net Return": -8.1,
+        "Sharpe": -0.1744,
+        "Max Drawdown": -19.65,
+        "Position Changes": 357
+      },
+      {
+        "Strategy": "ML Long-Only",
+        "Gross Return": -4.73,
+        "Net Return": -6.63,
+        "Sharpe": -0.2471,
+        "Max Drawdown": -15.2,
+        "Position Changes": 201
+      },
+      {
+        "Strategy": "B&H + ML Overlay",
+        "Gross Return": 4.94,
+        "Net Return": 1.51,
+        "Sharpe": 0.0591,
+        "Max Drawdown": -18.81,
+        "Position Changes": 333
+      }
+    ],
+    "cost_sensitivity": {
+      "0bp": {
+        "Buy and Hold": 1.81,
+        "ML Long-Short": -3.07,
+        "ML Long-Only": -4.73,
+        "B&H + ML Overlay": 4.94
+      },
+      "1bp": {
+        "Buy and Hold": 1.8,
+        "ML Long-Short": -8.1,
+        "ML Long-Only": -6.63,
+        "B&H + ML Overlay": 1.51
+      },
+      "2bp": {
+        "Buy and Hold": 1.79,
+        "ML Long-Short": -12.87,
+        "ML Long-Only": -8.49,
+        "B&H + ML Overlay": -1.82
+      },
+      "5bp": {
+        "Buy and Hold": 1.76,
+        "ML Long-Short": -25.76,
+        "ML Long-Only": -13.84,
+        "B&H + ML Overlay": -11.16
+      }
+    }
   }
 }

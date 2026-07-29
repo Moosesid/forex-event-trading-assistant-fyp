@@ -1,0 +1,5 @@
+signal_log.csv
+ff_calendar.json
+__pycache__/
+.ipynb_checkpoints/
+.env

@@ -1,84 +1,229 @@
-date,nfp_surprise
-2019-01-04,133.0
-2019-02-01,139.0
-2019-03-08,-160.0
-2019-04-05,24.0
-2019-05-03,82.0
-2019-06-07,-102.0
-2019-07-05,62.0
-2019-08-02,0.0
-2019-09-06,-33.0
-2019-10-04,-9.0
-2019-11-01,38.0
-2019-12-06,85.0
-2020-01-10,-17.0
-2020-02-07,62.0
-2020-03-06,98.0
-2020-04-03,-601.0
-2020-05-08,1463.0
-2020-06-05,10259.0
-2020-07-02,1763.0
-2020-08-07,233.0
-2020-09-04,-4.0
-2020-10-02,-239.0
-2020-11-06,43.0
-2020-12-04,-235.0
-2021-01-08,-200.0
-2021-02-05,-36.0
-2021-03-05,182.0
-2021-04-02,264.0
-2021-05-07,-724.0
-2021-06-04,-86.0
-2021-07-02,125.0
-2021-08-06,73.0
-2021-09-03,-485.0
-2021-10-08,-296.0
-2021-11-05,76.0
-2021-12-03,-343.0
-2022-01-07,-227.0
-2022-02-04,357.0
-2022-03-04,271.0
-2022-04-01,-61.0
-2022-05-06,38.0
-2022-06-03,65.0
-2022-07-08,112.0
-2022-08-05,278.0
-2022-09-02,20.0
-2022-10-07,15.0
-2022-11-04,64.0
-2022-12-02,63.0
-2023-01-06,23.0
-2023-02-03,324.0
-2023-03-10,87.0
-2023-04-07,8.0
-2023-05-05,72.0
-2023-06-02,146.0
-2023-07-07,-15.0
-2023-08-04,-18.0
-2023-09-01,18.0
-2023-10-06,165.0
-2023-11-03,-28.0
-2023-12-08,15.0
-2024-01-05,48.0
-2024-02-02,166.0
-2024-03-08,77.0
-2024-04-05,91.0
-2024-05-03,-63.0
-2024-06-07,90.0
-2024-07-05,15.0
-2024-08-02,-62.0
-2024-09-06,-22.0
-2024-10-04,107.0
-2024-11-01,-94.0
-2024-12-06,9.0
-2025-01-10,92.0
-2025-02-07,-26.0
-2025-03-07,-8.0
-2025-04-04,91.0
-2025-05-02,39.0
-2025-06-06,13.0
-2025-07-03,36.0
-2025-08-01,-33.0
-2025-09-05,-53.0
-2025-11-20,66.0
-2025-12-16,13.0
+date,event,actual,forecast,previous,nfp_surprise,nfp_available
+2007-01-05,Non-Farm Employment Change,167.0,115.0,132.0,52.0,1
+2007-02-02,Non-Farm Employment Change,111.0,146.0,206.0,-35.0,1
+2007-03-09,Non-Farm Employment Change,97.0,100.0,146.0,-3.0,1
+2007-04-06,Non-Farm Employment Change,180.0,135.0,113.0,45.0,1
+2007-05-04,Non-Farm Employment Change,88.0,107.0,177.0,-19.0,1
+2007-06-01,Non-Farm Employment Change,157.0,135.0,80.0,22.0,1
+2007-07-06,Non-Farm Employment Change,132.0,125.0,190.0,7.0,1
+2007-08-03,Non-Farm Employment Change,92.0,135.0,126.0,-43.0,1
+2007-09-07,Non-Farm Employment Change,-4.0,110.0,68.0,-114.0,1
+2007-10-05,Non-Farm Employment Change,110.0,100.0,89.0,10.0,1
+2007-11-02,Non-Farm Employment Change,166.0,82.0,96.0,84.0,1
+2007-12-07,Non-Farm Employment Change,94.0,75.0,170.0,19.0,1
+2008-01-04,Non-Farm Employment Change,18.0,70.0,115.0,-52.0,1
+2008-02-01,Non-Farm Employment Change,-17.0,65.0,82.0,-82.0,1
+2008-03-07,Non-Farm Employment Change,-63.0,25.0,-22.0,-88.0,1
+2008-04-04,Non-Farm Employment Change,-80.0,-50.0,-76.0,-30.0,1
+2008-05-02,Non-Farm Employment Change,-20.0,-80.0,-81.0,60.0,1
+2008-06-06,Non-Farm Employment Change,-49.0,-57.0,-28.0,8.0,1
+2008-07-03,Non-Farm Employment Change,-62.0,-60.0,-62.0,-2.0,1
+2008-08-01,Non-Farm Employment Change,-51.0,-75.0,-51.0,24.0,1
+2008-09-05,Non-Farm Employment Change,-84.0,-73.0,-60.0,-11.0,1
+2008-10-03,Non-Farm Employment Change,-159.0,-100.0,-73.0,-59.0,1
+2008-11-07,Non-Farm Employment Change,-240.0,-200.0,-284.0,-40.0,1
+2008-12-05,Non-Farm Employment Change,-533.0,-320.0,-320.0,-213.0,1
+2009-01-09,Non-Farm Employment Change,-524.0,-520.0,-584.0,-4.0,1
+2009-02-06,Non-Farm Employment Change,-598.0,-530.0,-577.0,-68.0,1
+2009-03-06,Non-Farm Employment Change,-651.0,-647.0,-655.0,-4.0,1
+2009-04-03,Non-Farm Employment Change,-663.0,-659.0,-651.0,-4.0,1
+2009-05-08,Non-Farm Employment Change,-539.0,-590.0,-699.0,51.0,1
+2009-06-05,Non-Farm Employment Change,-345.0,-520.0,-504.0,175.0,1
+2009-07-02,Non-Farm Employment Change,-467.0,-360.0,-322.0,-107.0,1
+2009-08-07,Non-Farm Employment Change,-247.0,-320.0,-443.0,73.0,1
+2009-09-04,Non-Farm Employment Change,-216.0,-223.0,-276.0,7.0,1
+2009-10-02,Non-Farm Employment Change,-263.0,-179.0,-201.0,-84.0,1
+2009-11-06,Non-Farm Employment Change,-190.0,-173.0,-219.0,-17.0,1
+2009-12-04,Non-Farm Employment Change,-11.0,-119.0,-111.0,108.0,1
+2010-01-08,Non-Farm Employment Change,-85.0,-3.0,4.0,-82.0,1
+2010-02-05,Non-Farm Employment Change,-20.0,10.0,-150.0,-30.0,1
+2010-03-05,Non-Farm Employment Change,-36.0,-56.0,-26.0,20.0,1
+2010-04-02,Non-Farm Employment Change,162.0,185.0,-14.0,-23.0,1
+2010-05-07,Non-Farm Employment Change,290.0,198.0,230.0,92.0,1
+2010-06-04,Non-Farm Employment Change,431.0,521.0,290.0,-90.0,1
+2010-07-02,Non-Farm Employment Change,-125.0,-106.0,433.0,-19.0,1
+2010-08-06,Non-Farm Employment Change,-131.0,-63.0,-221.0,-68.0,1
+2010-09-03,Non-Farm Employment Change,-54.0,-101.0,-54.0,47.0,1
+2010-10-08,Non-Farm Employment Change,-95.0,1.0,-57.0,-96.0,1
+2010-11-05,Non-Farm Employment Change,151.0,63.0,-41.0,88.0,1
+2010-12-03,Non-Farm Employment Change,39.0,143.0,172.0,-104.0,1
+2011-01-07,Non-Farm Employment Change,103.0,159.0,71.0,-56.0,1
+2011-02-04,Non-Farm Employment Change,36.0,138.0,121.0,-102.0,1
+2011-03-04,Non-Farm Employment Change,192.0,191.0,63.0,1.0,1
+2011-04-01,Non-Farm Employment Change,216.0,191.0,194.0,25.0,1
+2011-05-06,Non-Farm Employment Change,244.0,185.0,221.0,59.0,1
+2011-06-03,Non-Farm Employment Change,54.0,161.0,232.0,-107.0,1
+2011-07-08,Non-Farm Employment Change,18.0,97.0,25.0,-79.0,1
+2011-08-05,Non-Farm Employment Change,117.0,89.0,46.0,28.0,1
+2011-09-02,Non-Farm Employment Change,0.0,74.0,85.0,-74.0,1
+2011-10-07,Non-Farm Employment Change,103.0,55.0,57.0,48.0,1
+2011-11-04,Non-Farm Employment Change,80.0,97.0,158.0,-17.0,1
+2011-12-02,Non-Farm Employment Change,120.0,126.0,100.0,-6.0,1
+2012-01-06,Non-Farm Employment Change,200.0,152.0,100.0,48.0,1
+2012-02-03,Non-Farm Employment Change,243.0,150.0,203.0,93.0,1
+2012-03-09,Non-Farm Employment Change,227.0,209.0,284.0,18.0,1
+2012-04-06,Non-Farm Employment Change,120.0,207.0,240.0,-87.0,1
+2012-05-04,Non-Farm Employment Change,115.0,173.0,154.0,-58.0,1
+2012-06-01,Non-Farm Employment Change,69.0,151.0,77.0,-82.0,1
+2012-07-06,Non-Farm Employment Change,80.0,97.0,77.0,-17.0,1
+2012-08-03,Non-Farm Employment Change,163.0,101.0,64.0,62.0,1
+2012-09-07,Non-Farm Employment Change,96.0,123.0,141.0,-27.0,1
+2012-10-05,Non-Farm Employment Change,114.0,114.0,142.0,0.0,1
+2012-11-02,Non-Farm Employment Change,171.0,123.0,148.0,48.0,1
+2012-12-07,Non-Farm Employment Change,146.0,89.0,138.0,57.0,1
+2013-01-04,Non-Farm Employment Change,155.0,150.0,161.0,5.0,1
+2013-02-01,Non-Farm Employment Change,157.0,161.0,196.0,-4.0,1
+2013-03-08,Non-Farm Employment Change,236.0,162.0,119.0,74.0,1
+2013-04-05,Non-Farm Employment Change,88.0,198.0,268.0,-110.0,1
+2013-05-03,Non-Farm Employment Change,165.0,146.0,138.0,19.0,1
+2013-06-07,Non-Farm Employment Change,175.0,167.0,149.0,8.0,1
+2013-07-05,Non-Farm Employment Change,195.0,163.0,195.0,32.0,1
+2013-08-02,Non-Farm Employment Change,162.0,184.0,188.0,-22.0,1
+2013-09-06,Non-Farm Employment Change,169.0,178.0,104.0,-9.0,1
+2013-10-22,Non-Farm Employment Change,148.0,182.0,193.0,-34.0,1
+2013-11-08,Non-Farm Employment Change,204.0,121.0,163.0,83.0,1
+2013-12-06,Non-Farm Employment Change,203.0,180.0,200.0,23.0,1
+2014-01-10,Non-Farm Employment Change,74.0,196.0,241.0,-122.0,1
+2014-02-07,Non-Farm Employment Change,113.0,185.0,75.0,-72.0,1
+2014-03-07,Non-Farm Employment Change,175.0,151.0,129.0,24.0,1
+2014-04-04,Non-Farm Employment Change,192.0,199.0,197.0,-7.0,1
+2014-05-02,Non-Farm Employment Change,288.0,216.0,203.0,72.0,1
+2014-06-06,Non-Farm Employment Change,217.0,214.0,282.0,3.0,1
+2014-07-03,Non-Farm Employment Change,288.0,214.0,224.0,74.0,1
+2014-08-01,Non-Farm Employment Change,209.0,231.0,298.0,-22.0,1
+2014-09-05,Non-Farm Employment Change,142.0,226.0,212.0,-84.0,1
+2014-10-03,Non-Farm Employment Change,248.0,216.0,180.0,32.0,1
+2014-11-07,Non-Farm Employment Change,214.0,235.0,256.0,-21.0,1
+2014-12-05,Non-Farm Employment Change,321.0,231.0,243.0,90.0,1
+2015-01-09,Non-Farm Employment Change,252.0,241.0,353.0,11.0,1
+2015-02-06,Non-Farm Employment Change,257.0,236.0,329.0,21.0,1
+2015-03-06,Non-Farm Employment Change,295.0,240.0,239.0,55.0,1
+2015-04-03,Non-Farm Employment Change,126.0,246.0,264.0,-120.0,1
+2015-05-08,Non-Farm Employment Change,223.0,228.0,85.0,-5.0,1
+2015-06-05,Non-Farm Employment Change,280.0,222.0,221.0,58.0,1
+2015-07-02,Non-Farm Employment Change,223.0,231.0,254.0,-8.0,1
+2015-08-07,Non-Farm Employment Change,215.0,222.0,231.0,-7.0,1
+2015-09-04,Non-Farm Employment Change,173.0,215.0,245.0,-42.0,1
+2015-10-02,Non-Farm Employment Change,142.0,201.0,136.0,-59.0,1
+2015-11-06,Non-Farm Employment Change,271.0,181.0,137.0,90.0,1
+2015-12-04,Non-Farm Employment Change,211.0,201.0,298.0,10.0,1
+2016-01-08,Non-Farm Employment Change,292.0,203.0,252.0,89.0,1
+2016-02-05,Non-Farm Employment Change,151.0,189.0,262.0,-38.0,1
+2016-03-04,Non-Farm Employment Change,242.0,195.0,172.0,47.0,1
+2016-04-01,Non-Farm Employment Change,215.0,206.0,245.0,9.0,1
+2016-05-06,Non-Farm Employment Change,160.0,203.0,208.0,-43.0,1
+2016-06-03,Non-Farm Employment Change,38.0,159.0,123.0,-121.0,1
+2016-07-08,Non-Farm Employment Change,287.0,175.0,11.0,112.0,1
+2016-08-05,Non-Farm Employment Change,255.0,180.0,292.0,75.0,1
+2016-09-02,Non-Farm Employment Change,151.0,180.0,275.0,-29.0,1
+2016-10-07,Non-Farm Employment Change,156.0,171.0,167.0,-15.0,1
+2016-11-04,Non-Farm Employment Change,161.0,174.0,191.0,-13.0,1
+2016-12-02,Non-Farm Employment Change,178.0,177.0,142.0,1.0,1
+2017-01-06,Non-Farm Employment Change,156.0,175.0,204.0,-19.0,1
+2017-02-03,Non-Farm Employment Change,227.0,170.0,157.0,57.0,1
+2017-03-10,Non-Farm Employment Change,235.0,196.0,238.0,39.0,1
+2017-04-07,Non-Farm Employment Change,98.0,174.0,219.0,-76.0,1
+2017-05-05,Non-Farm Employment Change,211.0,194.0,79.0,17.0,1
+2017-06-02,Non-Farm Employment Change,138.0,181.0,174.0,-43.0,1
+2017-07-07,Non-Farm Employment Change,222.0,175.0,152.0,47.0,1
+2017-08-04,Non-Farm Employment Change,209.0,182.0,231.0,27.0,1
+2017-09-01,Non-Farm Employment Change,156.0,180.0,189.0,-24.0,1
+2017-10-06,Non-Farm Employment Change,-33.0,82.0,169.0,-115.0,1
+2017-11-03,Non-Farm Employment Change,261.0,312.0,18.0,-51.0,1
+2017-12-08,Non-Farm Employment Change,228.0,198.0,244.0,30.0,1
+2018-01-05,Non-Farm Employment Change,148.0,190.0,252.0,-42.0,1
+2018-02-02,Non-Farm Employment Change,200.0,181.0,160.0,19.0,1
+2018-03-09,Non-Farm Employment Change,313.0,205.0,239.0,108.0,1
+2018-04-06,Non-Farm Employment Change,103.0,188.0,326.0,-85.0,1
+2018-05-04,Non-Farm Employment Change,164.0,190.0,135.0,-26.0,1
+2018-06-01,Non-Farm Employment Change,223.0,189.0,159.0,34.0,1
+2018-07-06,Non-Farm Employment Change,213.0,195.0,244.0,18.0,1
+2018-08-03,Non-Farm Employment Change,157.0,191.0,248.0,-34.0,1
+2018-09-07,Non-Farm Employment Change,201.0,191.0,147.0,10.0,1
+2018-10-05,Non-Farm Employment Change,134.0,185.0,270.0,-51.0,1
+2018-11-02,Non-Farm Employment Change,250.0,194.0,118.0,56.0,1
+2018-12-07,Non-Farm Employment Change,155.0,198.0,237.0,-43.0,1
+2019-01-04,Non-Farm Employment Change,312.0,179.0,176.0,133.0,1
+2019-02-01,Non-Farm Employment Change,304.0,165.0,222.0,139.0,1
+2019-03-08,Non-Farm Employment Change,20.0,180.0,311.0,-160.0,1
+2019-04-05,Non-Farm Employment Change,196.0,172.0,33.0,24.0,1
+2019-05-03,Non-Farm Employment Change,263.0,181.0,189.0,82.0,1
+2019-06-07,Non-Farm Employment Change,75.0,177.0,224.0,-102.0,1
+2019-07-05,Non-Farm Employment Change,224.0,162.0,72.0,62.0,1
+2019-08-02,Non-Farm Employment Change,164.0,164.0,193.0,0.0,1
+2019-09-06,Non-Farm Employment Change,130.0,163.0,159.0,-33.0,1
+2019-10-04,Non-Farm Employment Change,136.0,145.0,168.0,-9.0,1
+2019-11-01,Non-Farm Employment Change,128.0,90.0,180.0,38.0,1
+2019-12-06,Non-Farm Employment Change,266.0,181.0,156.0,85.0,1
+2020-01-10,Non-Farm Employment Change,145.0,162.0,256.0,-17.0,1
+2020-02-07,Non-Farm Employment Change,225.0,163.0,147.0,62.0,1
+2020-03-06,Non-Farm Employment Change,273.0,175.0,273.0,98.0,1
+2020-04-03,Non-Farm Employment Change,-701.0,-100.0,275.0,-601.0,1
+2020-05-08,Non-Farm Employment Change,-20537.0,-22000.0,-881.0,1463.0,1
+2020-06-05,Non-Farm Employment Change,2509.0,-7750.0,-20687.0,10259.0,1
+2020-07-02,Non-Farm Employment Change,4800.0,3037.0,2699.0,1763.0,1
+2020-08-07,Non-Farm Employment Change,1763.0,1530.0,4791.0,233.0,1
+2020-09-04,Non-Farm Employment Change,1371.0,1375.0,1734.0,-4.0,1
+2020-10-02,Non-Farm Employment Change,661.0,900.0,1489.0,-239.0,1
+2020-11-06,Non-Farm Employment Change,638.0,595.0,672.0,43.0,1
+2020-12-04,Non-Farm Employment Change,245.0,480.0,610.0,-235.0,1
+2021-01-08,Non-Farm Employment Change,-140.0,60.0,336.0,-200.0,1
+2021-02-05,Non-Farm Employment Change,49.0,85.0,-227.0,-36.0,1
+2021-03-05,Non-Farm Employment Change,379.0,197.0,166.0,182.0,1
+2021-04-02,Non-Farm Employment Change,916.0,652.0,468.0,264.0,1
+2021-05-07,Non-Farm Employment Change,266.0,990.0,770.0,-724.0,1
+2021-06-04,Non-Farm Employment Change,559.0,645.0,278.0,-86.0,1
+2021-07-02,Non-Farm Employment Change,850.0,725.0,583.0,125.0,1
+2021-08-06,Non-Farm Employment Change,943.0,870.0,938.0,73.0,1
+2021-09-03,Non-Farm Employment Change,235.0,720.0,1053.0,-485.0,1
+2021-10-08,Non-Farm Employment Change,194.0,490.0,366.0,-296.0,1
+2021-11-05,Non-Farm Employment Change,531.0,455.0,312.0,76.0,1
+2021-12-03,Non-Farm Employment Change,210.0,553.0,546.0,-343.0,1
+2022-01-07,Non-Farm Employment Change,199.0,426.0,249.0,-227.0,1
+2022-02-04,Non-Farm Employment Change,467.0,110.0,510.0,357.0,1
+2022-03-04,Non-Farm Employment Change,678.0,407.0,481.0,271.0,1
+2022-04-01,Non-Farm Employment Change,431.0,492.0,750.0,-61.0,1
+2022-05-06,Non-Farm Employment Change,428.0,390.0,428.0,38.0,1
+2022-06-03,Non-Farm Employment Change,390.0,325.0,436.0,65.0,1
+2022-07-08,Non-Farm Employment Change,372.0,260.0,384.0,112.0,1
+2022-08-05,Non-Farm Employment Change,528.0,250.0,398.0,278.0,1
+2022-09-02,Non-Farm Employment Change,315.0,295.0,526.0,20.0,1
+2022-10-07,Non-Farm Employment Change,263.0,248.0,315.0,15.0,1
+2022-11-04,Non-Farm Employment Change,261.0,197.0,315.0,64.0,1
+2022-12-02,Non-Farm Employment Change,263.0,200.0,284.0,63.0,1
+2023-01-06,Non-Farm Employment Change,223.0,200.0,256.0,23.0,1
+2023-02-03,Non-Farm Employment Change,517.0,193.0,260.0,324.0,1
+2023-03-10,Non-Farm Employment Change,311.0,224.0,504.0,87.0,1
+2023-04-07,Non-Farm Employment Change,236.0,228.0,326.0,8.0,1
+2023-05-05,Non-Farm Employment Change,253.0,181.0,165.0,72.0,1
+2023-06-02,Non-Farm Employment Change,339.0,193.0,294.0,146.0,1
+2023-07-07,Non-Farm Employment Change,209.0,224.0,306.0,-15.0,1
+2023-08-04,Non-Farm Employment Change,187.0,205.0,185.0,-18.0,1
+2023-09-01,Non-Farm Employment Change,187.0,169.0,157.0,18.0,1
+2023-10-06,Non-Farm Employment Change,336.0,171.0,227.0,165.0,1
+2023-11-03,Non-Farm Employment Change,150.0,178.0,297.0,-28.0,1
+2023-12-08,Non-Farm Employment Change,199.0,184.0,150.0,15.0,1
+2024-01-05,Non-Farm Employment Change,216.0,168.0,173.0,48.0,1
+2024-02-02,Non-Farm Employment Change,353.0,187.0,333.0,166.0,1
+2024-03-08,Non-Farm Employment Change,275.0,198.0,229.0,77.0,1
+2024-04-05,Non-Farm Employment Change,303.0,212.0,270.0,91.0,1
+2024-05-03,Non-Farm Employment Change,175.0,238.0,315.0,-63.0,1
+2024-06-07,Non-Farm Employment Change,272.0,182.0,165.0,90.0,1
+2024-07-05,Non-Farm Employment Change,206.0,191.0,218.0,15.0,1
+2024-08-02,Non-Farm Employment Change,114.0,176.0,179.0,-62.0,1
+2024-09-06,Non-Farm Employment Change,142.0,164.0,89.0,-22.0,1
+2024-10-04,Non-Farm Employment Change,254.0,147.0,159.0,107.0,1
+2024-11-01,Non-Farm Employment Change,12.0,106.0,223.0,-94.0,1
+2024-12-06,Non-Farm Employment Change,227.0,218.0,36.0,9.0,1
+2025-01-10,Non-Farm Employment Change,256.0,164.0,212.0,92.0,1
+2025-02-07,Non-Farm Employment Change,143.0,169.0,307.0,-26.0,1
+2025-03-07,Non-Farm Employment Change,151.0,159.0,125.0,-8.0,1
+2025-04-04,Non-Farm Employment Change,228.0,137.0,117.0,91.0,1
+2025-05-02,Non-Farm Employment Change,177.0,138.0,185.0,39.0,1
+2025-06-06,Non-Farm Employment Change,139.0,126.0,147.0,13.0,1
+2025-07-03,Non-Farm Employment Change,147.0,111.0,144.0,36.0,1
+2025-08-01,Non-Farm Employment Change,73.0,106.0,14.0,-33.0,1
+2025-09-05,Non-Farm Employment Change,22.0,75.0,79.0,-53.0,1
+2025-11-20,Non-Farm Employment Change,119.0,53.0,-4.0,66.0,1
+2025-12-16,Non-Farm Employment Change,-105.0,,108.0,,0
+2025-12-16,Non-Farm Employment Change,64.0,51.0,-105.0,13.0,1

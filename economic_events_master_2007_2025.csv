@@ -1,0 +1,1175 @@
+date,event,canonical_event,actual,forecast,previous,surprise,surprise_available
+2007-01-04,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,1.9,0.0,1
+2007-01-05,Non-Farm Employment Change,us_nfp,167.0,115.0,132.0,52.0,1
+2007-01-11,Main Refinancing Rate,ecb_rate,3.5,3.5,3.5,0.0,1
+2007-01-18,CPI m/m,us_cpi,0.5,0.5,0.0,0.0,1
+2007-01-31,CPI Flash Estimate y/y,eu_cpi,1.9,2.1,1.9,-0.20000000000000018,1
+2007-02-01,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2007-02-02,Non-Farm Employment Change,us_nfp,111.0,146.0,206.0,-35.0,1
+2007-02-08,Main Refinancing Rate,ecb_rate,3.5,3.5,3.5,0.0,1
+2007-02-21,CPI m/m,us_cpi,0.2,0.2,0.5,0.0,1
+2007-03-01,CPI Flash Estimate y/y,eu_cpi,1.8,1.9,1.9,-0.09999999999999987,1
+2007-03-08,Main Refinancing Rate,ecb_rate,3.75,3.75,3.5,0.0,1
+2007-03-09,Non-Farm Employment Change,us_nfp,97.0,100.0,146.0,-3.0,1
+2007-03-16,CPI m/m,us_cpi,0.4,0.3,0.2,0.10000000000000003,1
+2007-03-22,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2007-03-30,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,1.8,0.0,1
+2007-04-06,Non-Farm Employment Change,us_nfp,180.0,135.0,113.0,45.0,1
+2007-04-12,Main Refinancing Rate,ecb_rate,3.75,3.75,3.75,0.0,1
+2007-04-17,CPI m/m,us_cpi,0.6,0.6,0.4,0.0,1
+2007-04-30,CPI Flash Estimate y/y,eu_cpi,1.8,1.8,1.9,0.0,1
+2007-05-04,Non-Farm Employment Change,us_nfp,88.0,107.0,177.0,-19.0,1
+2007-05-10,Main Refinancing Rate,ecb_rate,3.75,3.75,3.75,0.0,1
+2007-05-10,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2007-05-15,CPI m/m,us_cpi,0.4,0.5,0.6,-0.09999999999999998,1
+2007-05-31,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,1.9,0.0,1
+2007-06-01,Non-Farm Employment Change,us_nfp,157.0,135.0,80.0,22.0,1
+2007-06-06,Main Refinancing Rate,ecb_rate,4.0,4.0,3.75,0.0,1
+2007-06-15,CPI m/m,us_cpi,0.7,0.6,0.4,0.09999999999999998,1
+2007-06-29,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,1.9,0.0,1
+2007-06-29,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2007-07-05,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-07-06,Non-Farm Employment Change,us_nfp,132.0,125.0,190.0,7.0,1
+2007-07-18,CPI m/m,us_cpi,0.2,0.1,0.7,0.1,1
+2007-07-31,CPI Flash Estimate y/y,eu_cpi,1.8,2.0,1.9,-0.19999999999999996,1
+2007-08-02,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-08-03,Non-Farm Employment Change,us_nfp,92.0,135.0,126.0,-43.0,1
+2007-08-08,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2007-08-15,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2007-08-31,CPI Flash Estimate y/y,eu_cpi,1.8,1.8,1.8,0.0,1
+2007-09-06,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-09-07,Non-Farm Employment Change,us_nfp,-4.0,110.0,68.0,-114.0,1
+2007-09-19,CPI m/m,us_cpi,-0.1,0.0,0.1,-0.1,1
+2007-09-19,Federal Funds Rate,us_fomc,4.75,5.0,5.25,-0.25,1
+2007-09-28,CPI Flash Estimate y/y,eu_cpi,2.1,2.0,1.7,0.10000000000000009,1
+2007-10-04,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-10-05,Non-Farm Employment Change,us_nfp,110.0,100.0,89.0,10.0,1
+2007-10-17,CPI m/m,us_cpi,0.3,0.2,-0.1,0.09999999999999998,1
+2007-10-31,CPI Flash Estimate y/y,eu_cpi,2.6,2.3,2.1,0.30000000000000027,1
+2007-11-01,Federal Funds Rate,us_fomc,4.5,4.5,4.75,0.0,1
+2007-11-02,Non-Farm Employment Change,us_nfp,166.0,82.0,96.0,84.0,1
+2007-11-08,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-11-15,CPI m/m,us_cpi,0.3,0.3,0.3,0.0,1
+2007-11-30,CPI Flash Estimate y/y,eu_cpi,3.0,2.7,2.6,0.2999999999999998,1
+2007-12-06,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2007-12-07,Non-Farm Employment Change,us_nfp,94.0,75.0,170.0,19.0,1
+2007-12-12,Federal Funds Rate,us_fomc,4.25,4.25,4.5,0.0,1
+2007-12-14,CPI m/m,us_cpi,0.8,0.6,0.3,0.20000000000000007,1
+2008-01-04,CPI Flash Estimate y/y,eu_cpi,3.1,3.1,3.1,0.0,1
+2008-01-04,Non-Farm Employment Change,us_nfp,18.0,70.0,115.0,-52.0,1
+2008-01-10,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-01-16,CPI m/m,us_cpi,0.3,0.2,0.8,0.09999999999999998,1
+2008-01-22,Federal Funds Rate,us_fomc,3.5,,4.25,,0
+2008-01-31,CPI Flash Estimate y/y,eu_cpi,3.2,3.1,3.1,0.10000000000000009,1
+2008-01-31,Federal Funds Rate,us_fomc,3.0,3.0,3.5,0.0,1
+2008-02-01,Non-Farm Employment Change,us_nfp,-17.0,65.0,82.0,-82.0,1
+2008-02-07,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-02-20,CPI m/m,us_cpi,0.4,0.3,0.3,0.10000000000000003,1
+2008-03-03,CPI Flash Estimate y/y,eu_cpi,3.2,3.2,3.2,0.0,1
+2008-03-06,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-03-07,Non-Farm Employment Change,us_nfp,-63.0,25.0,-22.0,-88.0,1
+2008-03-14,CPI m/m,us_cpi,0.0,0.3,0.4,-0.3,1
+2008-03-19,Federal Funds Rate,us_fomc,2.25,2.25,3.0,0.0,1
+2008-03-31,CPI Flash Estimate y/y,eu_cpi,3.5,3.3,3.3,0.20000000000000018,1
+2008-04-04,Non-Farm Employment Change,us_nfp,-80.0,-50.0,-76.0,-30.0,1
+2008-04-10,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-04-16,CPI m/m,us_cpi,0.3,0.3,0.0,0.0,1
+2008-04-30,CPI Flash Estimate y/y,eu_cpi,3.3,3.4,3.6,-0.10000000000000009,1
+2008-05-01,Federal Funds Rate,us_fomc,2.0,2.0,2.25,0.0,1
+2008-05-02,Non-Farm Employment Change,us_nfp,-20.0,-80.0,-81.0,60.0,1
+2008-05-08,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-05-14,CPI m/m,us_cpi,0.2,0.3,0.3,-0.09999999999999998,1
+2008-05-30,CPI Flash Estimate y/y,eu_cpi,3.6,3.5,3.3,0.10000000000000009,1
+2008-06-05,Main Refinancing Rate,ecb_rate,4.0,4.0,4.0,0.0,1
+2008-06-06,Non-Farm Employment Change,us_nfp,-49.0,-57.0,-28.0,8.0,1
+2008-06-13,CPI m/m,us_cpi,0.6,0.5,0.2,0.09999999999999998,1
+2008-06-26,Federal Funds Rate,us_fomc,2.0,2.0,2.0,0.0,1
+2008-06-30,CPI Flash Estimate y/y,eu_cpi,4.0,3.9,3.7,0.10000000000000009,1
+2008-07-03,Main Refinancing Rate,ecb_rate,4.25,4.25,4.0,0.0,1
+2008-07-03,Non-Farm Employment Change,us_nfp,-62.0,-60.0,-62.0,-2.0,1
+2008-07-16,CPI m/m,us_cpi,1.1,0.7,0.6,0.40000000000000013,1
+2008-07-31,CPI Flash Estimate y/y,eu_cpi,4.1,4.1,4.0,0.0,1
+2008-08-01,Non-Farm Employment Change,us_nfp,-51.0,-75.0,-51.0,24.0,1
+2008-08-06,Federal Funds Rate,us_fomc,2.0,2.0,2.0,0.0,1
+2008-08-07,Main Refinancing Rate,ecb_rate,4.25,4.25,4.25,0.0,1
+2008-08-14,CPI m/m,us_cpi,0.8,0.4,1.1,0.4,1
+2008-08-29,CPI Flash Estimate y/y,eu_cpi,3.8,3.9,4.0,-0.10000000000000009,1
+2008-09-04,Main Refinancing Rate,ecb_rate,4.25,4.25,4.25,0.0,1
+2008-09-05,Non-Farm Employment Change,us_nfp,-84.0,-73.0,-60.0,-11.0,1
+2008-09-16,CPI m/m,us_cpi,-0.1,0.0,0.8,-0.1,1
+2008-09-17,Federal Funds Rate,us_fomc,2.0,2.0,2.0,0.0,1
+2008-09-30,CPI Flash Estimate y/y,eu_cpi,3.6,3.6,3.8,0.0,1
+2008-10-02,Main Refinancing Rate,ecb_rate,4.25,4.25,4.25,0.0,1
+2008-10-03,Non-Farm Employment Change,us_nfp,-159.0,-100.0,-73.0,-59.0,1
+2008-10-08,Main Refinancing Rate,ecb_rate,3.75,,4.25,,0
+2008-10-08,Federal Funds Rate,us_fomc,1.5,,2.0,,0
+2008-10-16,CPI m/m,us_cpi,0.0,0.1,-0.1,-0.1,1
+2008-10-30,Federal Funds Rate,us_fomc,1.0,1.0,1.5,0.0,1
+2008-10-31,CPI Flash Estimate y/y,eu_cpi,3.2,3.2,3.6,0.0,1
+2008-11-06,Main Refinancing Rate,ecb_rate,3.25,3.25,3.75,0.0,1
+2008-11-07,Non-Farm Employment Change,us_nfp,-240.0,-200.0,-284.0,-40.0,1
+2008-11-19,CPI m/m,us_cpi,-1.0,-0.8,0.0,-0.19999999999999996,1
+2008-11-28,CPI Flash Estimate y/y,eu_cpi,2.1,2.4,3.2,-0.2999999999999998,1
+2008-12-04,Main Refinancing Rate,ecb_rate,2.5,2.75,3.25,-0.25,1
+2008-12-05,Non-Farm Employment Change,us_nfp,-533.0,-320.0,-320.0,-213.0,1
+2008-12-16,CPI m/m,us_cpi,-1.7,-1.2,-1.0,-0.5,1
+2008-12-17,Federal Funds Rate,us_fomc,0.25,0.5,1.0,-0.25,1
+2009-01-06,CPI Flash Estimate y/y,eu_cpi,1.6,1.8,2.1,-0.19999999999999996,1
+2009-01-09,Non-Farm Employment Change,us_nfp,-524.0,-520.0,-584.0,-4.0,1
+2009-01-15,Main Refinancing Rate,ecb_rate,2.0,2.0,2.5,0.0,1
+2009-01-16,CPI m/m,us_cpi,-0.7,-0.8,-1.7,0.10000000000000009,1
+2009-01-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-01-30,CPI Flash Estimate y/y,eu_cpi,1.1,1.4,1.6,-0.2999999999999998,1
+2009-02-05,Main Refinancing Rate,ecb_rate,2.0,2.0,2.0,0.0,1
+2009-02-06,Non-Farm Employment Change,us_nfp,-598.0,-530.0,-577.0,-68.0,1
+2009-02-20,CPI m/m,us_cpi,0.3,0.2,-0.7,0.09999999999999998,1
+2009-03-02,CPI Flash Estimate y/y,eu_cpi,1.2,1.0,1.1,0.19999999999999996,1
+2009-03-05,Main Refinancing Rate,ecb_rate,1.5,1.5,2.0,0.0,1
+2009-03-06,Non-Farm Employment Change,us_nfp,-651.0,-647.0,-655.0,-4.0,1
+2009-03-18,CPI m/m,us_cpi,0.4,0.3,0.3,0.10000000000000003,1
+2009-03-19,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-03-31,CPI Flash Estimate y/y,eu_cpi,0.6,0.7,1.2,-0.09999999999999998,1
+2009-04-02,Main Refinancing Rate,ecb_rate,1.25,1.0,1.5,0.25,1
+2009-04-03,Non-Farm Employment Change,us_nfp,-663.0,-659.0,-651.0,-4.0,1
+2009-04-15,CPI m/m,us_cpi,-0.1,0.1,0.4,-0.2,1
+2009-04-30,CPI Flash Estimate y/y,eu_cpi,0.6,0.7,0.6,-0.09999999999999998,1
+2009-04-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-05-07,Main Refinancing Rate,ecb_rate,1.0,1.0,1.25,0.0,1
+2009-05-08,Non-Farm Employment Change,us_nfp,-539.0,-590.0,-699.0,51.0,1
+2009-05-15,CPI m/m,us_cpi,0.0,0.0,-0.1,0.0,1
+2009-05-29,CPI Flash Estimate y/y,eu_cpi,0.0,0.2,0.6,-0.2,1
+2009-06-04,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-06-05,Non-Farm Employment Change,us_nfp,-345.0,-520.0,-504.0,175.0,1
+2009-06-17,CPI m/m,us_cpi,0.1,0.3,0.0,-0.19999999999999998,1
+2009-06-25,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-06-30,CPI Flash Estimate y/y,eu_cpi,-0.1,-0.2,0.0,0.1,1
+2009-07-02,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-07-02,Non-Farm Employment Change,us_nfp,-467.0,-360.0,-322.0,-107.0,1
+2009-07-15,CPI m/m,us_cpi,0.7,0.6,0.1,0.09999999999999998,1
+2009-07-31,CPI Flash Estimate y/y,eu_cpi,-0.6,-0.4,-0.1,-0.19999999999999996,1
+2009-08-06,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-08-07,Non-Farm Employment Change,us_nfp,-247.0,-320.0,-443.0,73.0,1
+2009-08-13,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-08-14,CPI m/m,us_cpi,0.0,0.0,0.7,0.0,1
+2009-08-31,CPI Flash Estimate y/y,eu_cpi,-0.2,-0.4,-0.7,0.2,1
+2009-09-03,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-09-04,Non-Farm Employment Change,us_nfp,-216.0,-223.0,-276.0,7.0,1
+2009-09-16,CPI m/m,us_cpi,0.4,0.3,0.0,0.10000000000000003,1
+2009-09-24,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-09-30,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.2,-0.2,-0.09999999999999998,1
+2009-10-02,Non-Farm Employment Change,us_nfp,-263.0,-179.0,-201.0,-84.0,1
+2009-10-08,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-10-15,CPI m/m,us_cpi,0.2,0.2,0.4,0.0,1
+2009-10-30,CPI Flash Estimate y/y,eu_cpi,-0.1,-0.1,-0.3,0.0,1
+2009-11-05,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-11-05,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2009-11-06,Non-Farm Employment Change,us_nfp,-190.0,-173.0,-219.0,-17.0,1
+2009-11-18,CPI m/m,us_cpi,0.3,0.2,0.2,0.09999999999999998,1
+2009-11-30,CPI Flash Estimate y/y,eu_cpi,0.6,0.5,-0.1,0.09999999999999998,1
+2009-12-03,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2009-12-04,Non-Farm Employment Change,us_nfp,-11.0,-119.0,-111.0,108.0,1
+2009-12-16,CPI m/m,us_cpi,0.4,0.4,0.3,0.0,1
+2009-12-17,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-01-05,CPI Flash Estimate y/y,eu_cpi,0.9,0.9,0.5,0.0,1
+2010-01-08,Non-Farm Employment Change,us_nfp,-85.0,-3.0,4.0,-82.0,1
+2010-01-14,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-01-15,CPI m/m,us_cpi,0.1,0.2,0.4,-0.1,1
+2010-01-28,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-01-29,CPI Flash Estimate y/y,eu_cpi,1.0,1.2,0.9,-0.19999999999999996,1
+2010-02-04,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-02-05,Non-Farm Employment Change,us_nfp,-20.0,10.0,-150.0,-30.0,1
+2010-02-19,CPI m/m,us_cpi,0.2,0.3,0.1,-0.09999999999999998,1
+2010-03-02,CPI Flash Estimate y/y,eu_cpi,0.9,1.0,1.0,-0.09999999999999998,1
+2010-03-04,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-03-05,Non-Farm Employment Change,us_nfp,-36.0,-56.0,-26.0,20.0,1
+2010-03-17,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-03-18,CPI m/m,us_cpi,0.0,0.1,0.2,-0.1,1
+2010-03-31,CPI Flash Estimate y/y,eu_cpi,1.5,1.1,0.9,0.3999999999999999,1
+2010-04-02,Non-Farm Employment Change,us_nfp,162.0,185.0,-14.0,-23.0,1
+2010-04-08,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-04-14,CPI m/m,us_cpi,0.1,0.1,0.0,0.0,1
+2010-04-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-04-30,CPI Flash Estimate y/y,eu_cpi,1.5,1.4,1.4,0.10000000000000009,1
+2010-05-06,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-05-07,Non-Farm Employment Change,us_nfp,290.0,198.0,230.0,92.0,1
+2010-05-19,CPI m/m,us_cpi,-0.1,0.2,0.1,-0.30000000000000004,1
+2010-05-31,CPI Flash Estimate y/y,eu_cpi,1.6,1.6,1.5,0.0,1
+2010-06-04,Non-Farm Employment Change,us_nfp,431.0,521.0,290.0,-90.0,1
+2010-06-10,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-06-17,CPI m/m,us_cpi,-0.2,-0.2,-0.1,0.0,1
+2010-06-24,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-06-30,CPI Flash Estimate y/y,eu_cpi,1.4,1.5,1.6,-0.10000000000000009,1
+2010-07-02,Non-Farm Employment Change,us_nfp,-125.0,-106.0,433.0,-19.0,1
+2010-07-08,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-07-16,CPI m/m,us_cpi,-0.1,0.0,-0.2,-0.1,1
+2010-07-30,CPI Flash Estimate y/y,eu_cpi,1.7,1.8,1.4,-0.10000000000000009,1
+2010-08-05,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-08-06,Non-Farm Employment Change,us_nfp,-131.0,-63.0,-221.0,-68.0,1
+2010-08-11,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-08-13,CPI m/m,us_cpi,0.3,0.2,-0.1,0.09999999999999998,1
+2010-08-31,CPI Flash Estimate y/y,eu_cpi,1.6,1.6,1.7,0.0,1
+2010-09-02,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-09-03,Non-Farm Employment Change,us_nfp,-54.0,-101.0,-54.0,47.0,1
+2010-09-17,CPI m/m,us_cpi,0.3,0.2,0.3,0.09999999999999998,1
+2010-09-22,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-09-30,CPI Flash Estimate y/y,eu_cpi,1.8,1.8,1.6,0.0,1
+2010-10-07,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-10-08,Non-Farm Employment Change,us_nfp,-95.0,1.0,-57.0,-96.0,1
+2010-10-15,CPI m/m,us_cpi,0.1,0.2,0.3,-0.1,1
+2010-10-29,CPI Flash Estimate y/y,eu_cpi,1.9,1.7,1.8,0.19999999999999996,1
+2010-11-04,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-11-04,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2010-11-05,Non-Farm Employment Change,us_nfp,151.0,63.0,-41.0,88.0,1
+2010-11-17,CPI m/m,us_cpi,0.2,0.3,0.1,-0.09999999999999998,1
+2010-11-30,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,1.9,0.0,1
+2010-12-02,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2010-12-03,Non-Farm Employment Change,us_nfp,39.0,143.0,172.0,-104.0,1
+2010-12-15,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2010-12-15,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-01-04,CPI Flash Estimate y/y,eu_cpi,2.2,2.0,1.9,0.20000000000000018,1
+2011-01-07,Non-Farm Employment Change,us_nfp,103.0,159.0,71.0,-56.0,1
+2011-01-13,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2011-01-14,CPI m/m,us_cpi,0.5,0.4,0.1,0.09999999999999998,1
+2011-01-27,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-01-31,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.2,0.0,1
+2011-02-03,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2011-02-04,Non-Farm Employment Change,us_nfp,36.0,138.0,121.0,-102.0,1
+2011-02-17,CPI m/m,us_cpi,0.4,0.3,0.5,0.10000000000000003,1
+2011-03-01,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.3,0.0,1
+2011-03-03,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2011-03-04,Non-Farm Employment Change,us_nfp,192.0,191.0,63.0,1.0,1
+2011-03-16,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-03-17,CPI m/m,us_cpi,0.5,0.5,0.4,0.0,1
+2011-03-31,CPI Flash Estimate y/y,eu_cpi,2.6,2.4,2.4,0.20000000000000018,1
+2011-04-01,Non-Farm Employment Change,us_nfp,216.0,191.0,194.0,25.0,1
+2011-04-07,Main Refinancing Rate,ecb_rate,1.25,1.25,1.0,0.0,1
+2011-04-15,CPI m/m,us_cpi,0.5,0.5,0.5,0.0,1
+2011-04-28,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-04-29,CPI Flash Estimate y/y,eu_cpi,2.8,2.7,2.7,0.09999999999999964,1
+2011-05-05,Main Refinancing Rate,ecb_rate,1.25,1.25,1.25,0.0,1
+2011-05-06,Non-Farm Employment Change,us_nfp,244.0,185.0,221.0,59.0,1
+2011-05-13,CPI m/m,us_cpi,0.4,0.4,0.5,0.0,1
+2011-05-31,CPI Flash Estimate y/y,eu_cpi,2.7,2.8,2.8,-0.09999999999999964,1
+2011-06-03,Non-Farm Employment Change,us_nfp,54.0,161.0,232.0,-107.0,1
+2011-06-09,Main Refinancing Rate,ecb_rate,1.25,1.25,1.25,0.0,1
+2011-06-15,CPI m/m,us_cpi,0.2,0.2,0.4,0.0,1
+2011-06-23,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-06-30,CPI Flash Estimate y/y,eu_cpi,2.7,2.8,2.7,-0.09999999999999964,1
+2011-07-07,Main Refinancing Rate,ecb_rate,1.5,1.5,1.25,0.0,1
+2011-07-08,Non-Farm Employment Change,us_nfp,18.0,97.0,25.0,-79.0,1
+2011-07-15,CPI m/m,us_cpi,-0.2,-0.1,0.2,-0.1,1
+2011-07-29,CPI Flash Estimate y/y,eu_cpi,2.5,2.7,2.7,-0.20000000000000018,1
+2011-08-04,Main Refinancing Rate,ecb_rate,1.5,1.5,1.5,0.0,1
+2011-08-05,Non-Farm Employment Change,us_nfp,117.0,89.0,46.0,28.0,1
+2011-08-10,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-08-18,CPI m/m,us_cpi,0.5,0.2,-0.2,0.3,1
+2011-08-31,CPI Flash Estimate y/y,eu_cpi,2.5,2.5,2.5,0.0,1
+2011-09-02,Non-Farm Employment Change,us_nfp,0.0,74.0,85.0,-74.0,1
+2011-09-08,Main Refinancing Rate,ecb_rate,1.5,1.5,1.5,0.0,1
+2011-09-15,CPI m/m,us_cpi,0.4,0.2,0.5,0.2,1
+2011-09-22,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-09-30,CPI Flash Estimate y/y,eu_cpi,3.0,2.5,2.5,0.5,1
+2011-10-06,Main Refinancing Rate,ecb_rate,1.5,1.5,1.5,0.0,1
+2011-10-07,Non-Farm Employment Change,us_nfp,103.0,55.0,57.0,48.0,1
+2011-10-19,CPI m/m,us_cpi,0.3,0.3,0.4,0.0,1
+2011-10-31,CPI Flash Estimate y/y,eu_cpi,3.0,2.9,3.0,0.10000000000000009,1
+2011-11-03,Main Refinancing Rate,ecb_rate,1.25,1.5,1.5,-0.25,1
+2011-11-03,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-11-04,Non-Farm Employment Change,us_nfp,80.0,97.0,158.0,-17.0,1
+2011-11-16,CPI m/m,us_cpi,-0.1,0.0,0.3,-0.1,1
+2011-11-30,CPI Flash Estimate y/y,eu_cpi,3.0,3.0,3.0,0.0,1
+2011-12-02,Non-Farm Employment Change,us_nfp,120.0,126.0,100.0,-6.0,1
+2011-12-08,Main Refinancing Rate,ecb_rate,1.0,1.0,1.25,0.0,1
+2011-12-14,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2011-12-16,CPI m/m,us_cpi,0.0,0.1,-0.1,-0.1,1
+2012-01-04,CPI Flash Estimate y/y,eu_cpi,2.8,2.8,3.0,0.0,1
+2012-01-06,Non-Farm Employment Change,us_nfp,200.0,152.0,100.0,48.0,1
+2012-01-12,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-01-19,CPI m/m,us_cpi,0.0,0.1,0.0,-0.1,1
+2012-01-26,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-02-01,CPI Flash Estimate y/y,eu_cpi,2.7,2.7,2.7,0.0,1
+2012-02-03,Non-Farm Employment Change,us_nfp,243.0,150.0,203.0,93.0,1
+2012-02-09,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-02-17,CPI m/m,us_cpi,0.2,0.3,0.0,-0.09999999999999998,1
+2012-03-01,CPI Flash Estimate y/y,eu_cpi,2.7,2.6,2.6,0.10000000000000009,1
+2012-03-08,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-03-09,Non-Farm Employment Change,us_nfp,227.0,209.0,284.0,18.0,1
+2012-03-14,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-03-16,CPI m/m,us_cpi,0.4,0.4,0.2,0.0,1
+2012-03-30,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.7,0.10000000000000009,1
+2012-04-04,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-04-06,Non-Farm Employment Change,us_nfp,120.0,207.0,240.0,-87.0,1
+2012-04-13,CPI m/m,us_cpi,0.3,0.2,0.4,0.09999999999999998,1
+2012-04-26,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-04-30,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.7,0.10000000000000009,1
+2012-05-03,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-05-04,Non-Farm Employment Change,us_nfp,115.0,173.0,154.0,-58.0,1
+2012-05-15,CPI m/m,us_cpi,0.0,0.1,0.3,-0.1,1
+2012-05-31,CPI Flash Estimate y/y,eu_cpi,2.4,2.5,2.6,-0.10000000000000009,1
+2012-06-01,Non-Farm Employment Change,us_nfp,69.0,151.0,77.0,-82.0,1
+2012-06-06,Main Refinancing Rate,ecb_rate,1.0,1.0,1.0,0.0,1
+2012-06-14,CPI m/m,us_cpi,-0.3,-0.2,0.0,-0.09999999999999998,1
+2012-06-21,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-06-29,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.4,0.0,1
+2012-07-05,Main Refinancing Rate,ecb_rate,0.75,0.75,1.0,0.0,1
+2012-07-06,Non-Farm Employment Change,us_nfp,80.0,97.0,77.0,-17.0,1
+2012-07-17,CPI m/m,us_cpi,0.0,0.0,-0.3,0.0,1
+2012-07-31,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.4,0.0,1
+2012-08-02,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2012-08-02,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-08-03,Non-Farm Employment Change,us_nfp,163.0,101.0,64.0,62.0,1
+2012-08-15,CPI m/m,us_cpi,0.0,0.2,0.0,-0.2,1
+2012-08-31,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.4,0.10000000000000009,1
+2012-09-06,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2012-09-07,Non-Farm Employment Change,us_nfp,96.0,123.0,141.0,-27.0,1
+2012-09-14,CPI m/m,us_cpi,0.6,0.5,0.0,0.09999999999999998,1
+2012-09-14,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-09-28,CPI Flash Estimate y/y,eu_cpi,2.7,2.4,2.6,0.30000000000000027,1
+2012-10-04,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2012-10-05,Non-Farm Employment Change,us_nfp,114.0,114.0,142.0,0.0,1
+2012-10-16,CPI m/m,us_cpi,0.6,0.4,0.6,0.19999999999999996,1
+2012-10-25,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-10-31,CPI Flash Estimate y/y,eu_cpi,2.5,2.5,2.6,0.0,1
+2012-11-02,Non-Farm Employment Change,us_nfp,171.0,123.0,148.0,48.0,1
+2012-11-08,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2012-11-15,CPI m/m,us_cpi,0.1,0.1,0.6,0.0,1
+2012-11-30,CPI Flash Estimate y/y,eu_cpi,2.2,2.4,2.5,-0.19999999999999973,1
+2012-12-06,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2012-12-07,Non-Farm Employment Change,us_nfp,146.0,89.0,138.0,57.0,1
+2012-12-13,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2012-12-14,CPI m/m,us_cpi,-0.3,-0.2,0.1,-0.09999999999999998,1
+2013-01-04,CPI Flash Estimate y/y,eu_cpi,2.2,2.1,2.2,0.10000000000000009,1
+2013-01-04,Non-Farm Employment Change,us_nfp,155.0,150.0,161.0,5.0,1
+2013-01-10,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2013-01-16,CPI m/m,us_cpi,0.0,0.0,-0.3,0.0,1
+2013-01-31,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-02-01,CPI Flash Estimate y/y,eu_cpi,2.0,2.2,2.2,-0.20000000000000018,1
+2013-02-01,Non-Farm Employment Change,us_nfp,157.0,161.0,196.0,-4.0,1
+2013-02-07,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2013-02-21,CPI m/m,us_cpi,0.0,0.1,0.0,-0.1,1
+2013-03-01,CPI Flash Estimate y/y,eu_cpi,1.8,2.0,2.0,-0.19999999999999996,1
+2013-03-07,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2013-03-08,Non-Farm Employment Change,us_nfp,236.0,162.0,119.0,74.0,1
+2013-03-15,CPI m/m,us_cpi,0.7,0.6,0.0,0.09999999999999998,1
+2013-03-21,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-04-03,CPI Flash Estimate y/y,eu_cpi,1.7,1.6,1.8,0.09999999999999987,1
+2013-04-04,Main Refinancing Rate,ecb_rate,0.75,0.75,0.75,0.0,1
+2013-04-05,Non-Farm Employment Change,us_nfp,88.0,198.0,268.0,-110.0,1
+2013-04-16,CPI m/m,us_cpi,-0.2,0.0,0.7,-0.2,1
+2013-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,,1.5,,0
+2013-04-30,CPI Flash Estimate y/y,eu_cpi,1.2,1.6,1.7,-0.40000000000000013,1
+2013-05-02,Main Refinancing Rate,ecb_rate,0.5,0.5,0.75,0.0,1
+2013-05-02,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-05-03,Non-Farm Employment Change,us_nfp,165.0,146.0,138.0,19.0,1
+2013-05-16,CPI m/m,us_cpi,-0.4,-0.3,-0.2,-0.10000000000000003,1
+2013-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,,1.0,,0
+2013-05-31,CPI Flash Estimate y/y,eu_cpi,1.4,1.4,1.2,0.0,1
+2013-06-06,Main Refinancing Rate,ecb_rate,0.5,0.5,0.5,0.0,1
+2013-06-07,Non-Farm Employment Change,us_nfp,175.0,167.0,149.0,8.0,1
+2013-06-18,CPI m/m,us_cpi,0.1,0.1,-0.4,0.0,1
+2013-06-20,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-07-01,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,,1.2,,0
+2013-07-01,CPI Flash Estimate y/y,eu_cpi,1.6,1.6,1.4,0.0,1
+2013-07-04,Main Refinancing Rate,ecb_rate,0.5,0.5,0.5,0.0,1
+2013-07-05,Non-Farm Employment Change,us_nfp,195.0,163.0,195.0,32.0,1
+2013-07-16,CPI m/m,us_cpi,0.5,0.3,0.1,0.2,1
+2013-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,,1.2,,0
+2013-07-31,CPI Flash Estimate y/y,eu_cpi,1.6,1.6,1.6,0.0,1
+2013-08-01,Main Refinancing Rate,ecb_rate,0.5,0.5,0.5,0.0,1
+2013-08-01,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-08-02,Non-Farm Employment Change,us_nfp,162.0,184.0,188.0,-22.0,1
+2013-08-15,CPI m/m,us_cpi,0.2,0.2,0.5,0.0,1
+2013-08-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,,1.1,,0
+2013-08-30,CPI Flash Estimate y/y,eu_cpi,1.3,1.4,1.6,-0.09999999999999987,1
+2013-09-05,Main Refinancing Rate,ecb_rate,0.5,0.5,0.5,0.0,1
+2013-09-06,Non-Farm Employment Change,us_nfp,169.0,178.0,104.0,-9.0,1
+2013-09-17,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2013-09-19,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-09-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,,1.1,,0
+2013-09-30,CPI Flash Estimate y/y,eu_cpi,1.1,1.3,1.3,-0.19999999999999996,1
+2013-10-02,Main Refinancing Rate,ecb_rate,0.5,0.5,0.5,0.0,1
+2013-10-22,Non-Farm Employment Change,us_nfp,148.0,182.0,193.0,-34.0,1
+2013-10-30,CPI m/m,us_cpi,0.2,0.2,0.1,0.0,1
+2013-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,,1.0,,0
+2013-10-31,CPI Flash Estimate y/y,eu_cpi,0.7,1.1,1.1,-0.40000000000000013,1
+2013-10-31,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2013-11-07,Main Refinancing Rate,ecb_rate,0.25,0.5,0.5,-0.25,1
+2013-11-08,Non-Farm Employment Change,us_nfp,204.0,121.0,163.0,83.0,1
+2013-11-20,CPI m/m,us_cpi,-0.1,0.0,0.2,-0.1,1
+2013-11-29,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,,0.8,,0
+2013-11-29,CPI Flash Estimate y/y,eu_cpi,0.9,0.8,0.7,0.09999999999999998,1
+2013-12-05,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2013-12-06,Non-Farm Employment Change,us_nfp,203.0,180.0,200.0,23.0,1
+2013-12-17,CPI m/m,us_cpi,0.0,0.1,-0.1,-0.1,1
+2013-12-19,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,,0.9,,0
+2014-01-07,CPI Flash Estimate y/y,eu_cpi,0.8,0.9,0.9,-0.09999999999999998,1
+2014-01-09,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2014-01-10,Non-Farm Employment Change,us_nfp,74.0,196.0,241.0,-122.0,1
+2014-01-16,CPI m/m,us_cpi,0.3,0.3,0.0,0.0,1
+2014-01-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-01-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,,0.7,,0
+2014-01-31,CPI Flash Estimate y/y,eu_cpi,0.7,0.9,0.8,-0.20000000000000007,1
+2014-02-06,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2014-02-07,Non-Farm Employment Change,us_nfp,113.0,185.0,75.0,-72.0,1
+2014-02-20,CPI m/m,us_cpi,0.1,0.1,0.3,0.0,1
+2014-02-28,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,,0.8,,0
+2014-02-28,CPI Flash Estimate y/y,eu_cpi,0.8,0.7,0.8,0.10000000000000009,1
+2014-03-06,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2014-03-07,Non-Farm Employment Change,us_nfp,175.0,151.0,129.0,24.0,1
+2014-03-18,CPI m/m,us_cpi,0.1,0.1,0.1,0.0,1
+2014-03-20,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,,1.0,,0
+2014-03-31,CPI Flash Estimate y/y,eu_cpi,0.5,0.6,0.7,-0.09999999999999998,1
+2014-04-03,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2014-04-04,Non-Farm Employment Change,us_nfp,192.0,199.0,197.0,-7.0,1
+2014-04-15,CPI m/m,us_cpi,0.2,0.1,0.1,0.1,1
+2014-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,,0.7,,0
+2014-04-30,CPI Flash Estimate y/y,eu_cpi,0.7,0.8,0.5,-0.10000000000000009,1
+2014-05-01,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-05-02,Non-Farm Employment Change,us_nfp,288.0,216.0,203.0,72.0,1
+2014-05-08,Main Refinancing Rate,ecb_rate,0.25,0.25,0.25,0.0,1
+2014-05-15,CPI m/m,us_cpi,0.3,0.3,0.2,0.0,1
+2014-06-03,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.9,1.0,-0.20000000000000007,1
+2014-06-03,CPI Flash Estimate y/y,eu_cpi,0.5,0.7,0.7,-0.19999999999999996,1
+2014-06-05,Main Refinancing Rate,ecb_rate,0.15,0.1,0.25,0.04999999999999999,1
+2014-06-06,Non-Farm Employment Change,us_nfp,217.0,214.0,282.0,3.0,1
+2014-06-17,CPI m/m,us_cpi,0.4,0.2,0.3,0.2,1
+2014-06-19,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.7,0.7,0.10000000000000009,1
+2014-06-30,CPI Flash Estimate y/y,eu_cpi,0.5,0.6,0.5,-0.09999999999999998,1
+2014-07-03,Main Refinancing Rate,ecb_rate,0.15,0.15,0.15,0.0,1
+2014-07-03,Non-Farm Employment Change,us_nfp,288.0,214.0,224.0,74.0,1
+2014-07-22,CPI m/m,us_cpi,0.3,0.3,0.4,0.0,1
+2014-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.8,0.0,1
+2014-07-31,CPI Flash Estimate y/y,eu_cpi,0.4,0.5,0.5,-0.09999999999999998,1
+2014-07-31,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-08-01,Non-Farm Employment Change,us_nfp,209.0,231.0,298.0,-22.0,1
+2014-08-07,Main Refinancing Rate,ecb_rate,0.15,0.15,0.15,0.0,1
+2014-08-19,CPI m/m,us_cpi,0.1,0.1,0.3,0.0,1
+2014-08-29,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.8,0.8,0.09999999999999998,1
+2014-08-29,CPI Flash Estimate y/y,eu_cpi,0.3,0.3,0.4,0.0,1
+2014-09-04,Main Refinancing Rate,ecb_rate,0.05,0.15,0.15,-0.09999999999999999,1
+2014-09-05,Non-Farm Employment Change,us_nfp,142.0,226.0,212.0,-84.0,1
+2014-09-17,CPI m/m,us_cpi,-0.2,0.1,0.1,-0.30000000000000004,1
+2014-09-18,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-09-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.9,0.9,-0.20000000000000007,1
+2014-09-30,CPI Flash Estimate y/y,eu_cpi,0.3,0.3,0.4,0.0,1
+2014-10-02,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2014-10-03,Non-Farm Employment Change,us_nfp,248.0,216.0,180.0,32.0,1
+2014-10-22,CPI m/m,us_cpi,0.1,0.0,-0.2,0.1,1
+2014-10-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2014-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.8,0.8,-0.10000000000000009,1
+2014-10-31,CPI Flash Estimate y/y,eu_cpi,0.4,0.4,0.3,0.0,1
+2014-11-06,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2014-11-07,Non-Farm Employment Change,us_nfp,214.0,235.0,256.0,-21.0,1
+2014-11-20,CPI m/m,us_cpi,0.0,-0.1,0.1,0.1,1
+2014-11-28,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.7,0.7,0.0,1
+2014-11-28,CPI Flash Estimate y/y,eu_cpi,0.3,0.3,0.4,0.0,1
+2014-12-04,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2014-12-05,Non-Farm Employment Change,us_nfp,321.0,231.0,243.0,90.0,1
+2014-12-17,CPI m/m,us_cpi,-0.3,-0.1,0.0,-0.19999999999999998,1
+2014-12-18,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.6,0.7,0.20000000000000007,1
+2015-01-07,CPI Flash Estimate y/y,eu_cpi,-0.2,0.0,0.3,-0.2,1
+2015-01-09,Non-Farm Employment Change,us_nfp,252.0,241.0,353.0,11.0,1
+2015-01-16,CPI m/m,us_cpi,-0.4,-0.3,-0.3,-0.10000000000000003,1
+2015-01-22,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-01-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-01-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.6,0.6,0.7,0.0,1
+2015-01-30,CPI Flash Estimate y/y,eu_cpi,-0.6,-0.5,-0.2,-0.09999999999999998,1
+2015-02-06,Non-Farm Employment Change,us_nfp,257.0,236.0,329.0,21.0,1
+2015-02-26,CPI m/m,us_cpi,-0.7,-0.6,-0.4,-0.09999999999999998,1
+2015-03-02,Core CPI Flash Estimate y/y,eu_core_cpi,0.6,0.6,0.6,0.0,1
+2015-03-02,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.5,-0.6,0.2,1
+2015-03-05,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-03-06,Non-Farm Employment Change,us_nfp,295.0,240.0,239.0,55.0,1
+2015-03-19,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-03-24,CPI m/m,us_cpi,0.2,0.2,-0.7,0.0,1
+2015-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.6,0.6,0.7,0.0,1
+2015-03-31,CPI Flash Estimate y/y,eu_cpi,-0.1,-0.3,-0.3,0.19999999999999998,1
+2015-04-03,Non-Farm Employment Change,us_nfp,126.0,246.0,264.0,-120.0,1
+2015-04-15,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-04-17,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2015-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.6,0.6,0.6,0.0,1
+2015-04-30,CPI Flash Estimate y/y,eu_cpi,0.0,0.0,-0.1,0.0,1
+2015-04-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-05-08,Non-Farm Employment Change,us_nfp,223.0,228.0,85.0,-5.0,1
+2015-05-22,CPI m/m,us_cpi,0.1,0.1,0.2,0.0,1
+2015-06-02,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.7,0.6,0.20000000000000007,1
+2015-06-02,CPI Flash Estimate y/y,eu_cpi,0.3,0.2,0.0,0.09999999999999998,1
+2015-06-03,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-06-05,Non-Farm Employment Change,us_nfp,280.0,222.0,221.0,58.0,1
+2015-06-18,CPI m/m,us_cpi,0.4,0.5,0.1,-0.09999999999999998,1
+2015-06-18,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.9,0.0,1
+2015-06-30,CPI Flash Estimate y/y,eu_cpi,0.2,0.2,0.3,0.0,1
+2015-07-02,Non-Farm Employment Change,us_nfp,223.0,231.0,254.0,-8.0,1
+2015-07-16,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-07-17,CPI m/m,us_cpi,0.3,0.3,0.4,0.0,1
+2015-07-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,0.8,0.8,0.19999999999999996,1
+2015-07-31,CPI Flash Estimate y/y,eu_cpi,0.2,0.2,0.2,0.0,1
+2015-08-07,Non-Farm Employment Change,us_nfp,215.0,222.0,231.0,-7.0,1
+2015-08-19,CPI m/m,us_cpi,0.1,0.2,0.3,-0.1,1
+2015-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,1.0,0.0,1
+2015-08-31,CPI Flash Estimate y/y,eu_cpi,0.2,0.2,0.2,0.0,1
+2015-09-03,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-09-04,Non-Farm Employment Change,us_nfp,173.0,215.0,245.0,-42.0,1
+2015-09-16,CPI m/m,us_cpi,-0.1,0.0,0.1,-0.1,1
+2015-09-18,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-09-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,0.9,0.0,1
+2015-09-30,CPI Flash Estimate y/y,eu_cpi,-0.1,0.0,0.1,-0.1,1
+2015-10-02,Non-Farm Employment Change,us_nfp,142.0,201.0,136.0,-59.0,1
+2015-10-15,CPI m/m,us_cpi,-0.2,-0.2,-0.1,0.0,1
+2015-10-22,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-10-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2015-10-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,0.9,0.9,0.09999999999999998,1
+2015-10-30,CPI Flash Estimate y/y,eu_cpi,0.0,0.0,-0.1,0.0,1
+2015-11-06,Non-Farm Employment Change,us_nfp,271.0,181.0,137.0,90.0,1
+2015-11-17,CPI m/m,us_cpi,0.2,0.2,-0.2,0.0,1
+2015-12-02,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.1,1.1,-0.20000000000000007,1
+2015-12-02,CPI Flash Estimate y/y,eu_cpi,0.1,0.2,0.1,-0.1,1
+2015-12-03,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2015-12-04,Non-Farm Employment Change,us_nfp,211.0,201.0,298.0,10.0,1
+2015-12-15,CPI m/m,us_cpi,0.0,0.0,0.2,0.0,1
+2015-12-17,Federal Funds Rate,us_fomc,0.5,0.5,0.25,0.0,1
+2016-01-05,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,0.9,-0.09999999999999998,1
+2016-01-05,CPI Flash Estimate y/y,eu_cpi,0.2,0.4,0.2,-0.2,1
+2016-01-08,Non-Farm Employment Change,us_nfp,292.0,203.0,252.0,89.0,1
+2016-01-20,CPI m/m,us_cpi,-0.1,0.0,0.0,-0.1,1
+2016-01-21,Main Refinancing Rate,ecb_rate,0.05,0.05,0.05,0.0,1
+2016-01-28,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-01-29,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,0.9,0.9,0.09999999999999998,1
+2016-01-29,CPI Flash Estimate y/y,eu_cpi,0.4,0.4,0.2,0.0,1
+2016-02-05,Non-Farm Employment Change,us_nfp,151.0,189.0,262.0,-38.0,1
+2016-02-19,CPI m/m,us_cpi,0.0,-0.1,-0.1,0.1,1
+2016-02-29,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.9,1.0,-0.20000000000000007,1
+2016-02-29,CPI Flash Estimate y/y,eu_cpi,-0.2,0.0,0.3,-0.2,1
+2016-03-04,Non-Farm Employment Change,us_nfp,242.0,195.0,172.0,47.0,1
+2016-03-10,Main Refinancing Rate,ecb_rate,0.0,0.05,0.05,-0.05,1
+2016-03-16,CPI m/m,us_cpi,-0.2,-0.2,0.0,0.0,1
+2016-03-17,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,0.9,0.8,0.09999999999999998,1
+2016-03-31,CPI Flash Estimate y/y,eu_cpi,-0.1,-0.1,-0.2,0.0,1
+2016-04-01,Non-Farm Employment Change,us_nfp,215.0,206.0,245.0,9.0,1
+2016-04-14,CPI m/m,us_cpi,0.1,0.2,-0.2,-0.1,1
+2016-04-21,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-04-28,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-04-29,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.9,1.0,-0.09999999999999998,1
+2016-04-29,CPI Flash Estimate y/y,eu_cpi,-0.2,-0.1,0.0,-0.1,1
+2016-05-06,Non-Farm Employment Change,us_nfp,160.0,203.0,208.0,-43.0,1
+2016-05-17,CPI m/m,us_cpi,0.4,0.3,0.1,0.10000000000000003,1
+2016-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.7,0.0,1
+2016-05-31,CPI Flash Estimate y/y,eu_cpi,-0.1,-0.1,-0.2,0.0,1
+2016-06-02,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-06-03,Non-Farm Employment Change,us_nfp,38.0,159.0,123.0,-121.0,1
+2016-06-16,CPI m/m,us_cpi,0.2,0.3,0.4,-0.09999999999999998,1
+2016-06-16,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.8,0.8,0.09999999999999998,1
+2016-06-30,CPI Flash Estimate y/y,eu_cpi,0.1,0.0,-0.1,0.1,1
+2016-07-08,Non-Farm Employment Change,us_nfp,287.0,175.0,11.0,112.0,1
+2016-07-15,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2016-07-21,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-07-28,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-07-29,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,0.9,0.0,1
+2016-07-29,CPI Flash Estimate y/y,eu_cpi,0.2,0.1,0.1,0.1,1
+2016-08-05,Non-Farm Employment Change,us_nfp,255.0,180.0,292.0,75.0,1
+2016-08-16,CPI m/m,us_cpi,0.0,0.0,0.2,0.0,1
+2016-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.9,0.9,-0.09999999999999998,1
+2016-08-31,CPI Flash Estimate y/y,eu_cpi,0.2,0.3,0.2,-0.09999999999999998,1
+2016-09-02,Non-Farm Employment Change,us_nfp,151.0,180.0,275.0,-29.0,1
+2016-09-08,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-09-16,CPI m/m,us_cpi,0.2,0.1,0.0,0.1,1
+2016-09-22,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-09-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.9,0.8,-0.09999999999999998,1
+2016-09-30,CPI Flash Estimate y/y,eu_cpi,0.4,0.4,0.2,0.0,1
+2016-10-07,Non-Farm Employment Change,us_nfp,156.0,171.0,167.0,-15.0,1
+2016-10-18,CPI m/m,us_cpi,0.3,0.3,0.2,0.0,1
+2016-10-20,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.8,0.0,1
+2016-10-31,CPI Flash Estimate y/y,eu_cpi,0.5,0.5,0.4,0.0,1
+2016-11-03,Federal Funds Rate,us_fomc,0.5,0.5,0.5,0.0,1
+2016-11-04,Non-Farm Employment Change,us_nfp,161.0,174.0,191.0,-13.0,1
+2016-11-17,CPI m/m,us_cpi,0.4,0.4,0.3,0.0,1
+2016-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.8,0.0,1
+2016-11-30,CPI Flash Estimate y/y,eu_cpi,0.6,0.6,0.5,0.0,1
+2016-12-02,Non-Farm Employment Change,us_nfp,178.0,177.0,142.0,1.0,1
+2016-12-08,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2016-12-15,CPI m/m,us_cpi,0.2,0.2,0.4,0.0,1
+2016-12-15,Federal Funds Rate,us_fomc,0.75,0.75,0.5,0.0,1
+2017-01-04,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.8,0.8,0.09999999999999998,1
+2017-01-04,CPI Flash Estimate y/y,eu_cpi,1.1,1.0,0.6,0.10000000000000009,1
+2017-01-06,Non-Farm Employment Change,us_nfp,156.0,175.0,204.0,-19.0,1
+2017-01-18,CPI m/m,us_cpi,0.3,0.3,0.2,0.0,1
+2017-01-19,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-01-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,0.9,0.0,1
+2017-01-31,CPI Flash Estimate y/y,eu_cpi,1.8,1.5,1.1,0.30000000000000004,1
+2017-02-02,Federal Funds Rate,us_fomc,0.75,0.75,0.75,0.0,1
+2017-02-03,Non-Farm Employment Change,us_nfp,227.0,170.0,157.0,57.0,1
+2017-02-15,CPI m/m,us_cpi,0.6,0.3,0.3,0.3,1
+2017-03-02,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,0.9,0.0,1
+2017-03-02,CPI Flash Estimate y/y,eu_cpi,2.0,1.8,1.8,0.19999999999999996,1
+2017-03-09,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-03-10,Non-Farm Employment Change,us_nfp,235.0,196.0,238.0,39.0,1
+2017-03-15,CPI m/m,us_cpi,0.1,0.0,0.6,0.1,1
+2017-03-16,Federal Funds Rate,us_fomc,1.0,1.0,0.75,0.0,1
+2017-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.8,0.9,-0.10000000000000009,1
+2017-03-31,CPI Flash Estimate y/y,eu_cpi,1.5,1.8,2.0,-0.30000000000000004,1
+2017-04-07,Non-Farm Employment Change,us_nfp,98.0,174.0,219.0,-76.0,1
+2017-04-14,CPI m/m,us_cpi,-0.3,0.0,0.1,-0.3,1
+2017-04-27,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-04-28,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,1.0,0.7,0.19999999999999996,1
+2017-04-28,CPI Flash Estimate y/y,eu_cpi,1.9,1.8,1.5,0.09999999999999987,1
+2017-05-04,Federal Funds Rate,us_fomc,1.0,1.0,1.0,0.0,1
+2017-05-05,Non-Farm Employment Change,us_nfp,211.0,194.0,79.0,17.0,1
+2017-05-12,CPI m/m,us_cpi,0.2,0.3,-0.3,-0.09999999999999998,1
+2017-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,1.2,-0.09999999999999998,1
+2017-05-31,CPI Flash Estimate y/y,eu_cpi,1.4,1.5,1.9,-0.10000000000000009,1
+2017-06-02,Non-Farm Employment Change,us_nfp,138.0,181.0,174.0,-43.0,1
+2017-06-08,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-06-14,CPI m/m,us_cpi,-0.1,0.2,0.2,-0.30000000000000004,1
+2017-06-15,Federal Funds Rate,us_fomc,1.25,1.25,1.0,0.0,1
+2017-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,0.9,0.10000000000000009,1
+2017-06-30,CPI Flash Estimate y/y,eu_cpi,1.3,1.2,1.4,0.10000000000000009,1
+2017-07-07,Non-Farm Employment Change,us_nfp,222.0,175.0,152.0,47.0,1
+2017-07-14,CPI m/m,us_cpi,0.0,0.1,-0.1,-0.1,1
+2017-07-20,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-07-27,Federal Funds Rate,us_fomc,1.25,1.25,1.25,0.0,1
+2017-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,1.1,1.1,0.09999999999999987,1
+2017-07-31,CPI Flash Estimate y/y,eu_cpi,1.3,1.3,1.3,0.0,1
+2017-08-04,Non-Farm Employment Change,us_nfp,209.0,182.0,231.0,27.0,1
+2017-08-11,CPI m/m,us_cpi,0.1,0.2,0.0,-0.1,1
+2017-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,1.2,1.2,0.0,1
+2017-08-31,CPI Flash Estimate y/y,eu_cpi,1.5,1.4,1.3,0.10000000000000009,1
+2017-09-01,Non-Farm Employment Change,us_nfp,156.0,180.0,189.0,-24.0,1
+2017-09-07,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-09-14,CPI m/m,us_cpi,0.4,0.3,0.1,0.10000000000000003,1
+2017-09-21,Federal Funds Rate,us_fomc,1.25,1.25,1.25,0.0,1
+2017-09-29,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.2,1.2,-0.09999999999999987,1
+2017-09-29,CPI Flash Estimate y/y,eu_cpi,1.5,1.6,1.5,-0.10000000000000009,1
+2017-10-06,Non-Farm Employment Change,us_nfp,-33.0,82.0,169.0,-115.0,1
+2017-10-13,CPI m/m,us_cpi,0.5,0.6,0.4,-0.09999999999999998,1
+2017-10-26,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.1,1.1,-0.20000000000000007,1
+2017-10-31,CPI Flash Estimate y/y,eu_cpi,1.4,1.5,1.5,-0.10000000000000009,1
+2017-11-02,Federal Funds Rate,us_fomc,1.25,1.25,1.25,0.0,1
+2017-11-03,Non-Farm Employment Change,us_nfp,261.0,312.0,18.0,-51.0,1
+2017-11-15,CPI m/m,us_cpi,0.1,0.1,0.5,0.0,1
+2017-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,0.9,-0.09999999999999998,1
+2017-11-30,CPI Flash Estimate y/y,eu_cpi,1.5,1.6,1.4,-0.10000000000000009,1
+2017-12-08,Non-Farm Employment Change,us_nfp,228.0,198.0,244.0,30.0,1
+2017-12-13,CPI m/m,us_cpi,0.4,0.4,0.1,0.0,1
+2017-12-14,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2017-12-14,Federal Funds Rate,us_fomc,1.5,1.5,1.25,0.0,1
+2018-01-05,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,0.9,-0.09999999999999998,1
+2018-01-05,CPI Flash Estimate y/y,eu_cpi,1.4,1.4,1.5,0.0,1
+2018-01-05,Non-Farm Employment Change,us_nfp,148.0,190.0,252.0,-42.0,1
+2018-01-12,CPI m/m,us_cpi,0.1,0.1,0.4,0.0,1
+2018-01-25,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-01-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,0.9,0.0,1
+2018-01-31,CPI Flash Estimate y/y,eu_cpi,1.3,1.3,1.4,0.0,1
+2018-02-01,Federal Funds Rate,us_fomc,1.5,1.5,1.5,0.0,1
+2018-02-02,Non-Farm Employment Change,us_nfp,200.0,181.0,160.0,19.0,1
+2018-02-14,CPI m/m,us_cpi,0.5,0.3,0.1,0.2,1
+2018-02-28,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,1.0,0.0,1
+2018-02-28,CPI Flash Estimate y/y,eu_cpi,1.2,1.2,1.3,0.0,1
+2018-03-08,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-03-09,Non-Farm Employment Change,us_nfp,313.0,205.0,239.0,108.0,1
+2018-03-13,CPI m/m,us_cpi,0.2,0.2,0.5,0.0,1
+2018-03-22,Federal Funds Rate,us_fomc,1.75,1.75,1.5,0.0,1
+2018-04-04,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.1,1.0,-0.10000000000000009,1
+2018-04-04,CPI Flash Estimate y/y,eu_cpi,1.4,1.4,1.1,0.0,1
+2018-04-06,Non-Farm Employment Change,us_nfp,103.0,188.0,326.0,-85.0,1
+2018-04-11,CPI m/m,us_cpi,-0.1,0.0,0.2,-0.1,1
+2018-04-26,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-05-03,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.9,1.0,-0.20000000000000007,1
+2018-05-03,CPI Flash Estimate y/y,eu_cpi,1.2,1.3,1.3,-0.10000000000000009,1
+2018-05-03,Federal Funds Rate,us_fomc,1.75,1.75,1.75,0.0,1
+2018-05-04,Non-Farm Employment Change,us_nfp,164.0,190.0,135.0,-26.0,1
+2018-05-10,CPI m/m,us_cpi,0.2,0.3,-0.1,-0.09999999999999998,1
+2018-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,0.7,0.10000000000000009,1
+2018-05-31,CPI Flash Estimate y/y,eu_cpi,1.9,1.6,1.2,0.2999999999999998,1
+2018-06-01,Non-Farm Employment Change,us_nfp,223.0,189.0,159.0,34.0,1
+2018-06-12,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2018-06-14,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-06-14,Federal Funds Rate,us_fomc,2.0,2.0,1.75,0.0,1
+2018-06-29,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,1.1,0.0,1
+2018-06-29,CPI Flash Estimate y/y,eu_cpi,2.0,2.0,1.9,0.0,1
+2018-07-06,Non-Farm Employment Change,us_nfp,213.0,195.0,244.0,18.0,1
+2018-07-12,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2018-07-26,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,0.9,0.10000000000000009,1
+2018-07-31,CPI Flash Estimate y/y,eu_cpi,2.1,2.0,2.0,0.10000000000000009,1
+2018-08-02,Federal Funds Rate,us_fomc,2.0,2.0,2.0,0.0,1
+2018-08-03,Non-Farm Employment Change,us_nfp,157.0,191.0,248.0,-34.0,1
+2018-08-10,CPI m/m,us_cpi,0.2,0.2,0.1,0.0,1
+2018-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.1,1.1,-0.10000000000000009,1
+2018-08-31,CPI Flash Estimate y/y,eu_cpi,2.0,2.1,2.1,-0.10000000000000009,1
+2018-09-07,Non-Farm Employment Change,us_nfp,201.0,191.0,147.0,10.0,1
+2018-09-13,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-09-13,CPI m/m,us_cpi,0.2,0.3,0.2,-0.09999999999999998,1
+2018-09-27,Federal Funds Rate,us_fomc,2.25,2.25,2.0,0.0,1
+2018-09-28,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.1,1.0,-0.20000000000000007,1
+2018-09-28,CPI Flash Estimate y/y,eu_cpi,2.1,2.1,2.0,0.0,1
+2018-10-05,Non-Farm Employment Change,us_nfp,134.0,185.0,270.0,-51.0,1
+2018-10-11,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2018-10-25,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.1,0.9,0.0,1
+2018-10-31,CPI Flash Estimate y/y,eu_cpi,2.2,2.2,2.1,0.0,1
+2018-11-02,Non-Farm Employment Change,us_nfp,250.0,194.0,118.0,56.0,1
+2018-11-09,Federal Funds Rate,us_fomc,2.25,2.25,2.25,0.0,1
+2018-11-14,CPI m/m,us_cpi,0.3,0.3,0.1,0.0,1
+2018-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.1,1.1,-0.10000000000000009,1
+2018-11-30,CPI Flash Estimate y/y,eu_cpi,2.0,2.1,2.2,-0.10000000000000009,1
+2018-12-07,Non-Farm Employment Change,us_nfp,155.0,198.0,237.0,-43.0,1
+2018-12-12,CPI m/m,us_cpi,0.0,0.0,0.3,0.0,1
+2018-12-13,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2018-12-20,Federal Funds Rate,us_fomc,2.5,2.5,2.25,0.0,1
+2019-01-04,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,1.0,0.0,1
+2019-01-04,CPI Flash Estimate y/y,eu_cpi,1.6,1.8,1.9,-0.19999999999999996,1
+2019-01-04,Non-Farm Employment Change,us_nfp,312.0,179.0,176.0,133.0,1
+2019-01-11,CPI m/m,us_cpi,-0.1,-0.1,0.0,0.0,1
+2019-01-24,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-01-31,Federal Funds Rate,us_fomc,2.5,2.5,2.5,0.0,1
+2019-02-01,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,1.0,0.10000000000000009,1
+2019-02-01,CPI Flash Estimate y/y,eu_cpi,1.4,1.4,1.6,0.0,1
+2019-02-01,Non-Farm Employment Change,us_nfp,304.0,165.0,222.0,139.0,1
+2019-02-13,CPI m/m,us_cpi,0.0,0.1,-0.1,-0.1,1
+2019-03-01,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.1,1.1,-0.10000000000000009,1
+2019-03-01,CPI Flash Estimate y/y,eu_cpi,1.5,1.5,1.4,0.0,1
+2019-03-07,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-03-08,Non-Farm Employment Change,us_nfp,20.0,180.0,311.0,-160.0,1
+2019-03-12,CPI m/m,us_cpi,0.2,0.2,0.0,0.0,1
+2019-03-21,Federal Funds Rate,us_fomc,2.5,2.5,2.5,0.0,1
+2019-04-01,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.9,1.0,-0.09999999999999998,1
+2019-04-01,CPI Flash Estimate y/y,eu_cpi,1.4,1.5,1.5,-0.10000000000000009,1
+2019-04-05,Non-Farm Employment Change,us_nfp,196.0,172.0,33.0,24.0,1
+2019-04-10,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-04-10,CPI m/m,us_cpi,0.4,0.3,0.2,0.10000000000000003,1
+2019-05-02,Federal Funds Rate,us_fomc,2.5,2.5,2.5,0.0,1
+2019-05-03,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,1.0,0.8,0.19999999999999996,1
+2019-05-03,CPI Flash Estimate y/y,eu_cpi,1.7,1.6,1.4,0.09999999999999987,1
+2019-05-03,Non-Farm Employment Change,us_nfp,263.0,181.0,189.0,82.0,1
+2019-05-10,CPI m/m,us_cpi,0.3,0.4,0.4,-0.10000000000000003,1
+2019-06-04,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,1.0,1.3,-0.19999999999999996,1
+2019-06-04,CPI Flash Estimate y/y,eu_cpi,1.2,1.4,1.7,-0.19999999999999996,1
+2019-06-06,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-06-07,Non-Farm Employment Change,us_nfp,75.0,177.0,224.0,-102.0,1
+2019-06-12,CPI m/m,us_cpi,0.1,0.1,0.3,0.0,1
+2019-06-20,Federal Funds Rate,us_fomc,2.5,2.5,2.5,0.0,1
+2019-06-28,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,0.8,0.10000000000000009,1
+2019-06-28,CPI Flash Estimate y/y,eu_cpi,1.2,1.2,1.2,0.0,1
+2019-07-05,Non-Farm Employment Change,us_nfp,224.0,162.0,72.0,62.0,1
+2019-07-11,CPI m/m,us_cpi,0.1,0.0,0.1,0.1,1
+2019-07-25,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,1.1,-0.09999999999999998,1
+2019-07-31,CPI Flash Estimate y/y,eu_cpi,1.1,1.0,1.2,0.10000000000000009,1
+2019-08-01,Federal Funds Rate,us_fomc,2.25,2.25,2.5,0.0,1
+2019-08-02,Non-Farm Employment Change,us_nfp,164.0,164.0,193.0,0.0,1
+2019-08-13,CPI m/m,us_cpi,0.3,0.3,0.1,0.0,1
+2019-08-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.0,0.9,-0.09999999999999998,1
+2019-08-30,CPI Flash Estimate y/y,eu_cpi,1.0,1.0,1.0,0.0,1
+2019-09-06,Non-Farm Employment Change,us_nfp,130.0,163.0,159.0,-33.0,1
+2019-09-12,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-09-12,CPI m/m,us_cpi,0.1,0.1,0.3,0.0,1
+2019-09-19,Federal Funds Rate,us_fomc,2.0,2.0,2.25,0.0,1
+2019-10-01,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.0,0.9,0.0,1
+2019-10-01,CPI Flash Estimate y/y,eu_cpi,0.9,1.0,1.0,-0.09999999999999998,1
+2019-10-04,Non-Farm Employment Change,us_nfp,136.0,145.0,168.0,-9.0,1
+2019-10-10,CPI m/m,us_cpi,0.0,0.1,0.1,-0.1,1
+2019-10-24,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.0,1.0,0.10000000000000009,1
+2019-10-31,CPI Flash Estimate y/y,eu_cpi,0.7,0.7,0.8,0.0,1
+2019-10-31,Federal Funds Rate,us_fomc,1.75,1.75,2.0,0.0,1
+2019-11-01,Non-Farm Employment Change,us_nfp,128.0,90.0,180.0,38.0,1
+2019-11-13,CPI m/m,us_cpi,0.4,0.3,0.0,0.10000000000000003,1
+2019-11-29,Core CPI Flash Estimate y/y,eu_core_cpi,1.3,1.2,1.1,0.10000000000000009,1
+2019-11-29,CPI Flash Estimate y/y,eu_cpi,1.0,0.8,0.7,0.19999999999999996,1
+2019-12-06,Non-Farm Employment Change,us_nfp,266.0,181.0,156.0,85.0,1
+2019-12-11,CPI m/m,us_cpi,0.3,0.2,0.4,0.09999999999999998,1
+2019-12-12,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2019-12-12,Federal Funds Rate,us_fomc,1.75,1.75,1.75,0.0,1
+2020-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,1.3,1.3,1.3,0.0,1
+2020-01-07,CPI Flash Estimate y/y,eu_cpi,1.3,1.3,1.0,0.0,1
+2020-01-10,Non-Farm Employment Change,us_nfp,145.0,162.0,256.0,-17.0,1
+2020-01-14,CPI m/m,us_cpi,0.2,0.2,0.3,0.0,1
+2020-01-23,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-01-30,Federal Funds Rate,us_fomc,1.75,1.75,1.75,0.0,1
+2020-01-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.2,1.3,-0.09999999999999987,1
+2020-01-31,CPI Flash Estimate y/y,eu_cpi,1.4,1.4,1.3,0.0,1
+2020-02-07,Non-Farm Employment Change,us_nfp,225.0,163.0,147.0,62.0,1
+2020-02-13,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2020-03-03,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,1.2,1.1,0.0,1
+2020-03-03,CPI Flash Estimate y/y,eu_cpi,1.2,1.4,1.4,-0.19999999999999996,1
+2020-03-03,Federal Funds Rate,us_fomc,1.25,,1.75,,0
+2020-03-06,Non-Farm Employment Change,us_nfp,273.0,175.0,273.0,98.0,1
+2020-03-11,CPI m/m,us_cpi,0.1,0.0,0.1,0.1,1
+2020-03-12,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-03-16,Federal Funds Rate,us_fomc,0.25,,1.25,,0
+2020-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.0,1.1,1.2,-0.10000000000000009,1
+2020-03-31,CPI Flash Estimate y/y,eu_cpi,0.7,0.8,1.2,-0.10000000000000009,1
+2020-04-03,Non-Farm Employment Change,us_nfp,-701.0,-100.0,275.0,-601.0,1
+2020-04-10,CPI m/m,us_cpi,-0.4,-0.3,0.1,-0.10000000000000003,1
+2020-04-30,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.7,1.0,0.20000000000000007,1
+2020-04-30,CPI Flash Estimate y/y,eu_cpi,0.4,0.1,0.7,0.30000000000000004,1
+2020-04-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2020-05-08,Non-Farm Employment Change,us_nfp,-20537.0,-22000.0,-881.0,1463.0,1
+2020-05-12,CPI m/m,us_cpi,-0.8,-0.7,-0.4,-0.10000000000000009,1
+2020-05-29,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.8,0.9,0.09999999999999998,1
+2020-05-29,CPI Flash Estimate y/y,eu_cpi,0.1,0.1,0.3,0.0,1
+2020-06-04,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-06-05,Non-Farm Employment Change,us_nfp,2509.0,-7750.0,-20687.0,10259.0,1
+2020-06-10,CPI m/m,us_cpi,-0.1,0.0,-0.8,-0.1,1
+2020-06-11,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2020-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.9,0.0,1
+2020-06-30,CPI Flash Estimate y/y,eu_cpi,0.3,-0.1,0.1,0.4,1
+2020-07-02,Non-Farm Employment Change,us_nfp,4800.0,3037.0,2699.0,1763.0,1
+2020-07-14,CPI m/m,us_cpi,0.6,0.5,-0.1,0.09999999999999998,1
+2020-07-16,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-07-30,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2020-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.2,0.8,0.8,0.3999999999999999,1
+2020-07-31,CPI Flash Estimate y/y,eu_cpi,0.4,0.3,0.3,0.10000000000000003,1
+2020-08-07,Non-Farm Employment Change,us_nfp,1763.0,1530.0,4791.0,233.0,1
+2020-08-12,CPI m/m,us_cpi,0.6,0.3,0.6,0.3,1
+2020-09-01,Core CPI Flash Estimate y/y,eu_core_cpi,0.4,0.9,1.2,-0.5,1
+2020-09-01,CPI Flash Estimate y/y,eu_cpi,-0.2,0.2,0.4,-0.4,1
+2020-09-04,Non-Farm Employment Change,us_nfp,1371.0,1375.0,1734.0,-4.0,1
+2020-09-10,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-09-11,CPI m/m,us_cpi,0.4,0.3,0.6,0.10000000000000003,1
+2020-09-17,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2020-10-02,Core CPI Flash Estimate y/y,eu_core_cpi,0.2,0.5,0.4,-0.3,1
+2020-10-02,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.1,-0.2,-0.19999999999999998,1
+2020-10-02,Non-Farm Employment Change,us_nfp,661.0,900.0,1489.0,-239.0,1
+2020-10-13,CPI m/m,us_cpi,0.2,0.2,0.4,0.0,1
+2020-10-29,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-10-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.2,0.2,0.2,0.0,1
+2020-10-30,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.3,-0.3,0.0,1
+2020-11-06,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2020-11-06,Non-Farm Employment Change,us_nfp,638.0,595.0,672.0,43.0,1
+2020-11-12,CPI m/m,us_cpi,0.0,0.1,0.2,-0.1,1
+2020-12-01,Core CPI Flash Estimate y/y,eu_core_cpi,0.2,0.2,0.2,0.0,1
+2020-12-01,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.2,-0.3,-0.09999999999999998,1
+2020-12-04,Non-Farm Employment Change,us_nfp,245.0,480.0,610.0,-235.0,1
+2020-12-10,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2020-12-10,CPI m/m,us_cpi,0.2,0.1,0.0,0.1,1
+2020-12-17,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,0.2,0.2,0.2,0.0,1
+2021-01-07,CPI Flash Estimate y/y,eu_cpi,-0.3,-0.2,-0.3,-0.09999999999999998,1
+2021-01-08,Non-Farm Employment Change,us_nfp,-140.0,60.0,336.0,-200.0,1
+2021-01-13,CPI m/m,us_cpi,0.4,0.4,0.2,0.0,1
+2021-01-21,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-01-28,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-02-03,Core CPI Flash Estimate y/y,eu_core_cpi,1.4,0.9,0.2,0.4999999999999999,1
+2021-02-03,CPI Flash Estimate y/y,eu_cpi,0.9,0.6,-0.3,0.30000000000000004,1
+2021-02-05,Non-Farm Employment Change,us_nfp,49.0,85.0,-227.0,-36.0,1
+2021-02-10,CPI m/m,us_cpi,0.3,0.3,0.4,0.0,1
+2021-03-02,Core CPI Flash Estimate y/y,eu_core_cpi,1.1,1.1,1.4,0.0,1
+2021-03-02,CPI Flash Estimate y/y,eu_cpi,0.9,0.9,0.9,0.0,1
+2021-03-05,Non-Farm Employment Change,us_nfp,379.0,197.0,166.0,182.0,1
+2021-03-10,CPI m/m,us_cpi,0.4,0.4,0.3,0.0,1
+2021-03-11,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-03-18,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,1.1,1.1,-0.20000000000000007,1
+2021-03-31,CPI Flash Estimate y/y,eu_cpi,1.3,1.4,0.9,-0.09999999999999987,1
+2021-04-02,Non-Farm Employment Change,us_nfp,916.0,652.0,468.0,264.0,1
+2021-04-13,CPI m/m,us_cpi,0.6,0.5,0.4,0.09999999999999998,1
+2021-04-22,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-04-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.8,0.8,0.9,0.0,1
+2021-04-30,CPI Flash Estimate y/y,eu_cpi,1.6,1.6,1.3,0.0,1
+2021-05-07,Non-Farm Employment Change,us_nfp,266.0,990.0,770.0,-724.0,1
+2021-05-12,CPI m/m,us_cpi,0.8,0.2,0.6,0.6000000000000001,1
+2021-06-01,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,0.7,0.0,1
+2021-06-01,CPI Flash Estimate y/y,eu_cpi,2.0,1.9,1.6,0.10000000000000009,1
+2021-06-04,Non-Farm Employment Change,us_nfp,559.0,645.0,278.0,-86.0,1
+2021-06-10,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-06-10,CPI m/m,us_cpi,0.6,0.4,0.8,0.19999999999999996,1
+2021-06-17,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.9,0.9,1.0,0.0,1
+2021-06-30,CPI Flash Estimate y/y,eu_cpi,1.9,1.9,2.0,0.0,1
+2021-07-02,Non-Farm Employment Change,us_nfp,850.0,725.0,583.0,125.0,1
+2021-07-13,CPI m/m,us_cpi,0.9,0.5,0.6,0.4,1
+2021-07-22,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-07-29,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-07-30,Core CPI Flash Estimate y/y,eu_core_cpi,0.7,0.7,0.9,0.0,1
+2021-07-30,CPI Flash Estimate y/y,eu_cpi,2.2,2.0,1.9,0.20000000000000018,1
+2021-08-06,Non-Farm Employment Change,us_nfp,943.0,870.0,938.0,73.0,1
+2021-08-11,CPI m/m,us_cpi,0.5,0.5,0.9,0.0,1
+2021-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,1.6,1.5,0.7,0.10000000000000009,1
+2021-08-31,CPI Flash Estimate y/y,eu_cpi,3.0,2.7,2.2,0.2999999999999998,1
+2021-09-03,Non-Farm Employment Change,us_nfp,235.0,720.0,1053.0,-485.0,1
+2021-09-09,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-09-14,CPI m/m,us_cpi,0.3,0.4,0.5,-0.10000000000000003,1
+2021-09-23,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-10-01,Core CPI Flash Estimate y/y,eu_core_cpi,1.9,1.9,1.6,0.0,1
+2021-10-01,CPI Flash Estimate y/y,eu_cpi,3.4,3.3,3.0,0.10000000000000009,1
+2021-10-08,Non-Farm Employment Change,us_nfp,194.0,490.0,366.0,-296.0,1
+2021-10-13,CPI m/m,us_cpi,0.4,0.3,0.3,0.10000000000000003,1
+2021-10-28,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-10-29,Core CPI Flash Estimate y/y,eu_core_cpi,2.1,1.9,1.9,0.20000000000000018,1
+2021-10-29,CPI Flash Estimate y/y,eu_cpi,4.1,3.7,3.4,0.39999999999999947,1
+2021-11-04,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2021-11-05,Non-Farm Employment Change,us_nfp,531.0,455.0,312.0,76.0,1
+2021-11-10,CPI m/m,us_cpi,0.9,0.6,0.4,0.30000000000000004,1
+2021-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,2.6,2.3,2.0,0.30000000000000027,1
+2021-11-30,CPI Flash Estimate y/y,eu_cpi,4.9,4.5,4.1,0.40000000000000036,1
+2021-12-03,Non-Farm Employment Change,us_nfp,210.0,553.0,546.0,-343.0,1
+2021-12-10,CPI m/m,us_cpi,0.8,0.7,0.9,0.10000000000000009,1
+2021-12-16,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2021-12-16,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2022-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,2.6,2.5,2.6,0.10000000000000009,1
+2022-01-07,CPI Flash Estimate y/y,eu_cpi,5.0,4.8,4.9,0.20000000000000018,1
+2022-01-07,Non-Farm Employment Change,us_nfp,199.0,426.0,249.0,-227.0,1
+2022-01-12,CPI m/m,us_cpi,0.5,0.4,0.8,0.09999999999999998,1
+2022-01-27,Federal Funds Rate,us_fomc,0.25,0.25,0.25,0.0,1
+2022-02-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,1.9,2.6,0.3999999999999999,1
+2022-02-02,CPI Flash Estimate y/y,eu_cpi,5.1,4.4,5.0,0.6999999999999993,1
+2022-02-03,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2022-02-04,Non-Farm Employment Change,us_nfp,467.0,110.0,510.0,357.0,1
+2022-02-10,CPI m/m,us_cpi,0.6,0.4,0.5,0.19999999999999996,1
+2022-03-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.6,2.3,0.10000000000000009,1
+2022-03-02,CPI Flash Estimate y/y,eu_cpi,5.8,5.6,5.1,0.20000000000000018,1
+2022-03-04,Non-Farm Employment Change,us_nfp,678.0,407.0,481.0,271.0,1
+2022-03-10,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2022-03-10,CPI m/m,us_cpi,0.8,0.8,0.6,0.0,1
+2022-03-17,Federal Funds Rate,us_fomc,0.5,0.5,0.25,0.0,1
+2022-04-01,Core CPI Flash Estimate y/y,eu_core_cpi,3.0,3.1,2.7,-0.10000000000000009,1
+2022-04-01,CPI Flash Estimate y/y,eu_cpi,7.5,6.7,5.9,0.7999999999999998,1
+2022-04-01,Non-Farm Employment Change,us_nfp,431.0,492.0,750.0,-61.0,1
+2022-04-12,CPI m/m,us_cpi,1.2,1.2,0.8,0.0,1
+2022-04-14,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2022-04-29,Core CPI Flash Estimate y/y,eu_core_cpi,3.5,3.2,2.9,0.2999999999999998,1
+2022-04-29,CPI Flash Estimate y/y,eu_cpi,7.5,7.5,7.4,0.0,1
+2022-05-05,Federal Funds Rate,us_fomc,1.0,1.0,0.5,0.0,1
+2022-05-06,Non-Farm Employment Change,us_nfp,428.0,390.0,428.0,38.0,1
+2022-05-11,CPI m/m,us_cpi,0.3,0.2,1.2,0.09999999999999998,1
+2022-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,3.8,3.6,3.5,0.19999999999999973,1
+2022-05-31,CPI Flash Estimate y/y,eu_cpi,8.1,7.8,7.5,0.2999999999999998,1
+2022-06-03,Non-Farm Employment Change,us_nfp,390.0,325.0,436.0,65.0,1
+2022-06-09,Main Refinancing Rate,ecb_rate,0.0,0.0,0.0,0.0,1
+2022-06-10,CPI m/m,us_cpi,1.0,0.7,0.3,0.30000000000000004,1
+2022-06-16,Federal Funds Rate,us_fomc,1.75,1.5,1.0,0.25,1
+2022-07-01,Core CPI Flash Estimate y/y,eu_core_cpi,3.7,3.9,3.8,-0.19999999999999973,1
+2022-07-01,CPI Flash Estimate y/y,eu_cpi,8.6,8.5,8.1,0.09999999999999964,1
+2022-07-08,Non-Farm Employment Change,us_nfp,372.0,260.0,384.0,112.0,1
+2022-07-13,CPI m/m,us_cpi,1.3,1.1,1.0,0.19999999999999996,1
+2022-07-21,Main Refinancing Rate,ecb_rate,0.5,0.25,0.0,0.25,1
+2022-07-28,Federal Funds Rate,us_fomc,2.5,2.5,1.75,0.0,1
+2022-07-29,Core CPI Flash Estimate y/y,eu_core_cpi,4.0,3.9,3.7,0.10000000000000009,1
+2022-07-29,CPI Flash Estimate y/y,eu_cpi,8.9,8.7,8.6,0.20000000000000107,1
+2022-08-05,Non-Farm Employment Change,us_nfp,528.0,250.0,398.0,278.0,1
+2022-08-10,CPI m/m,us_cpi,0.0,0.2,1.3,-0.2,1
+2022-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,4.3,4.1,4.0,0.20000000000000018,1
+2022-08-31,CPI Flash Estimate y/y,eu_cpi,9.1,9.0,8.9,0.09999999999999964,1
+2022-09-02,Non-Farm Employment Change,us_nfp,315.0,295.0,526.0,20.0,1
+2022-09-08,Main Refinancing Rate,ecb_rate,1.25,1.25,0.5,0.0,1
+2022-09-13,CPI m/m,us_cpi,0.1,-0.1,0.0,0.2,1
+2022-09-22,Federal Funds Rate,us_fomc,3.25,3.25,2.5,0.0,1
+2022-09-30,Core CPI Flash Estimate y/y,eu_core_cpi,4.8,4.7,4.3,0.09999999999999964,1
+2022-09-30,CPI Flash Estimate y/y,eu_cpi,10.0,9.7,9.1,0.3000000000000007,1
+2022-10-07,Non-Farm Employment Change,us_nfp,263.0,248.0,315.0,15.0,1
+2022-10-13,CPI m/m,us_cpi,0.4,0.2,0.1,0.2,1
+2022-10-27,Main Refinancing Rate,ecb_rate,2.0,2.0,1.25,0.0,1
+2022-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,5.0,4.8,4.8,0.20000000000000018,1
+2022-10-31,CPI Flash Estimate y/y,eu_cpi,10.7,9.9,9.9,0.7999999999999989,1
+2022-11-03,Federal Funds Rate,us_fomc,4.0,4.0,3.25,0.0,1
+2022-11-04,Non-Farm Employment Change,us_nfp,261.0,197.0,315.0,64.0,1
+2022-11-10,CPI m/m,us_cpi,0.4,0.6,0.4,-0.19999999999999996,1
+2022-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,5.0,5.0,5.0,0.0,1
+2022-11-30,CPI Flash Estimate y/y,eu_cpi,10.0,10.4,10.6,-0.40000000000000036,1
+2022-12-02,Non-Farm Employment Change,us_nfp,263.0,200.0,284.0,63.0,1
+2022-12-13,CPI m/m,us_cpi,0.1,0.3,0.4,-0.19999999999999998,1
+2022-12-15,Main Refinancing Rate,ecb_rate,2.5,2.5,2.0,0.0,1
+2022-12-15,Federal Funds Rate,us_fomc,4.5,4.5,4.0,0.0,1
+2023-01-06,Core CPI Flash Estimate y/y,eu_core_cpi,5.2,5.1,5.0,0.10000000000000053,1
+2023-01-06,CPI Flash Estimate y/y,eu_cpi,9.2,9.6,10.1,-0.40000000000000036,1
+2023-01-06,Non-Farm Employment Change,us_nfp,223.0,200.0,256.0,23.0,1
+2023-01-12,CPI m/m,us_cpi,-0.1,-0.1,0.1,0.0,1
+2023-02-01,Core CPI Flash Estimate y/y,eu_core_cpi,5.2,5.1,5.2,0.10000000000000053,1
+2023-02-01,CPI Flash Estimate y/y,eu_cpi,8.5,9.0,9.2,-0.5,1
+2023-02-02,Main Refinancing Rate,ecb_rate,3.0,3.0,2.5,0.0,1
+2023-02-02,Federal Funds Rate,us_fomc,4.75,4.75,4.5,0.0,1
+2023-02-03,Non-Farm Employment Change,us_nfp,517.0,193.0,260.0,324.0,1
+2023-02-14,CPI m/m,us_cpi,0.5,0.5,-0.1,0.0,1
+2023-03-02,Core CPI Flash Estimate y/y,eu_core_cpi,5.6,5.3,5.3,0.2999999999999998,1
+2023-03-02,CPI Flash Estimate y/y,eu_cpi,8.5,8.3,8.6,0.1999999999999993,1
+2023-03-10,Non-Farm Employment Change,us_nfp,311.0,224.0,504.0,87.0,1
+2023-03-14,CPI m/m,us_cpi,0.4,0.4,0.5,0.0,1
+2023-03-16,Main Refinancing Rate,ecb_rate,3.5,3.5,3.0,0.0,1
+2023-03-23,Federal Funds Rate,us_fomc,5.0,5.0,4.75,0.0,1
+2023-03-31,Core CPI Flash Estimate y/y,eu_core_cpi,5.7,5.7,5.6,0.0,1
+2023-03-31,CPI Flash Estimate y/y,eu_cpi,6.9,7.1,8.5,-0.1999999999999993,1
+2023-04-07,Non-Farm Employment Change,us_nfp,236.0,228.0,326.0,8.0,1
+2023-04-12,CPI m/m,us_cpi,0.1,0.2,0.4,-0.1,1
+2023-05-02,Core CPI Flash Estimate y/y,eu_core_cpi,5.6,5.6,5.7,0.0,1
+2023-05-02,CPI Flash Estimate y/y,eu_cpi,7.0,7.0,6.9,0.0,1
+2023-05-04,Main Refinancing Rate,ecb_rate,3.75,3.75,3.5,0.0,1
+2023-05-04,Federal Funds Rate,us_fomc,5.25,5.25,5.0,0.0,1
+2023-05-05,Non-Farm Employment Change,us_nfp,253.0,181.0,165.0,72.0,1
+2023-05-10,CPI m/m,us_cpi,0.4,0.4,0.1,0.0,1
+2023-06-01,Core CPI Flash Estimate y/y,eu_core_cpi,5.3,5.5,5.6,-0.20000000000000018,1
+2023-06-01,CPI Flash Estimate y/y,eu_cpi,6.1,6.3,7.0,-0.20000000000000018,1
+2023-06-02,Non-Farm Employment Change,us_nfp,339.0,193.0,294.0,146.0,1
+2023-06-13,CPI m/m,us_cpi,0.1,0.2,0.4,-0.1,1
+2023-06-15,Main Refinancing Rate,ecb_rate,4.0,4.0,3.75,0.0,1
+2023-06-15,Federal Funds Rate,us_fomc,5.25,5.25,5.25,0.0,1
+2023-06-30,Core CPI Flash Estimate y/y,eu_core_cpi,5.4,5.5,5.3,-0.09999999999999964,1
+2023-06-30,CPI Flash Estimate y/y,eu_cpi,5.5,5.6,6.1,-0.09999999999999964,1
+2023-07-07,Non-Farm Employment Change,us_nfp,209.0,224.0,306.0,-15.0,1
+2023-07-12,CPI m/m,us_cpi,0.2,0.3,0.1,-0.09999999999999998,1
+2023-07-27,Main Refinancing Rate,ecb_rate,4.25,4.25,4.0,0.0,1
+2023-07-27,Federal Funds Rate,us_fomc,5.5,5.5,5.25,0.0,1
+2023-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,5.5,5.4,5.5,0.09999999999999964,1
+2023-07-31,CPI Flash Estimate y/y,eu_cpi,5.3,5.3,5.5,0.0,1
+2023-08-04,Non-Farm Employment Change,us_nfp,187.0,205.0,185.0,-18.0,1
+2023-08-10,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2023-08-31,Core CPI Flash Estimate y/y,eu_core_cpi,5.3,5.3,5.5,0.0,1
+2023-08-31,CPI Flash Estimate y/y,eu_cpi,5.3,5.1,5.3,0.20000000000000018,1
+2023-09-01,Non-Farm Employment Change,us_nfp,187.0,169.0,157.0,18.0,1
+2023-09-13,CPI m/m,us_cpi,0.6,0.6,0.2,0.0,1
+2023-09-14,Main Refinancing Rate,ecb_rate,4.5,4.25,4.25,0.25,1
+2023-09-21,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2023-09-29,Core CPI Flash Estimate y/y,eu_core_cpi,4.5,4.8,5.3,-0.2999999999999998,1
+2023-09-29,CPI Flash Estimate y/y,eu_cpi,4.3,4.5,5.2,-0.20000000000000018,1
+2023-10-06,Non-Farm Employment Change,us_nfp,336.0,171.0,227.0,165.0,1
+2023-10-12,CPI m/m,us_cpi,0.4,0.3,0.6,0.10000000000000003,1
+2023-10-26,Main Refinancing Rate,ecb_rate,4.5,4.5,4.5,0.0,1
+2023-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,4.2,4.2,4.5,0.0,1
+2023-10-31,CPI Flash Estimate y/y,eu_cpi,2.9,3.1,4.3,-0.20000000000000018,1
+2023-11-02,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2023-11-03,Non-Farm Employment Change,us_nfp,150.0,178.0,297.0,-28.0,1
+2023-11-14,CPI m/m,us_cpi,0.0,0.1,0.4,-0.1,1
+2023-11-30,Core CPI Flash Estimate y/y,eu_core_cpi,3.6,3.9,4.2,-0.2999999999999998,1
+2023-11-30,CPI Flash Estimate y/y,eu_cpi,2.4,2.7,2.9,-0.30000000000000027,1
+2023-12-08,Non-Farm Employment Change,us_nfp,199.0,184.0,150.0,15.0,1
+2023-12-12,CPI m/m,us_cpi,0.1,0.0,0.0,0.1,1
+2023-12-14,Main Refinancing Rate,ecb_rate,4.5,4.5,4.5,0.0,1
+2023-12-14,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-01-05,Core CPI Flash Estimate y/y,eu_core_cpi,3.4,3.4,3.6,0.0,1
+2024-01-05,CPI Flash Estimate y/y,eu_cpi,2.9,3.0,2.4,-0.10000000000000009,1
+2024-01-05,Non-Farm Employment Change,us_nfp,216.0,168.0,173.0,48.0,1
+2024-01-11,CPI m/m,us_cpi,0.3,0.2,0.1,0.09999999999999998,1
+2024-01-25,Main Refinancing Rate,ecb_rate,4.5,4.5,4.5,0.0,1
+2024-02-01,Core CPI Flash Estimate y/y,eu_core_cpi,3.3,3.2,3.4,0.09999999999999964,1
+2024-02-01,CPI Flash Estimate y/y,eu_cpi,2.8,2.7,2.9,0.09999999999999964,1
+2024-02-01,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-02-02,Non-Farm Employment Change,us_nfp,353.0,187.0,333.0,166.0,1
+2024-02-13,CPI m/m,us_cpi,0.3,0.2,0.3,0.09999999999999998,1
+2024-03-01,Core CPI Flash Estimate y/y,eu_core_cpi,3.1,2.9,3.3,0.20000000000000018,1
+2024-03-01,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.8,0.10000000000000009,1
+2024-03-07,Main Refinancing Rate,ecb_rate,4.5,4.5,4.5,0.0,1
+2024-03-08,Non-Farm Employment Change,us_nfp,275.0,198.0,229.0,77.0,1
+2024-03-12,CPI m/m,us_cpi,0.4,0.4,0.3,0.0,1
+2024-03-21,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-04-03,Core CPI Flash Estimate y/y,eu_core_cpi,2.9,3.0,3.1,-0.10000000000000009,1
+2024-04-03,CPI Flash Estimate y/y,eu_cpi,2.4,2.5,2.6,-0.10000000000000009,1
+2024-04-05,Non-Farm Employment Change,us_nfp,303.0,212.0,270.0,91.0,1
+2024-04-10,CPI m/m,us_cpi,0.4,0.3,0.4,0.10000000000000003,1
+2024-04-11,Main Refinancing Rate,ecb_rate,4.5,4.5,4.5,0.0,1
+2024-04-30,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.6,2.9,0.10000000000000009,1
+2024-04-30,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.4,0.0,1
+2024-05-02,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-05-03,Non-Farm Employment Change,us_nfp,175.0,238.0,315.0,-63.0,1
+2024-05-15,CPI m/m,us_cpi,0.3,0.4,0.4,-0.10000000000000003,1
+2024-05-31,Core CPI Flash Estimate y/y,eu_core_cpi,2.9,2.7,2.7,0.19999999999999973,1
+2024-05-31,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.4,0.10000000000000009,1
+2024-06-06,Main Refinancing Rate,ecb_rate,4.25,4.25,4.5,0.0,1
+2024-06-07,Non-Farm Employment Change,us_nfp,272.0,182.0,165.0,90.0,1
+2024-06-12,CPI m/m,us_cpi,0.0,0.1,0.3,-0.1,1
+2024-06-13,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-07-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.9,2.8,2.9,0.10000000000000009,1
+2024-07-02,CPI Flash Estimate y/y,eu_cpi,2.5,2.5,2.6,0.0,1
+2024-07-05,Non-Farm Employment Change,us_nfp,206.0,191.0,218.0,15.0,1
+2024-07-11,CPI m/m,us_cpi,-0.1,0.1,0.0,-0.2,1
+2024-07-18,Main Refinancing Rate,ecb_rate,4.25,4.25,4.25,0.0,1
+2024-07-31,Core CPI Flash Estimate y/y,eu_core_cpi,2.9,2.8,2.9,0.10000000000000009,1
+2024-07-31,CPI Flash Estimate y/y,eu_cpi,2.6,2.5,2.5,0.10000000000000009,1
+2024-08-01,Federal Funds Rate,us_fomc,5.5,5.5,5.5,0.0,1
+2024-08-02,Non-Farm Employment Change,us_nfp,114.0,176.0,179.0,-62.0,1
+2024-08-14,CPI m/m,us_cpi,0.2,0.2,-0.1,0.0,1
+2024-08-30,Core CPI Flash Estimate y/y,eu_core_cpi,2.8,2.8,2.9,0.0,1
+2024-08-30,CPI Flash Estimate y/y,eu_cpi,2.2,2.2,2.6,0.0,1
+2024-09-06,Non-Farm Employment Change,us_nfp,142.0,164.0,89.0,-22.0,1
+2024-09-11,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2024-09-12,Main Refinancing Rate,ecb_rate,3.65,3.65,4.25,0.0,1
+2024-09-19,Federal Funds Rate,us_fomc,5.0,5.25,5.5,-0.25,1
+2024-10-01,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.7,2.8,0.0,1
+2024-10-01,CPI Flash Estimate y/y,eu_cpi,1.8,1.8,2.2,0.0,1
+2024-10-04,Non-Farm Employment Change,us_nfp,254.0,147.0,159.0,107.0,1
+2024-10-10,CPI m/m,us_cpi,0.2,0.1,0.2,0.1,1
+2024-10-17,Main Refinancing Rate,ecb_rate,3.4,3.4,3.65,0.0,1
+2024-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.6,2.7,0.10000000000000009,1
+2024-10-31,CPI Flash Estimate y/y,eu_cpi,2.0,1.9,1.7,0.10000000000000009,1
+2024-11-01,Non-Farm Employment Change,us_nfp,12.0,106.0,223.0,-94.0,1
+2024-11-08,Federal Funds Rate,us_fomc,4.75,4.75,5.0,0.0,1
+2024-11-13,CPI m/m,us_cpi,0.2,0.2,0.2,0.0,1
+2024-11-29,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.8,2.7,-0.09999999999999964,1
+2024-11-29,CPI Flash Estimate y/y,eu_cpi,2.3,2.3,2.0,0.0,1
+2024-12-06,Non-Farm Employment Change,us_nfp,227.0,218.0,36.0,9.0,1
+2024-12-11,CPI m/m,us_cpi,0.3,0.3,0.2,0.0,1
+2024-12-12,Main Refinancing Rate,ecb_rate,3.15,3.15,3.4,0.0,1
+2024-12-19,Federal Funds Rate,us_fomc,4.5,4.5,4.75,0.0,1
+2025-01-07,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.7,2.7,0.0,1
+2025-01-07,CPI Flash Estimate y/y,eu_cpi,2.4,2.4,2.2,0.0,1
+2025-01-10,Non-Farm Employment Change,us_nfp,256.0,164.0,212.0,92.0,1
+2025-01-15,CPI m/m,us_cpi,0.4,0.4,0.3,0.0,1
+2025-01-30,Main Refinancing Rate,ecb_rate,2.9,2.9,3.15,0.0,1
+2025-01-30,Federal Funds Rate,us_fomc,4.5,4.5,4.5,0.0,1
+2025-02-03,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.6,2.7,0.10000000000000009,1
+2025-02-03,CPI Flash Estimate y/y,eu_cpi,2.5,2.4,2.4,0.10000000000000009,1
+2025-02-07,Non-Farm Employment Change,us_nfp,143.0,169.0,307.0,-26.0,1
+2025-02-12,CPI m/m,us_cpi,0.5,0.3,0.4,0.2,1
+2025-03-03,Core CPI Flash Estimate y/y,eu_core_cpi,2.6,2.5,2.7,0.10000000000000009,1
+2025-03-03,CPI Flash Estimate y/y,eu_cpi,2.4,2.3,2.5,0.10000000000000009,1
+2025-03-06,Main Refinancing Rate,ecb_rate,2.65,2.65,2.9,0.0,1
+2025-03-07,Non-Farm Employment Change,us_nfp,151.0,159.0,125.0,-8.0,1
+2025-03-12,CPI m/m,us_cpi,0.2,0.3,0.5,-0.09999999999999998,1
+2025-03-20,Federal Funds Rate,us_fomc,4.5,4.5,4.5,0.0,1
+2025-04-01,Core CPI Flash Estimate y/y,eu_core_cpi,2.4,2.5,2.6,-0.10000000000000009,1
+2025-04-01,CPI Flash Estimate y/y,eu_cpi,2.2,2.2,2.3,0.0,1
+2025-04-04,Non-Farm Employment Change,us_nfp,228.0,137.0,117.0,91.0,1
+2025-04-10,CPI m/m,us_cpi,-0.1,0.1,0.2,-0.2,1
+2025-04-17,Main Refinancing Rate,ecb_rate,2.4,2.4,2.65,0.0,1
+2025-05-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.7,2.5,2.4,0.20000000000000018,1
+2025-05-02,CPI Flash Estimate y/y,eu_cpi,2.2,2.1,2.2,0.10000000000000009,1
+2025-05-02,Non-Farm Employment Change,us_nfp,177.0,138.0,185.0,39.0,1
+2025-05-08,Federal Funds Rate,us_fomc,4.5,4.5,4.5,0.0,1
+2025-05-13,CPI m/m,us_cpi,0.2,0.3,-0.1,-0.09999999999999998,1
+2025-06-03,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,2.4,2.7,-0.10000000000000009,1
+2025-06-03,CPI Flash Estimate y/y,eu_cpi,1.9,2.0,2.2,-0.10000000000000009,1
+2025-06-05,Main Refinancing Rate,ecb_rate,2.15,2.15,2.4,0.0,1
+2025-06-06,Non-Farm Employment Change,us_nfp,139.0,126.0,147.0,13.0,1
+2025-06-11,CPI m/m,us_cpi,0.1,0.2,0.2,-0.1,1
+2025-06-19,Federal Funds Rate,us_fomc,4.5,4.5,4.5,0.0,1
+2025-07-01,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,2.3,2.3,0.0,1
+2025-07-01,CPI Flash Estimate y/y,eu_cpi,2.0,2.0,1.9,0.0,1
+2025-07-03,Non-Farm Employment Change,us_nfp,147.0,111.0,144.0,36.0,1
+2025-07-15,CPI m/m,us_cpi,0.3,0.3,0.1,0.0,1
+2025-07-24,Main Refinancing Rate,ecb_rate,2.15,2.15,2.15,0.0,1
+2025-07-31,Federal Funds Rate,us_fomc,4.5,4.5,4.5,0.0,1
+2025-08-01,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,2.3,2.3,0.0,1
+2025-08-01,CPI Flash Estimate y/y,eu_cpi,2.0,1.9,2.0,0.10000000000000009,1
+2025-08-01,Non-Farm Employment Change,us_nfp,73.0,106.0,14.0,-33.0,1
+2025-08-12,CPI m/m,us_cpi,0.2,0.2,0.3,0.0,1
+2025-09-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,2.2,2.3,0.09999999999999964,1
+2025-09-02,CPI Flash Estimate y/y,eu_cpi,2.1,2.1,2.0,0.0,1
+2025-09-05,Non-Farm Employment Change,us_nfp,22.0,75.0,79.0,-53.0,1
+2025-09-11,Main Refinancing Rate,ecb_rate,2.15,2.15,2.15,0.0,1
+2025-09-11,CPI m/m,us_cpi,0.4,0.3,0.2,0.10000000000000003,1
+2025-09-18,Federal Funds Rate,us_fomc,4.25,4.25,4.5,0.0,1
+2025-10-01,Core CPI Flash Estimate y/y,eu_core_cpi,2.3,2.3,2.3,0.0,1
+2025-10-01,CPI Flash Estimate y/y,eu_cpi,2.2,2.2,2.0,0.0,1
+2025-10-24,CPI m/m,us_cpi,0.3,0.4,0.4,-0.10000000000000003,1
+2025-10-30,Main Refinancing Rate,ecb_rate,2.15,2.15,2.15,0.0,1
+2025-10-30,Federal Funds Rate,us_fomc,4.0,4.0,4.25,0.0,1
+2025-10-31,Core CPI Flash Estimate y/y,eu_core_cpi,2.4,2.3,2.4,0.10000000000000009,1
+2025-10-31,CPI Flash Estimate y/y,eu_cpi,2.1,2.1,2.2,0.0,1
+2025-11-20,Non-Farm Employment Change,us_nfp,119.0,53.0,-4.0,66.0,1
+2025-12-02,Core CPI Flash Estimate y/y,eu_core_cpi,2.4,2.4,2.4,0.0,1
+2025-12-02,CPI Flash Estimate y/y,eu_cpi,2.2,2.1,2.1,0.10000000000000009,1
+2025-12-11,Federal Funds Rate,us_fomc,3.75,3.75,4.0,0.0,1
+2025-12-16,Non-Farm Employment Change,us_nfp,-105.0,,108.0,,0
+2025-12-16,Non-Farm Employment Change,us_nfp,64.0,51.0,-105.0,13.0,1
+2025-12-18,Main Refinancing Rate,ecb_rate,2.15,2.15,2.15,0.0,1
