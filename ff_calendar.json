@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-31 04:29:41.490467",
+  "scraped_at": "2026-07-31 07:56:53.024507",
   "source": "github_actions",
   "events": [
     {
@@ -31,9 +31,9 @@
       "event": "French Prelim CPI m/m",
       "forecast": "0.3%",
       "previous": "-0.3%",
-      "actual": "",
+      "actual": "0.6%",
       "is_today": false,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-07-31",
