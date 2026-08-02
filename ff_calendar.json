@@ -1,72 +1,28 @@
 {
-  "scraped_at": "2026-08-02 04:29:32.609457",
+  "scraped_at": "2026-08-02 07:36:18.106671",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-07-29",
-      "time": "1:00pm",
+      "date": "2026-08-05",
+      "time": "5:15am",
       "currency": "USD",
-      "event": "Federal Funds Rate",
-      "forecast": "3.75%",
-      "previous": "3.75%",
-      "actual": "3.75%",
+      "event": "ADP Non-Farm Employment Change",
+      "forecast": "71K",
+      "previous": "98K",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-07-30",
-      "time": "All Day",
-      "currency": "EUR",
-      "event": "German Prelim CPI m/m",
-      "forecast": "0.7%",
-      "previous": "-0.3%",
-      "actual": "0.8%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-07-31",
-      "time": "1:45am",
-      "currency": "EUR",
-      "event": "French Prelim CPI m/m",
-      "forecast": "0.3%",
-      "previous": "-0.3%",
-      "actual": "0.6%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-07-31",
-      "time": "4:00am",
-      "currency": "EUR",
-      "event": "Core CPI Flash Estimate y/y",
-      "forecast": "2.4%",
-      "previous": "2.4%",
-      "actual": "2.5%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-07-31",
+      "date": "2026-08-07",
       "time": "",
-      "currency": "EUR",
-      "event": "CPI Flash Estimate y/y",
-      "forecast": "2.9%",
-      "previous": "2.8%",
-      "actual": "2.9%",
+      "currency": "USD",
+      "event": "Non-Farm Employment Change",
+      "forecast": "88K",
+      "previous": "57K",
+      "actual": "",
       "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-07-31",
-      "time": "",
-      "currency": "EUR",
-      "event": "Italian Prelim CPI m/m",
-      "forecast": "0.3%",
-      "previous": "0.0%",
-      "actual": "0.2%",
-      "is_today": false,
-      "released": true
+      "released": false
     }
   ]
 }
