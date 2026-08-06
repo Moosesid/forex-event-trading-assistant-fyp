@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-08-05 22:16:49.283045",
+  "scraped_at": "2026-08-06 00:04:56.322823",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-08-05",
-      "time": "7:15am",
+      "time": "8:15am",
       "currency": "USD",
       "event": "ADP Non-Farm Employment Change",
       "forecast": "68K",
       "previous": "95K",
       "actual": "44K",
-      "is_today": true,
+      "is_today": false,
       "released": true
     },
     {
