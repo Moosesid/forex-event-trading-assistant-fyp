@@ -1,25 +1,80 @@
 {
-  "scraped_at": "2026-08-06 15:21:27.809765",
+  "scraped_at": "2026-09-29 04:12:22.838652",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-08-05",
-      "time": "8:15am",
-      "currency": "USD",
-      "event": "ADP Non-Farm Employment Change",
-      "forecast": "68K",
-      "previous": "95K",
-      "actual": "44K",
-      "is_today": false,
-      "released": true
+      "date": "2026-09-29",
+      "time": "All Day",
+      "currency": "EUR",
+      "event": "German Prelim CPI m/m",
+      "forecast": "0.5%",
+      "previous": "0.2%",
+      "actual": "",
+      "is_today": true,
+      "released": false
     },
     {
-      "date": "2026-08-07",
+      "date": "2026-09-29",
+      "time": "",
+      "currency": "EUR",
+      "event": "French Prelim CPI m/m",
+      "forecast": "-0.5%",
+      "previous": "0.7%",
+      "actual": "",
+      "is_today": true,
+      "released": false
+    },
+    {
+      "date": "2026-09-30",
+      "time": "2:00am",
+      "currency": "EUR",
+      "event": "Italian Prelim CPI m/m",
+      "forecast": "0.2%",
+      "previous": "0.5%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-09-30",
+      "time": "5:15am",
+      "currency": "USD",
+      "event": "ADP Non-Farm Employment Change",
+      "forecast": "73K",
+      "previous": "38K",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-10-02",
+      "time": "2:00am",
+      "currency": "EUR",
+      "event": "Core CPI Flash Estimate y/y",
+      "forecast": "2.5%",
+      "previous": "2.4%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-10-02",
+      "time": "",
+      "currency": "EUR",
+      "event": "CPI Flash Estimate y/y",
+      "forecast": "3.7%",
+      "previous": "3.2%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-10-02",
       "time": "",
       "currency": "USD",
       "event": "Non-Farm Employment Change",
-      "forecast": "85K",
-      "previous": "57K",
+      "forecast": "90K",
+      "previous": "162K",
       "actual": "",
       "is_today": false,
       "released": false
