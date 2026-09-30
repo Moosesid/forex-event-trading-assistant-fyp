@@ -1,54 +1,54 @@
 {
-  "scraped_at": "2026-09-30 08:19:39.765992",
+  "scraped_at": "2026-09-30 15:50:23.266737",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "time": "All Day",
       "currency": "EUR",
       "event": "German Prelim CPI m/m",
       "forecast": "0.5%",
       "previous": "0.2%",
-      "actual": "",
-      "is_today": false,
-      "released": false
+      "actual": "0.6%",
+      "is_today": true,
+      "released": true
     },
     {
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "time": "",
       "currency": "EUR",
       "event": "French Prelim CPI m/m",
       "forecast": "-0.5%",
       "previous": "0.7%",
       "actual": "-0.3%",
-      "is_today": false,
+      "is_today": true,
       "released": true
     },
     {
       "date": "2026-09-30",
-      "time": "2:00am",
+      "time": "4:00am",
       "currency": "EUR",
       "event": "Italian Prelim CPI m/m",
       "forecast": "0.2%",
       "previous": "0.5%",
-      "actual": "",
+      "actual": "0.7%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-09-30",
-      "time": "5:15am",
+      "time": "7:15am",
       "currency": "USD",
       "event": "ADP Non-Farm Employment Change",
       "forecast": "73K",
-      "previous": "38K",
-      "actual": "",
+      "previous": "36K",
+      "actual": "90K",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-10-02",
-      "time": "2:00am",
+      "time": "4:00am",
       "currency": "EUR",
       "event": "Core CPI Flash Estimate y/y",
       "forecast": "2.5%",
