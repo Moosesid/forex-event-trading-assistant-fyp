@@ -1,62 +1,58 @@
 # Economic Event-Driven Forex Trading Assistant
 
-Final year capstone project (BSc Applied Computing, Singapore Institute of Technology).
+My final year project for the BSc Applied Computing at Singapore Institute of Technology.
 
-An end-to-end ML pipeline that predicts daily EUR/USD direction from macroeconomic event surprises, with a live Streamlit dashboard fed by an automated scraping job.
+## Overview
 
-**Live dashboard:** https://forex-event-trading-assistant-fyp-nvpztjudusmnwdkjirmgee.streamlit.app/
+This project collects economic announcement data (like US inflation, jobs reports and central bank interest rate decisions), uses it to predict whether the EUR/USD exchange rate will go up or down the next day, and shows the prediction on a live dashboard.
 
-## What it does
+The main focus is the data pipeline: collecting 19 years of data, cleaning it, making sure the model only uses information it would have had at the time, and keeping everything updated automatically.
 
-- Scrapes 19 years (2007 to 2025) of macroeconomic event data from ForexFactory: actual, forecast and previous values for US CPI, NFP, FOMC, ECB rate decisions, EU CPI and EU Core CPI
-- Merges event data with daily EUR/USD prices into 4,727 modelling rows and 48 features
-- Engineers surprise features (actual minus consensus, normalised against past releases only) alongside technical and regime features
-- Trains and evaluates Logistic Regression, Random Forest and XGBoost using purged walk-forward validation
-- Serves live BUY / SELL / HOLD signals on a 5-page Streamlit dashboard, refreshed hourly by GitHub Actions
+Streamlit Link: https://forex-event-trading-assistant-fyp-nvpztjudusmnwdkjirmgee.streamlit.app/
 
-## Architecture
+## How it works
 
-```
-ForexFactory scraper ──┐
-                       ├──> merge + feature engineering ──> walk-forward training ──> model pickle
-yfinance EUR/USD ──────┘                                                                   │
-                                                                                           v
-GitHub Actions (hourly) ──> ff_calendar.json ──> live feature builder ──> Streamlit dashboard
-```
+**1. Data collection**
+A Python scraper pulls economic announcements from ForexFactory from 2007 to 2025. Six event types are covered: US CPI (inflation), US Non-Farm Payrolls (jobs), FOMC (US interest rates), ECB (Euro interest rates), EU CPI and EU Core CPI. For each announcement it saves the expected value (the forecast), the actual value, and the previous value.
 
-The live feature builder and the offline training path share one feature implementation, so there is no train/serve skew.
+**2. Combining the data**
+The announcements are matched to daily EUR/USD prices by date. After cleaning, this gives 4,727 days of data with 48 input features.
 
-## Data engineering decisions
+**3. Feature engineering**
+The most important feature is the **surprise**: the difference between the actual number and what was expected. Markets usually react to surprises, not to the number itself. To keep surprises comparable across different events, each one is ranked against that event's own past releases only, never future ones. Price trend and market condition features are added alongside.
 
-- **Leakage-safe evaluation:** 36 non-overlapping walk-forward folds with a purge gap, hyperparameter tuning inside training windows only, and signal thresholds chosen on validation data only
-- **Past-only normalisation:** surprise percentiles use only prior releases, with a 12-release minimum before a rank is produced
-- **Missing data handled explicitly:** event dates are kept even when the forecast is missing, with `*_available` flags so the model can tell "no surprise" from "no data"
-- **Bugs found and fixed:** look-ahead bias in quantile clipping, a test-set model-selection leak, and inconsistent lagged-return definitions from earlier iterations
-- **Blocked upstream source:** ForexFactory blocks Streamlit Cloud IPs, so scraping runs on GitHub Actions and commits a JSON snapshot the app reads
+**4. Model training and testing (walk-forward validation)**
+Three models are compared: Logistic Regression, Random Forest and XGBoost. Instead of one train/test split, the data is split into 36 time periods. The model trains on the past, predicts the next period, then moves forward and repeats. A gap is left between training and testing data so nothing overlaps. This mirrors how the model would actually be used day to day.
 
-## Results (summary)
+**5. Dashboard**
+A Streamlit web app with five pages: upcoming events, the current BUY / SELL / HOLD signal, which features drove the prediction, model results, and a summary.
 
-Daily FX direction is close to a random walk, so the goal was to measure how much signal macro surprises actually carry, honestly.
+**6. Automated data pipeline**
+A GitHub Actions job runs on a schedule, scrapes the latest event calendar, and commits it to the repo as `ff_calendar.json`. The dashboard reads this file, so it stays up to date without anything running manually.
 
-- Mean walk-forward fold AUC [add final figure] across 36 folds, above random in [x/36] folds
-- Hybrid (event + technical) features beat either set alone, confirmed with paired t-tests across folds
-- As a trading filter layered on buy-and-hold, the model reduced maximum drawdown, but the edge is sensitive to transaction costs
+## Problems I solved
 
-Conclusion: the signal is statistically detectable but modest, so the system is framed as a decision-support and risk filter, not an autonomous trading bot.
+**The data source blocked the dashboard.** ForexFactory blocks requests from Streamlit's cloud servers. I moved the scraping into GitHub Actions and had the dashboard read the saved file instead of scraping directly.
 
-## Dashboard pages
+**Data leakage.** Early versions accidentally let the model use future information, which made results look better than they really were. Examples: scaling data using statistics from the whole dataset (including the future), and picking the best model based on test results. I found and fixed these, and the honest results came out lower but reliable.
 
-1. **Event Calendar** - upcoming and recent macro releases
-2. **Live Signal** - current model probability and BUY / SELL / HOLD
-3. **Interpretability** - permutation importance and SHAP
-4. **Model Analysis** - walk-forward results and feature-set comparison
-5. **Results Summary** - headline metrics and backtest
+**Missing data.** Some announcements had no forecast value. Dropping them would lose real events, so I kept them and added "available" flags so the model can tell the difference between "no surprise" and "no data".
 
-## Tech stack
+**Training and live data matching.** The dashboard builds its inputs using the same code as the training notebook, so the live predictions are based on exactly the same features the model learned from.
 
-Python, pandas, NumPy, scikit-learn, XGBoost, SHAP, Streamlit, GitHub Actions, cloudscraper, yfinance
+## Results
 
-## Run locally
+- The model beat random guessing in most test periods and the result was statistically significant, but the edge is small. This is expected, since daily currency moves are very hard to predict.
+- Combining economic surprises with price trends worked better than using either on its own (confirmed with statistical tests across test periods).
+- Used as a filter on top of simply holding the currency, it reduced the largest losses, but trading costs quickly eat into the benefit.
+
+Conclusion: the system works best as a decision-support tool to help a trader manage risk around announcements, not as an automatic trading bot. Full results are in the final report in this repo.
+
+## Tools used
+
+Python, pandas, NumPy, scikit-learn, XGBoost, SHAP, Streamlit, GitHub Actions, yfinance
+
+## How to run it
 
 ```bash
 git clone https://github.com/Moosesid/forex-event-trading-assistant-fyp.git
@@ -65,20 +61,17 @@ pip install -r requirements.txt
 streamlit run app_live.py
 ```
 
-## Repo structure
+## Main files
 
 ```
-[update to match your actual files]
-app_live.py                 Streamlit dashboard
-fyp_model.pkl               trained model
-results_summary.json        metrics shown on the dashboard
-ff_calendar.json            latest scraped events (updated hourly)
-.github/workflows/          hourly scrape job
-notebooks/                  scraping, feature engineering and evaluation
+app_live.py                                the dashboard
+scrape_calendar.py                         scraper that GitHub Actions runs on a schedule
+.github/workflows/                         the scheduled job
+ff_calendar.json                           latest scraped events, read by the dashboard
+fyp_model.pkl                              trained model used by the dashboard
+FYP_Main_Final_Run7 Grid.ipynb             main notebook (data prep, training, testing)
+ForexFactory_Scrape_final2007_run3.ipynb   scraper for the 2007 to 2025 history
+economic_events_master_2007_2025.csv       all collected event data
+*_surprise.csv                             surprise data for each event type
+run*_*.csv and *.png                       results and charts from each experiment
 ```
-
-## Limitations and future work
-
-- Actual-minus-consensus is a rough proxy for policy surprise; market-implied measures (e.g. fed funds futures) would be stronger
-- Daily horizon dilutes event impact; intraday data would test this directly
-- Walk-forward fold loops could be refactored into one parameterised function
