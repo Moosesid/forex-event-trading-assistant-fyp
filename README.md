@@ -4,7 +4,7 @@ Final year capstone project (BSc Applied Computing, Singapore Institute of Techn
 
 An end-to-end ML pipeline that predicts daily EUR/USD direction from macroeconomic event surprises, with a live Streamlit dashboard fed by an automated scraping job.
 
-**Live dashboard:** 
+**Live dashboard:** https://forex-event-trading-assistant-fyp-nvpztjudusmnwdkjirmgee.streamlit.app/
 
 ## What it does
 
