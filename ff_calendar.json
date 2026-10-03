@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-02 23:42:01.423552",
+  "scraped_at": "2026-10-03 05:06:27.328380",
   "source": "github_actions",
   "events": [
     {
@@ -54,7 +54,7 @@
       "forecast": "2.5%",
       "previous": "2.4%",
       "actual": "2.5%",
-      "is_today": true,
+      "is_today": false,
       "released": true
     },
     {
@@ -65,7 +65,7 @@
       "forecast": "3.7%",
       "previous": "3.2%",
       "actual": "3.8%",
-      "is_today": true,
+      "is_today": false,
       "released": true
     },
     {
@@ -76,7 +76,7 @@
       "forecast": "89K",
       "previous": "133K",
       "actual": "29K",
-      "is_today": true,
+      "is_today": false,
       "released": true
     }
   ]
