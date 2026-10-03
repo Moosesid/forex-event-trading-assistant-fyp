@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-10-03 05:06:27.328380",
+  "scraped_at": "2026-10-03 11:32:22.098230",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "time": "All Day",
       "currency": "EUR",
       "event": "German Prelim CPI m/m",
@@ -14,7 +14,7 @@
       "released": true
     },
     {
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "time": "",
       "currency": "EUR",
       "event": "French Prelim CPI m/m",
@@ -26,7 +26,7 @@
     },
     {
       "date": "2026-09-30",
-      "time": "2:00am",
+      "time": "5:00am",
       "currency": "EUR",
       "event": "Italian Prelim CPI m/m",
       "forecast": "0.2%",
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-09-30",
-      "time": "5:15am",
+      "time": "8:15am",
       "currency": "USD",
       "event": "ADP Non-Farm Employment Change",
       "forecast": "73K",
@@ -48,7 +48,7 @@
     },
     {
       "date": "2026-10-02",
-      "time": "2:00am",
+      "time": "5:00am",
       "currency": "EUR",
       "event": "Core CPI Flash Estimate y/y",
       "forecast": "2.5%",
