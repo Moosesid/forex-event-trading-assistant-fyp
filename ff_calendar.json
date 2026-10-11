@@ -1,83 +1,50 @@
 {
-  "scraped_at": "2026-10-04 02:30:58.154785",
+  "scraped_at": "2026-10-11 08:39:43.569142",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-09-30",
-      "time": "All Day",
+      "date": "2026-10-13",
+      "time": "1:00am",
       "currency": "EUR",
-      "event": "German Prelim CPI m/m",
-      "forecast": "0.5%",
-      "previous": "0.2%",
-      "actual": "0.6%",
+      "event": "German Final CPI m/m",
+      "forecast": "0.6%",
+      "previous": "0.6%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-09-30",
+      "date": "2026-10-14",
       "time": "",
-      "currency": "EUR",
-      "event": "French Prelim CPI m/m",
-      "forecast": "-0.5%",
-      "previous": "0.7%",
-      "actual": "-0.3%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-09-30",
-      "time": "4:00am",
-      "currency": "EUR",
-      "event": "Italian Prelim CPI m/m",
+      "currency": "USD",
+      "event": "Core CPI m/m",
       "forecast": "0.2%",
-      "previous": "0.5%",
-      "actual": "0.7%",
+      "previous": "0.3%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-09-30",
-      "time": "7:15am",
-      "currency": "USD",
-      "event": "ADP Non-Farm Employment Change",
-      "forecast": "73K",
-      "previous": "36K",
-      "actual": "90K",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-10-02",
-      "time": "4:00am",
-      "currency": "EUR",
-      "event": "Core CPI Flash Estimate y/y",
-      "forecast": "2.5%",
-      "previous": "2.4%",
-      "actual": "2.5%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-10-02",
-      "time": "",
-      "currency": "EUR",
-      "event": "CPI Flash Estimate y/y",
-      "forecast": "3.7%",
-      "previous": "3.2%",
-      "actual": "3.8%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-10-02",
+      "date": "2026-10-14",
       "time": "",
       "currency": "USD",
-      "event": "Non-Farm Employment Change",
-      "forecast": "89K",
-      "previous": "133K",
-      "actual": "29K",
+      "event": "CPI m/m",
+      "forecast": "0.6%",
+      "previous": "0.4%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
+    },
+    {
+      "date": "2026-10-15",
+      "time": "1:45am",
+      "currency": "EUR",
+      "event": "French Final CPI m/m",
+      "forecast": "-0.3%",
+      "previous": "-0.3%",
+      "actual": "",
+      "is_today": false,
+      "released": false
     }
   ]
 }
