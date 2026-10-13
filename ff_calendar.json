@@ -1,17 +1,17 @@
 {
-  "scraped_at": "2026-10-13 00:31:26.132500",
+  "scraped_at": "2026-10-13 07:36:34.513226",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-10-13",
-      "time": "1:00am",
+      "date": "2026-10-12",
+      "time": "11:00pm",
       "currency": "EUR",
       "event": "German Final CPI m/m",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "actual": "",
-      "is_today": true,
-      "released": false
+      "actual": "0.6%",
+      "is_today": false,
+      "released": true
     },
     {
       "date": "2026-10-14",
@@ -36,8 +36,8 @@
       "released": false
     },
     {
-      "date": "2026-10-15",
-      "time": "1:45am",
+      "date": "2026-10-14",
+      "time": "11:45pm",
       "currency": "EUR",
       "event": "French Final CPI m/m",
       "forecast": "-0.3%",
