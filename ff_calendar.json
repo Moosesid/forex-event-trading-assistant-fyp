@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-14 07:27:13.212183",
+  "scraped_at": "2026-10-14 13:35:36.679235",
   "source": "github_actions",
   "events": [
     {
@@ -20,9 +20,9 @@
       "event": "Core CPI m/m",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "actual": "",
+      "actual": "0.3%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-10-14",
@@ -31,9 +31,9 @@
       "event": "CPI m/m",
       "forecast": "0.6%",
       "previous": "0.4%",
-      "actual": "",
+      "actual": "0.6%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-10-15",
