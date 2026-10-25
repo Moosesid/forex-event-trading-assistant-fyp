@@ -1,50 +1,61 @@
 {
-  "scraped_at": "2026-10-18 00:50:35.304015",
+  "scraped_at": "2026-10-25 05:58:46.208305",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-10-12",
-      "time": "11:00pm",
+      "date": "2026-10-28",
+      "time": "2:00pm",
+      "currency": "USD",
+      "event": "Federal Funds Rate",
+      "forecast": "4.00%",
+      "previous": "4.00%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-10-29",
+      "time": "9:15am",
       "currency": "EUR",
-      "event": "German Final CPI m/m",
-      "forecast": "0.6%",
+      "event": "Main Refinancing Rate",
+      "forecast": "2.65%",
+      "previous": "2.65%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-10-30",
+      "time": "All Day",
+      "currency": "EUR",
+      "event": "German Prelim CPI m/m",
+      "forecast": "0.1%",
       "previous": "0.6%",
-      "actual": "0.6%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-10-14",
-      "time": "",
-      "currency": "USD",
-      "event": "Core CPI m/m",
-      "forecast": "0.2%",
-      "previous": "0.3%",
-      "actual": "0.3%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-10-14",
-      "time": "",
-      "currency": "USD",
-      "event": "CPI m/m",
-      "forecast": "0.6%",
-      "previous": "0.4%",
-      "actual": "0.6%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-10-14",
-      "time": "11:45pm",
+      "date": "2026-10-30",
+      "time": "3:45am",
       "currency": "EUR",
-      "event": "French Final CPI m/m",
-      "forecast": "-0.3%",
+      "event": "French Prelim CPI m/m",
+      "forecast": "0.2%",
       "previous": "-0.3%",
-      "actual": "-0.3%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
+    },
+    {
+      "date": "2026-10-30",
+      "time": "6:00am",
+      "currency": "EUR",
+      "event": "Italian Prelim CPI m/m",
+      "forecast": "0.0%",
+      "previous": "0.7%",
+      "actual": "",
+      "is_today": false,
+      "released": false
     }
   ]
 }
