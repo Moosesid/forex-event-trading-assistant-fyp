@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-10-30 06:58:39.868687",
+  "scraped_at": "2026-10-30 13:58:21.255126",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-10-28",
-      "time": "2:00pm",
+      "time": "11:00am",
       "currency": "USD",
       "event": "Federal Funds Rate",
       "forecast": "4.00%",
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-10-29",
-      "time": "9:15am",
+      "time": "6:15am",
       "currency": "EUR",
       "event": "Main Refinancing Rate",
       "forecast": "2.65%",
@@ -31,31 +31,31 @@
       "event": "German Prelim CPI m/m",
       "forecast": "0.1%",
       "previous": "0.6%",
-      "actual": "",
+      "actual": "-0.2%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-10-30",
-      "time": "3:45am",
+      "time": "12:45am",
       "currency": "EUR",
       "event": "French Prelim CPI m/m",
       "forecast": "0.2%",
       "previous": "-0.3%",
-      "actual": "",
+      "actual": "0.4%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-10-30",
-      "time": "6:00am",
+      "time": "3:00am",
       "currency": "EUR",
       "event": "Italian Prelim CPI m/m",
       "forecast": "0.1%",
       "previous": "0.7%",
-      "actual": "",
+      "actual": "0.9%",
       "is_today": true,
-      "released": false
+      "released": true
     }
   ]
 }
