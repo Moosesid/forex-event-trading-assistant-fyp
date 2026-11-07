@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-11-06 22:58:46.197907",
+  "scraped_at": "2026-11-07 02:39:47.713081",
   "source": "github_actions",
   "events": [
     {
       "date": "2026-11-04",
-      "time": "2:00am",
+      "time": "4:00am",
       "currency": "EUR",
       "event": "Core CPI Flash Estimate y/y",
       "forecast": "2.5%",
@@ -26,7 +26,7 @@
     },
     {
       "date": "2026-11-04",
-      "time": "5:15am",
+      "time": "7:15am",
       "currency": "USD",
       "event": "ADP Non-Farm Employment Change",
       "forecast": "67K",
@@ -43,7 +43,7 @@
       "forecast": "65K",
       "previous": "60K",
       "actual": "165K",
-      "is_today": true,
+      "is_today": false,
       "released": true
     }
   ]
