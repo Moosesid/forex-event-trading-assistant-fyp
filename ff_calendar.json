@@ -1,50 +1,50 @@
 {
-  "scraped_at": "2026-11-08 07:09:20.572903",
+  "scraped_at": "2026-11-08 14:58:56.947810",
   "source": "github_actions",
   "events": [
     {
-      "date": "2026-11-04",
-      "time": "2:00am",
-      "currency": "EUR",
-      "event": "Core CPI Flash Estimate y/y",
-      "forecast": "2.5%",
-      "previous": "2.5%",
-      "actual": "2.5%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-11-04",
-      "time": "",
-      "currency": "EUR",
-      "event": "CPI Flash Estimate y/y",
-      "forecast": "4.0%",
-      "previous": "3.8%",
-      "actual": "4.0%",
-      "is_today": false,
-      "released": true
-    },
-    {
-      "date": "2026-11-04",
-      "time": "5:15am",
+      "date": "2026-11-10",
+      "time": "6:30am",
       "currency": "USD",
-      "event": "ADP Non-Farm Employment Change",
-      "forecast": "67K",
-      "previous": "86K",
-      "actual": "86K",
+      "event": "Core CPI m/m",
+      "forecast": "0.2%",
+      "previous": "0.3%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-10",
       "time": "",
       "currency": "USD",
-      "event": "Non-Farm Employment Change",
-      "forecast": "65K",
-      "previous": "60K",
-      "actual": "165K",
+      "event": "CPI m/m",
+      "forecast": "0.3%",
+      "previous": "0.6%",
+      "actual": "",
       "is_today": false,
-      "released": true
+      "released": false
+    },
+    {
+      "date": "2026-11-11",
+      "time": "12:00am",
+      "currency": "EUR",
+      "event": "German Final CPI m/m",
+      "forecast": "-0.2%",
+      "previous": "-0.2%",
+      "actual": "",
+      "is_today": false,
+      "released": false
+    },
+    {
+      "date": "2026-11-13",
+      "time": "12:45am",
+      "currency": "EUR",
+      "event": "French Final CPI m/m",
+      "forecast": "0.4%",
+      "previous": "0.4%",
+      "actual": "",
+      "is_today": false,
+      "released": false
     }
   ]
 }
