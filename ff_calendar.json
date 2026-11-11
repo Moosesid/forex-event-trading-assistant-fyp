@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-11 02:41:17.752545",
+  "scraped_at": "2026-11-11 10:40:59.501889",
   "source": "github_actions",
   "events": [
     {
@@ -31,9 +31,9 @@
       "event": "German Final CPI m/m",
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "actual": "",
+      "actual": "-0.2%",
       "is_today": true,
-      "released": false
+      "released": true
     },
     {
       "date": "2026-11-13",
