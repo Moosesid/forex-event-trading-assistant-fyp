@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-12 18:07:44.256186",
+  "scraped_at": "2026-11-13 00:06:17.710612",
   "source": "github_actions",
   "events": [
     {
@@ -43,7 +43,7 @@
       "forecast": "0.4%",
       "previous": "0.4%",
       "actual": "",
-      "is_today": false,
+      "is_today": true,
       "released": false
     }
   ]
